@@ -11,7 +11,7 @@ const DAILY_MS = 20 * 60 * 60 * 1000, DAILY_REWARD = 500;
 let CHARS = [];
 let byId = {};
 let state = load() || fresh();
-let current = null, claimDeadline = 0, claimTimerInt = null;
+let current = null, claimDeadline = 0, claimTimerInt = null, currentCanMarry = false;
 
 function fresh() {
   return { nickname: "Player" + Math.floor(Math.random() * 900 + 100),
@@ -57,19 +57,25 @@ function doRoll() {
   if (!c) return;
   const now = Date.now();
   const last = state.cd[c.id] || 0;
-  state.rolls -= 1; state.cd[c.id] = now;
-  current = c;
-  const owned = state.harem.includes(c.id);
   const inCd = now - last < CHAR_COOLDOWN_MS;
+  state.rolls -= 1;
+  // só atualiza o cooldown quando o roll foi válido (igual ao bot: bloqueado não renova)
+  current = c;
+  currentCanMarry = false;
+  clearInterval(claimTimerInt);
+  $("#claimTimer").classList.add("hidden");
+  const owned = state.harem.includes(c.id);
   showCard(c, { owned, inCd });
   if (owned) {
     setStatus(`Você já casou com ${c.name} — converta em kakera 💠.`);
     $("#btnMarry").disabled = true; $("#btnKakera").classList.remove("hidden");
   } else if (inCd) {
     const s = Math.ceil((CHAR_COOLDOWN_MS - (now - last)) / 1000);
-    setStatus(`⏳ ${c.name} em cooldown no bot original (${s}s). Aqui você pode casar, mas ganha metade da kakera se esperar.`);
-    startClaim(c); // permite casar mesmo em cooldown (diferença amigável vs bot)
+    setStatus(`⏳ ${c.name} em cooldown (${s}s). Aguarde para poder casar — igual ao bot.`);
+    $("#btnMarry").disabled = true; $("#btnKakera").classList.remove("hidden");
+    $("#btnKakera").textContent = `💠 Pegar kakera em vez de esperar`;
   } else {
+    state.cd[c.id] = now;
     setStatus(`Reaja com 💍 em até 30s para casar!`);
     startClaim(c);
   }
@@ -86,6 +92,7 @@ function showCard(c, opts = {}) {
 function setStatus(t) { $("#rollStatus").textContent = t; }
 function startClaim(c) {
   clearInterval(claimTimerInt);
+  currentCanMarry = true;
   claimDeadline = Date.now() + CLAIM_MS;
   $("#btnMarry").disabled = false; $("#btnKakera").classList.add("hidden");
   $("#claimTimer").classList.remove("hidden");
@@ -93,8 +100,10 @@ function startClaim(c) {
     const s = Math.ceil((claimDeadline - Date.now()) / 1000);
     if (s <= 0) { clearInterval(claimTimerInt); $("#claimTimer").classList.add("hidden");
       $("#btnMarry").disabled = true;
+      currentCanMarry = false;
       if (current && !state.harem.includes(current.id)) {
         $("#btnKakera").classList.remove("hidden");
+        $("#btnKakera").textContent = `💠 +kakera`;
         setStatus(`${current.name} fugiu! Converta o encontro em kakera 💠.`);
       }
       return;
@@ -104,7 +113,8 @@ function startClaim(c) {
 }
 function doMarry() {
   if (!current) return;
-  if (Date.now() > claimDeadline) { setStatus("Tempo esgotado."); return; }
+  if (!currentCanMarry) { setStatus("Esse personagem está em cooldown. Dê outro ROLL."); return; }
+  if (Date.now() > claimDeadline) { setStatus("Tempo esgotado."); currentCanMarry = false; return; }
   if (state.harem.includes(current.id)) { setStatus("Você já está casado com essa pessoa."); return; }
   // checagem multiplayer (se online, bloqueia se outro dono)
   if (window._fbClaimed && window._fbClaimed[current.id] && window._fbClaimed[current.id] !== state.nickname) {
@@ -114,6 +124,7 @@ function doMarry() {
   state.harem.push(current.id);
   clearInterval(claimTimerInt); $("#claimTimer").classList.add("hidden");
   $("#btnMarry").disabled = true;
+  currentCanMarry = false;
   setStatus(`💍 Você casou com ${current.name} (${current.series})!`);
   pushHist(`💍 Casou com ${current.name}`);
   if (window._fbMarry) window._fbMarry(current).catch(() => {});

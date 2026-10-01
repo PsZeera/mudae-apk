@@ -14,7 +14,7 @@ body{margin:0;background:radial-gradient(1200px 600px at 50% -10%,#2b1b69,var(--
 .card{background:linear-gradient(180deg,var(--card),#150f2b);border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:14px;box-shadow:0 8px 30px rgba(0,0,0,.35)}
 .card.mini h3{margin:6px 0 10px}
 .card-img-wrap{position:relative;border-radius:14px;overflow:hidden;background:#0b0718;border:1px solid var(--line);min-height:280px;display:flex;align-items:center;justify-content:center}
-.card-img-wrap img{width:100%;height:340px;object-fit:cover;display:block}
+.card-img-wrap img{width:100%;height:380px;object-fit:contain;display:block;background:#0b0718}
 .rarity{position:absolute;top:10px;left:10px;background:var(--gold);color:#231603;font-weight:900;padding:4px 10px;border-radius:999px}
 .rarity.SS,.rarity.SSS{background:linear-gradient(90deg,#f472b6,#8b5cf6);color:#fff}
 .rarity.S{background:#38bdf8;color:#06202e}
@@ -38,7 +38,7 @@ h2{margin:12px 0 4px}.muted{color:var(--muted)}.status{min-height:22px;font-weig
 .check{display:flex;align-items:center;gap:6px;font-size:14px;color:var(--muted)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
 .cell{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;cursor:pointer}
-.cell img{width:100%;height:170px;object-fit:cover;display:block;background:#0b0718}
+.cell img{width:100%;height:220px;object-fit:contain;display:block;background:#0b0718}
 .cell .pad{padding:8px;font-size:13px}
 .cell .pad b{display:block;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .badge{display:inline-block;font-size:11px;font-weight:900;background:#33265f;border:1px solid var(--line);border-radius:999px;padding:2px 8px;margin-right:4px}
@@ -48,7 +48,7 @@ h2{margin:12px 0 4px}.muted{color:var(--muted)}.status{min-height:22px;font-weig
 .tabbar small{font-size:11px}
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;padding:16px;z-index:10}
 .modal-card{background:var(--card);border:1px solid var(--line);border-radius:18px;max-width:420px;width:100%;padding:16px;text-align:center}
-.modal-card img{width:100%;height:300px;object-fit:cover;border-radius:12px;background:#0b0718}
+.modal-card img{width:100%;height:auto;max-height:60vh;object-fit:contain;border-radius:12px;background:#0b0718}
 .dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--bad)}
 .dot.on{background:var(--ok)}
 #tradeBox{width:100%;min-height:70px;background:#0e0a22;color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:8px;margin-top:8px}
