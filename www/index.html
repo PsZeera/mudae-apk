@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Mudae APK — Gacha Waifu & Husbando</title>
+<meta name="theme-color" content="#7c3aed" />
+<link rel="manifest" href="./manifest.json" />
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <div class="brand">💍 Mudae <span>APK</span></div>
+    <div class="wallet">
+      <span id="rollsBadge" title="Rolls">🎲 10</span>
+      <span id="kakeraBadge" title="Kakera">💠 0</span>
+    </div>
+  </header>
+
+  <main id="screens">
+    <!-- ROLL -->
+    <section id="screen-roll" class="screen active">
+      <div id="rollCard" class="card">
+        <div class="card-img-wrap">
+          <img id="rollImg" alt="Personagem" referrerpolicy="no-referrer" />
+          <span id="rollRarity" class="rarity">?</span>
+        </div>
+        <h2 id="rollName">Toque em ROLL para começar</h2>
+        <p id="rollSeries" class="muted">603 personagens • pesos estilo Mudae</p>
+        <p id="rollStatus" class="status"></p>
+        <div id="claimTimer" class="timer hidden">⏳ <span id="claimSecs">30</span>s para casar</div>
+        <div class="row">
+          <button id="btnRoll" class="btn primary">🎲 ROLL</button>
+          <button id="btnMarry" class="btn marry" disabled>💍 CASAR</button>
+          <button id="btnKakera" class="btn ghost hidden">💠 +kakera</button>
+        </div>
+        <p class="hint">Roll gasta 1 🎲 (recarrega com o tempo). Personagem repetido ou expirado vira kakera 💠.</p>
+      </div>
+      <div class="card mini">
+        <h3>📜 Últimos rolls</h3>
+        <ul id="history"></ul>
+      </div>
+    </section>
+
+    <!-- HAREM -->
+    <section id="screen-harem" class="screen">
+      <div class="toolbar">
+        <h2>💒 Meu harém (<span id="haremCount">0</span>)</h2>
+        <button id="btnTradeExport" class="btn small">📤 Código de troca</button>
+      </div>
+      <div id="haremGrid" class="grid"></div>
+    </section>
+
+    <!-- BUSCAR -->
+    <section id="screen-search" class="screen">
+      <div class="toolbar col">
+        <input id="searchInput" placeholder="🔎 Buscar nome ou série..." />
+        <div class="row wrap">
+          <select id="filterSeries"><option value="">Todas as séries</option></select>
+          <select id="filterRarity">
+            <option value="">Todas raridades</option>
+            <option>SSS</option><option>SS</option><option>S</option>
+            <option>A</option><option>B</option><option>C</option><option>D</option>
+          </select>
+          <label class="check"><input type="checkbox" id="filterWish" /> ⭐ wishlist</label>
+          <label class="check"><input type="checkbox" id="filterOwned" /> 💍 meus</label>
+        </div>
+      </div>
+      <div id="searchGrid" class="grid"></div>
+    </section>
+
+    <!-- RANK -->
+    <section id="screen-rank" class="screen">
+      <div class="card mini">
+        <h3>🏆 Ranking local</h3>
+        <ol id="rankLocal"></ol>
+        <p class="hint">Ranking global ativa com Firebase (ver aba Perfil → Multiplayer).</p>
+        <h3>🌐 Ranking global <span id="onlineDot" class="dot off"></span></h3>
+        <ol id="rankGlobal"><li class="muted">Offline — configure o Firebase para ativar.</li></ol>
+      </div>
+    </section>
+
+    <!-- PERFIL -->
+    <section id="screen-profile" class="screen">
+      <div class="card mini">
+        <h3>👤 Perfil</h3>
+        <div class="row">
+          <input id="nickInput" placeholder="Seu nickname" maxlength="20" />
+          <button id="btnSaveNick" class="btn small">Salvar</button>
+        </div>
+        <div class="row wrap">
+          <button id="btnDaily" class="btn primary">🎁 Daily +500 💠</button>
+          <button id="btnShopRolls" class="btn small">🛒 +3 🎲 por 150 💠</button>
+          <button id="btnShopReset" class="btn small">⚡ Limpar cooldown 50 💠</button>
+        </div>
+        <p id="dailyInfo" class="hint"></p>
+      </div>
+      <div class="card mini">
+        <h3>⭐ Wishlist (<span id="wishCount">0</span>)</h3>
+        <div id="wishGrid" class="grid"></div>
+      </div>
+      <div class="card mini">
+        <h3>🔀 Troca por código (funciona offline)</h3>
+        <div class="row">
+          <button id="btnShowImport" class="btn small">📥 Importar código</button>
+        </div>
+        <textarea id="tradeBox" class="hidden" placeholder="Cole o código aqui..."></textarea>
+        <div class="row hidden" id="tradeRow">
+          <button id="btnTradeImport" class="btn small primary">Confirmar importação</button>
+        </div>
+        <p class="hint">Troca online (ofertas em tempo real) ativa com Firebase: coleção <code>trades</code>.</p>
+      </div>
+      <div class="card mini">
+        <h3>🌐 Multiplayer (Firebase — opcional)</h3>
+        <p class="hint">Sem Firebase o app é 100% offline solo. Para jogar com amigos: crie um projeto no Firebase, ative Auth anônimo + Firestore, copie as chaves em <code>firebase-config.js</code>.</p>
+        <p id="fbStatus" class="hint">Status: offline solo.</p>
+        <button id="btnWipe" class="btn danger small">🗑 Resetar tudo</button>
+      </div>
+    </section>
+  </main>
+
+  <nav class="tabbar">
+    <button data-tab="roll" class="active">🎲<small>Roll</small></button>
+    <button data-tab="harem">💒<small>Harém</small></button>
+    <button data-tab="search">🔎<small>Buscar</small></button>
+    <button data-tab="rank">🏆<small>Rank</small></button>
+    <button data-tab="profile">👤<small>Perfil</small></button>
+  </nav>
+</div>
+
+<!-- Modal detalhe -->
+<div id="modal" class="modal hidden">
+  <div class="modal-card">
+    <img id="mImg" alt="" referrerpolicy="no-referrer" />
+    <h2 id="mName"></h2>
+    <p id="mMeta" class="muted"></p>
+    <p id="mOwner"></p>
+    <div class="row">
+      <button id="mWish" class="btn small">⭐ Wishlist</button>
+      <button id="mDivorce" class="btn small danger">💔 Divorciar</button>
+      <button id="mClose" class="btn small">Fechar</button>
+    </div>
+  </div>
+</div>
+
+<script src="./firebase-config.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

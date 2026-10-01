@@ -1,0 +1,5429 @@
+[
+  {
+    "id": "ace",
+    "name": "Ace",
+    "series": "One Piece",
+    "rarity": "SS",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2072-Lc6jEdsueJUK.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "acnologia",
+    "name": "Acnologia",
+    "series": "Fairy Tail",
+    "rarity": "SS",
+    "emoji": "🐲",
+    "image": "https://static.wikia.nocookie.net/fairytail/images/f/fc/Acnologia%27s_image.png/revision/latest?cb=20190407085759",
+    "img_src": "fandom"
+  },
+  {
+    "id": "ai-hayasaka",
+    "name": "Ai Hayasaka",
+    "series": "Kaguya-sama",
+    "rarity": "A",
+    "emoji": "🎀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121104-7TYRl3EEsDYU.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "aikawa",
+    "name": "Aikawa",
+    "series": "Dorohedoro",
+    "rarity": "B",
+    "emoji": "😏",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b29595-pZvcUzUhVTtm.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "aizen",
+    "name": "Aizen",
+    "series": "Bleach",
+    "rarity": "SSS",
+    "emoji": "💢",
+    "image": "https://static.wikia.nocookie.net/bleach/images/6/68/682Aizen_profile.png/revision/latest?cb=20260319222423&path-prefix=en",
+    "img_src": "fandom"
+  },
+  {
+    "id": "akaashi",
+    "name": "Akaashi",
+    "series": "Haikyuu",
+    "rarity": "B",
+    "emoji": "📘",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88938-MQdQoMzEigo1.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "akainu",
+    "name": "Akainu",
+    "series": "One Piece",
+    "rarity": "SS",
+    "emoji": "🌋",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22687-tCQVpj6wZhRk.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "akaza",
+    "name": "Akaza",
+    "series": "Demon Slayer",
+    "rarity": "S",
+    "emoji": "🌸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b141694-0COi0GVXPuEn.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "aki",
+    "name": "Aki",
+    "series": "Chainsaw Man",
+    "rarity": "A",
+    "emoji": "🚬",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "aki-hayakawa",
+    "name": "Aki Hayakawa",
+    "series": "Chainsaw Man",
+    "rarity": "A",
+    "emoji": "🚬",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "akine-atagawa",
+    "name": "Akine Atagawa",
+    "series": "Parede de Gelo",
+    "rarity": "C",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b394747-9ZHS5EgVqPdr.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "all-might",
+    "name": "All Might",
+    "series": "My Hero Academia",
+    "rarity": "SS",
+    "emoji": "💪",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89224-K6KEuQAuYKzq.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "alphonse-elric",
+    "name": "Alphonse Elric",
+    "series": "Fullmetal Alchemist",
+    "rarity": "S",
+    "emoji": "🛡",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12-tCKu8yK5kFL5.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "alucard",
+    "name": "Alucard",
+    "series": "Hellsing",
+    "rarity": "A",
+    "emoji": "🔫",
+    "image": "https://static.wikia.nocookie.net/hellsing/images/0/07/AlucardM.png/revision/latest?cb=20260312153218",
+    "img_src": "fandom"
+  },
+  {
+    "id": "amity-blight",
+    "name": "Amity Blight",
+    "series": "The Owl House",
+    "rarity": "S",
+    "emoji": "💋",
+    "image": "https://static.wikia.nocookie.net/the-owl-house/images/0/0d/Amity_Season_3_Hecate.png/revision/latest?cb=20230122185359",
+    "img_src": "fandom"
+  },
+  {
+    "id": "among-us",
+    "name": "Among Us",
+    "series": "Among Us",
+    "rarity": "C",
+    "emoji": "👾",
+    "image": "https://static.wikia.nocookie.net/among-us-wiki/images/4/4f/Crewmate_title_card.png/revision/latest?cb=20220122165356",
+    "img_src": "fandom"
+  },
+  {
+    "id": "amy-rose",
+    "name": "Amy Rose",
+    "series": "Sonic",
+    "rarity": "B",
+    "emoji": "💖",
+    "image": "https://static.wikia.nocookie.net/sonic/images/1/12/SRCAmy.png/revision/latest?cb=20250826092335",
+    "img_src": "fandom"
+  },
+  {
+    "id": "android-17",
+    "name": "Android 17",
+    "series": "Dragon Ball",
+    "rarity": "S",
+    "emoji": "🤖",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2147-AQ0iJ9QEmwPf.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "android-18",
+    "name": "Android 18",
+    "series": "Dragon Ball",
+    "rarity": "A",
+    "emoji": "🗼",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4318-HfIy9rOIOZXM.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "angel",
+    "name": "Angel",
+    "series": "Chainsaw Man",
+    "rarity": "B",
+    "emoji": "😇",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22369-zC7OgGbfO7b6.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "anna",
+    "name": "Anna",
+    "series": "Frozen",
+    "rarity": "A",
+    "emoji": "🎈",
+    "image": "https://static.wikia.nocookie.net/disney/images/0/0f/Profile_-_Anna.jpeg/revision/latest?cb=20200319054431",
+    "img_src": "fandom"
+  },
+  {
+    "id": "annie",
+    "name": "Annie",
+    "series": "Attack on Titan",
+    "rarity": "A",
+    "emoji": "🌀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46490-tan274Ifc1Jf.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "ant-man",
+    "name": "Ant-Man",
+    "series": "Marvel",
+    "rarity": "B",
+    "emoji": "🐜",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/6/66/Henry_Pym_%28Earth-616%29_from_Avengers_Origins_Ant-Man_%26_the_Wasp_Vol_1_1_001.jpg/revision/latest?cb=20140819221923",
+    "img_src": "fandom"
+  },
+  {
+    "id": "anya",
+    "name": "Anya",
+    "series": "Spy x Family",
+    "rarity": "A",
+    "emoji": "🥜",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138100-4Li0tWRCa5bQ.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "anya-forger",
+    "name": "Anya Forger",
+    "series": "Spy x Family",
+    "rarity": "SS",
+    "emoji": "👧",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138100-4Li0tWRCa5bQ.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "aokiji",
+    "name": "Aokiji",
+    "series": "One Piece",
+    "rarity": "S",
+    "emoji": "❄️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2752-0ENS2a39muDz.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "aqua",
+    "name": "Aqua",
+    "series": "Konosuba",
+    "rarity": "A",
+    "emoji": "💧",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89362-ibkc0eoECaW1.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "aquaman",
+    "name": "Aquaman",
+    "series": "DC",
+    "rarity": "A",
+    "emoji": "🌊",
+    "image": "https://static.wikia.nocookie.net/marvel_dc/images/4/4a/Batman_Superman_World%27s_Finest_Vol_1_26_Textless_Lee_Variant.jpg/revision/latest?cb=20240417151448",
+    "img_src": "fandom"
+  },
+  {
+    "id": "arceus",
+    "name": "Arceus",
+    "series": "Pokemon",
+    "rarity": "SS",
+    "emoji": "✨",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/9/9e/0493Arceus.png/revision/latest?cb=20260223065111",
+    "img_src": "fandom"
+  },
+  {
+    "id": "archer",
+    "name": "Archer",
+    "series": "Fate",
+    "rarity": "A",
+    "emoji": "🏹",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2514-hnE6LEdqm7Su.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "argo",
+    "name": "Argo",
+    "series": "Sword Art Online",
+    "rarity": "B",
+    "emoji": "🐭",
+    "image": "https://static.wikia.nocookie.net/swordartonline/images/d/d2/Hosaka_Tomo.png/revision/latest?cb=20200326115816",
+    "img_src": "fandom"
+  },
+  {
+    "id": "ariel",
+    "name": "Ariel",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "🧜",
+    "image": "https://static.wikia.nocookie.net/disney/images/8/8a/Profile_-_Ariel.jpg/revision/latest?cb=20260214125609",
+    "img_src": "fandom"
+  },
+  {
+    "id": "armin",
+    "name": "Armin",
+    "series": "Attack on Titan",
+    "rarity": "A",
+    "emoji": "🚀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46494-g7xYYuBtYPnO.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "armin-arlert",
+    "name": "Armin Arlert",
+    "series": "Attack on Titan",
+    "rarity": "A",
+    "emoji": "📖",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46494-g7xYYuBtYPnO.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "artoria-pendragon",
+    "name": "Artoria Pendragon",
+    "series": "Fate",
+    "rarity": "SS",
+    "emoji": "⚔️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b497-Yg5pNmC8kxzs.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "ash-ketchum",
+    "name": "Ash Ketchum",
+    "series": "Pokemon",
+    "rarity": "A",
+    "emoji": "👒",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/7/76/Ash_anime_The_Beginning.png/revision/latest?cb=20110507193331",
+    "img_src": "fandom"
+  },
+  {
+    "id": "asta",
+    "name": "Asta",
+    "series": "Black Clover",
+    "rarity": "S",
+    "emoji": "🗡",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123285-tKijiuQErDS0.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "asuka-langley",
+    "name": "Asuka Langley",
+    "series": "Evangelion",
+    "rarity": "S",
+    "emoji": "🔶",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b94-d631a3Z2KPvd.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "asuma-sarutobi",
+    "name": "Asuma Sarutobi",
+    "series": "Naruto",
+    "rarity": "B",
+    "emoji": "🚬",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4775-skviHvjIQHiE.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "asuna",
+    "name": "Asuna",
+    "series": "Sword Art Online",
+    "rarity": "S",
+    "emoji": "🧘‍♀️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b36828-j5ib0adAzGMx.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "atomic-samurai",
+    "name": "Atomic Samurai",
+    "series": "One Punch Man",
+    "rarity": "A",
+    "emoji": "🗡️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b154767-B8TieN81pfMI.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "aurora",
+    "name": "Aurora",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "💰",
+    "image": "https://static.wikia.nocookie.net/disney/images/2/2a/Profile_-_Aurora.jpeg/revision/latest?cb=20260322084912",
+    "img_src": "fandom"
+  },
+  {
+    "id": "ayato-kirishima",
+    "name": "Ayato Kirishima",
+    "series": "Tokyo Ghoul",
+    "rarity": "A",
+    "emoji": "🐾",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88411-dI6vqLy4pvHK.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "bakugo",
+    "name": "Bakugo",
+    "series": "My Hero Academia",
+    "rarity": "A",
+    "emoji": "💣",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88892-bdOha3lNcaN6.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "bang",
+    "name": "Bang",
+    "series": "One Punch Man",
+    "rarity": "A",
+    "emoji": "🥋",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n81141-1ml7Q6X2B508.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "bart-simpson",
+    "name": "Bart Simpson",
+    "series": "Simpsons",
+    "rarity": "B",
+    "emoji": "🛹",
+    "image": "https://static.wikia.nocookie.net/simpsons/images/0/0a/Profile_-_Bart_Simpson.png/revision/latest?cb=20250301184943",
+    "img_src": "fandom"
+  },
+  {
+    "id": "bartolomeo",
+    "name": "Bartolomeo",
+    "series": "One Piece",
+    "rarity": "B",
+    "emoji": "🌐",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n85647-WfwG1ixb2qZL.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "batman",
+    "name": "Batman",
+    "series": "DC",
+    "rarity": "S",
+    "emoji": "🦇",
+    "image": "https://static.wikia.nocookie.net/marvel_dc/images/7/76/Batman_Urban_Legends_Vol_1_5_Textless.jpg/revision/latest?cb=20210717062920",
+    "img_src": "fandom"
+  },
+  {
+    "id": "baymax",
+    "name": "Baymax",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "🤖",
+    "image": "https://static.wikia.nocookie.net/disney/images/d/d4/Profile_-_Baymax.jpeg/revision/latest?cb=20190312041817",
+    "img_src": "fandom"
+  },
+  {
+    "id": "becky",
+    "name": "Becky",
+    "series": "Spy x Family",
+    "rarity": "B",
+    "emoji": "🌸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b458-tlKqPcuR287U.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "beerus",
+    "name": "Beerus",
+    "series": "Dragon Ball",
+    "rarity": "SS",
+    "emoji": "😾",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b76348-pGWrznfxgPIV.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "belle",
+    "name": "Belle",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "📖",
+    "image": "https://static.wikia.nocookie.net/disney/images/1/1b/Profile_-_Belle.jpeg/revision/latest?cb=20260419055926",
+    "img_src": "fandom"
+  },
+  {
+    "id": "bertolt",
+    "name": "Bertolt",
+    "series": "Attack on Titan",
+    "rarity": "A",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46488-wm6HvkdkHoZu.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "best-jeanist",
+    "name": "Best Jeanist",
+    "series": "My Hero Academia",
+    "rarity": "B",
+    "emoji": "👖",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b143536-x5jMYB9HbATo.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "black-panther",
+    "name": "Black Panther",
+    "series": "Marvel",
+    "rarity": "A",
+    "emoji": "🐾",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/a2/Black_Panther_Vol_5_1_Textless.jpg/revision/latest?cb=20221204164902",
+    "img_src": "fandom"
+  },
+  {
+    "id": "black-widow",
+    "name": "Black Widow",
+    "series": "Marvel",
+    "rarity": "S",
+    "emoji": "🕷️",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/7/72/Black_Widow_Pale_Little_Spider_Vol_1_1_Textless.jpg/revision/latest?cb=20190809082317",
+    "img_src": "fandom"
+  },
+  {
+    "id": "blizzard",
+    "name": "Blizzard",
+    "series": "One Punch Man",
+    "rarity": "B",
+    "emoji": "❄️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b81931-fmouMoprPVbV.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "boa-hancock",
+    "name": "Boa Hancock",
+    "series": "One Piece",
+    "rarity": "S",
+    "emoji": "💋",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16342-kVOF6V5Q94go.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "bokuto",
+    "name": "Bokuto",
+    "series": "Haikyuu",
+    "rarity": "A",
+    "emoji": "🦉",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88937-2GSqkX9TIzYy.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "bond-forger",
+    "name": "Bond Forger",
+    "series": "Spy x Family",
+    "rarity": "B",
+    "emoji": "🐕",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b169679-EFPubVtZFYom.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "bonnie",
+    "name": "Bonnie",
+    "series": "FNAF",
+    "rarity": "B",
+    "emoji": "🐰",
+    "image": "https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/2/2a/ClassicBonnie_Infobox.png/revision/latest?cb=20260105073447",
+    "img_src": "fandom"
+  },
+  {
+    "id": "boros",
+    "name": "Boros",
+    "series": "One Punch Man",
+    "rarity": "SS",
+    "emoji": "🌌",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n89263-GPItRQ64F27D.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "boruto-uzumaki",
+    "name": "Boruto Uzumaki",
+    "series": "Boruto",
+    "rarity": "A",
+    "emoji": "⚡",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121439-0XY8buCyFI94.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "bowser",
+    "name": "Bowser",
+    "series": "Super Mario",
+    "rarity": "S",
+    "emoji": "🐢",
+    "image": "https://static.wikia.nocookie.net/mario/images/3/3f/SMBW_Bowser_Artwork.png/revision/latest?cb=20230910142646",
+    "img_src": "fandom"
+  },
+  {
+    "id": "brock",
+    "name": "Brock",
+    "series": "Pokemon",
+    "rarity": "B",
+    "emoji": "🍳",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/1/13/Brock_Let%27s_Go%2C_Pikachu%21_and_Let%27s_Go%2C_Eevee%21.png/revision/latest?cb=20181120184438",
+    "img_src": "fandom"
+  },
+  {
+    "id": "brook",
+    "name": "Brook",
+    "series": "One Piece",
+    "rarity": "A",
+    "emoji": "🎻",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5627-av8oD3zhKvDl.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "bugs-bunny",
+    "name": "Bugs Bunny",
+    "series": "Looney Tunes",
+    "rarity": "A",
+    "emoji": "🐰",
+    "image": "https://static.wikia.nocookie.net/looneytunes/images/f/f5/Bugs_Bunny_with_his_Carrot.png/revision/latest?cb=20230717125534",
+    "img_src": "fandom"
+  },
+  {
+    "id": "bulbasaur",
+    "name": "Bulbasaur",
+    "series": "Pokemon",
+    "rarity": "C",
+    "emoji": "🌿",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/f/fb/0001Bulbasaur.png/revision/latest?cb=20240903144321",
+    "img_src": "fandom"
+  },
+  {
+    "id": "bulma",
+    "name": "Bulma",
+    "series": "Dragon Ball",
+    "rarity": "A",
+    "emoji": "🧩",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b678-2YCe13F0tFos.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "buzz-lightyear",
+    "name": "Buzz Lightyear",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "🚀",
+    "image": "https://static.wikia.nocookie.net/pixar/images/5/56/Buzz_Profile.jpg/revision/latest?cb=20260706180029",
+    "img_src": "fandom"
+  },
+  {
+    "id": "byakuya-kuchiki",
+    "name": "Byakuya Kuchiki",
+    "series": "Bleach",
+    "rarity": "S",
+    "emoji": "🌸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b907-kgnDKeMtEN5y.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "byleth",
+    "name": "Byleth",
+    "series": "Fire Emblem",
+    "rarity": "S",
+    "emoji": "⚔️",
+    "image": "https://static.wikia.nocookie.net/fireemblem/images/b/bc/Artwork_Byleth_M.png/revision/latest?cb=20201220085213",
+    "img_src": "fandom"
+  },
+  {
+    "id": "c-c",
+    "name": "C.C.",
+    "series": "Code Geass",
+    "rarity": "SS",
+    "emoji": "🧡",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1111-UhmlFtRFrnWa.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "cabba",
+    "name": "Cabba",
+    "series": "Dragon Ball",
+    "rarity": "A",
+    "emoji": "💪",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n85649-c73lmX9J1dMq.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "caiman",
+    "name": "Caiman",
+    "series": "Dorohedoro",
+    "rarity": "SS",
+    "emoji": "🧄",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b9192-Jly0Soaxc6DX.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "captain-america",
+    "name": "Captain America",
+    "series": "Marvel",
+    "rarity": "A",
+    "emoji": "🎨",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b1/Captain_America_Vol_6_2_Textless.jpg/revision/latest?cb=20110719042719",
+    "img_src": "fandom"
+  },
+  {
+    "id": "catwoman",
+    "name": "Catwoman",
+    "series": "DC",
+    "rarity": "A",
+    "emoji": "🐈",
+    "image": "https://static.wikia.nocookie.net/marvel_dc/images/c/c1/Catwoman_Vol_5_80_Textless_Chew_Variant.jpg/revision/latest?cb=20251017123609",
+    "img_src": "fandom"
+  },
+  {
+    "id": "caulifla",
+    "name": "Caulifla",
+    "series": "Dragon Ball",
+    "rarity": "A",
+    "emoji": "☄️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/126822-yhQlVdPAIAhi.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "cell",
+    "name": "Cell",
+    "series": "Dragon Ball",
+    "rarity": "S",
+    "emoji": "🦗",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/3908.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "celty-sturluson",
+    "name": "Celty Sturluson",
+    "series": "Durarara",
+    "rarity": "S",
+    "emoji": "🏍",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b28331-At0Nz4p6qZHx.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "charizard",
+    "name": "Charizard",
+    "series": "Pokemon",
+    "rarity": "S",
+    "emoji": "🔥",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/0/01/0006MXCharizard.png/revision/latest?cb=20260202155515",
+    "img_src": "fandom"
+  },
+  {
+    "id": "charlotte-roselei",
+    "name": "Charlotte Roselei",
+    "series": "Black Clover",
+    "rarity": "A",
+    "emoji": "🌹",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124434-ZmaDj2J5lSId.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "charmander",
+    "name": "Charmander",
+    "series": "Pokemon",
+    "rarity": "B",
+    "emoji": "🦎",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/2/27/0004Charmander.png/revision/latest?cb=20250818161953",
+    "img_src": "fandom"
+  },
+  {
+    "id": "charmy-pappitson",
+    "name": "Charmy Pappitson",
+    "series": "Black Clover",
+    "rarity": "B",
+    "emoji": "🐑",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124447-2J1PKMgWETNT.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "chica",
+    "name": "Chica",
+    "series": "FNAF",
+    "rarity": "B",
+    "emoji": "🐔",
+    "image": "https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/1/10/ClassicChica_Infobox.png/revision/latest?cb=20260510031724",
+    "img_src": "fandom"
+  },
+  {
+    "id": "chidaruma",
+    "name": "Chidaruma",
+    "series": "Dorohedoro",
+    "rarity": "A",
+    "emoji": "👻",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b79443-lJrwt4yXwOFx.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "chika",
+    "name": "Chika",
+    "series": "Kaguya-sama",
+    "rarity": "A",
+    "emoji": "🎯",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121103-UGLxT8utLPnq.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "chika-fujiwara",
+    "name": "Chika Fujiwara",
+    "series": "Kaguya-sama",
+    "rarity": "A",
+    "emoji": "🎮",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121103-UGLxT8utLPnq.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "chip",
+    "name": "Chip",
+    "series": "Disney",
+    "rarity": "B",
+    "emoji": "🐿️",
+    "image": "https://static.wikia.nocookie.net/disney/images/6/68/CNI220.jpg/revision/latest?cb=20140226190535",
+    "img_src": "fandom"
+  },
+  {
+    "id": "choji-akimichi",
+    "name": "Choji Akimichi",
+    "series": "Naruto",
+    "rarity": "B",
+    "emoji": "🍖",
+    "image": "https://static.wikia.nocookie.net/naruto/images/7/7d/Ch%C5%8Dji_Akimichi.png/revision/latest?cb=20200426204415",
+    "img_src": "fandom"
+  },
+  {
+    "id": "chopper",
+    "name": "Chopper",
+    "series": "One Piece",
+    "rarity": "B",
+    "emoji": "🦌",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b309-H64NhbJ2ywIQ.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "cinderella",
+    "name": "Cinderella",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "👸",
+    "image": "https://static.wikia.nocookie.net/disney/images/4/41/Slipper-y_Kid.png/revision/latest?cb=20141017041626",
+    "img_src": "fandom"
+  },
+  {
+    "id": "connie-springer",
+    "name": "Connie Springer",
+    "series": "Attack on Titan",
+    "rarity": "B",
+    "emoji": "💇",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n46486-izhPjzut6WCZ.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "corazon",
+    "name": "Corazon",
+    "series": "One Piece",
+    "rarity": "S",
+    "emoji": "🎭",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b120536-PxdNxEhQwE8d.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "crocodile",
+    "name": "Crocodile",
+    "series": "One Piece",
+    "rarity": "S",
+    "emoji": "🏜️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2749-e8ebEBN1SlS2.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "cruella",
+    "name": "Cruella",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "🐶",
+    "image": "https://static.wikia.nocookie.net/disney/images/9/92/Profile_-_Cruella.png/revision/latest?cb=20190312122644",
+    "img_src": "fandom"
+  },
+  {
+    "id": "cuphead",
+    "name": "Cuphead",
+    "series": "Cuphead",
+    "rarity": "A",
+    "emoji": "🥤",
+    "image": "https://static.wikia.nocookie.net/cuphead/images/c/c4/Cuphead.png/revision/latest/scale-to-width-down/315?cb=20220701220957",
+    "img_src": "fandom"
+  },
+  {
+    "id": "daffy-duck",
+    "name": "Daffy Duck",
+    "series": "Looney Tunes",
+    "rarity": "B",
+    "emoji": "🦆",
+    "image": "https://static.wikia.nocookie.net/looneytunes/images/0/0d/Daffy_Sheldon_Duck.webp/revision/latest?cb=20221130203902",
+    "img_src": "fandom"
+  },
+  {
+    "id": "daichi-sawamura",
+    "name": "Daichi Sawamura",
+    "series": "Haikyuu",
+    "rarity": "B",
+    "emoji": "🏐",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67323-yFbLDAfJ5ysG.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "daisy",
+    "name": "Daisy",
+    "series": "Super Mario",
+    "rarity": "B",
+    "emoji": "🌼",
+    "image": "https://static.wikia.nocookie.net/mario/images/b/b5/Daisy_Render_MP6_2.png/revision/latest?cb=20241025225150",
+    "img_src": "fandom"
+  },
+  {
+    "id": "dale",
+    "name": "Dale",
+    "series": "Disney",
+    "rarity": "B",
+    "emoji": "🐿️",
+    "image": "https://static.wikia.nocookie.net/disney/images/3/35/ChipAndDale.png/revision/latest/scale-to-width-down/600?cb=20240719200002",
+    "img_src": "fandom"
+  },
+  {
+    "id": "damian",
+    "name": "Damian",
+    "series": "Spy x Family",
+    "rarity": "B",
+    "emoji": "🐺",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b150424-4B4psF6I4dgO.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "darkness",
+    "name": "Darkness",
+    "series": "Konosuba",
+    "rarity": "A",
+    "emoji": "🛡",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89363-mm21Ll4NegUD.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "deadpool",
+    "name": "Deadpool",
+    "series": "Marvel",
+    "rarity": "SS",
+    "emoji": "🗡️",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/44/Deadpool_Vol_9_8_Deadpool_Virgin_Variant.jpg/revision/latest?cb=20241117002534",
+    "img_src": "fandom"
+  },
+  {
+    "id": "deidara",
+    "name": "Deidara",
+    "series": "Naruto",
+    "rarity": "S",
+    "emoji": "💣",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1902-JsEFRFwjmtZJ.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "deku",
+    "name": "Deku",
+    "series": "My Hero Academia",
+    "rarity": "S",
+    "emoji": "💥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89028-8w1I9o1ISHMg.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "denji",
+    "name": "Denji",
+    "series": "Chainsaw Man",
+    "rarity": "S",
+    "emoji": "⛓",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b130102-FO1VHNnEnLlB.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "doctor-doom",
+    "name": "Doctor Doom",
+    "series": "Marvel",
+    "rarity": "A",
+    "emoji": "🗿",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/4a/Victor_von_Doom_%28Earth-36%29_from_Startling_Stories_Thing_-_Night_Falls_on_Yancy_Street_Vol_1_1_0001.jpg/revision/latest?cb=20130825143305",
+    "img_src": "fandom"
+  },
+  {
+    "id": "doctor-strange",
+    "name": "Doctor Strange",
+    "series": "Marvel",
+    "rarity": "S",
+    "emoji": "🌌",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/ac/Asim_Strange_%28Earth-65%29_from_Spider-Gwen_Vol_2_34.jpg/revision/latest?cb=20181231172547",
+    "img_src": "fandom"
+  },
+  {
+    "id": "doflamingo",
+    "name": "Doflamingo",
+    "series": "One Piece",
+    "rarity": "SS",
+    "emoji": "🕶️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2754-B4gGSlNYgsyh.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "dokuga",
+    "name": "Dokuga",
+    "series": "Dorohedoro",
+    "rarity": "B",
+    "emoji": "📸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/40982.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "doma",
+    "name": "Doma",
+    "series": "Demon Slayer",
+    "rarity": "A",
+    "emoji": "💠",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89019-sH6Zg8rpfPWD.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "donald-duck",
+    "name": "Donald Duck",
+    "series": "Disney",
+    "rarity": "B",
+    "emoji": "🦆",
+    "image": "https://static.wikia.nocookie.net/disney/images/a/ab/Donald_Duck_Disney_1.png/revision/latest?cb=20180828172632",
+    "img_src": "fandom"
+  },
+  {
+    "id": "donato",
+    "name": "Donato",
+    "series": "Tokyo Ghoul",
+    "rarity": "B",
+    "emoji": "👼",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127292-MAWgxbS0Cbrs.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "donkey",
+    "name": "Donkey",
+    "series": "Shrek",
+    "rarity": "B",
+    "emoji": "🐴",
+    "image": "https://static.wikia.nocookie.net/shrek/images/b/b4/Donkey_%28Shrek_2%29.png/revision/latest?cb=20230605032710",
+    "img_src": "fandom"
+  },
+  {
+    "id": "donkey-kong",
+    "name": "Donkey Kong",
+    "series": "Super Mario",
+    "rarity": "A",
+    "emoji": "🍌",
+    "image": "https://static.wikia.nocookie.net/mario/images/c/c3/Donkey-kong.png/revision/latest?cb=20250521175012",
+    "img_src": "fandom"
+  },
+  {
+    "id": "doraemon",
+    "name": "Doraemon",
+    "series": "Doraemon",
+    "rarity": "A",
+    "emoji": "🤖",
+    "image": "https://static.wikia.nocookie.net/doraemon/images/d/d1/Doraemon_2005_Anime_Remake.png/revision/latest?cb=20241126194535&path-prefix=en",
+    "img_src": "fandom"
+  },
+  {
+    "id": "dory",
+    "name": "Dory",
+    "series": "Disney",
+    "rarity": "B",
+    "emoji": "🐠",
+    "image": "https://static.wikia.nocookie.net/pixar/images/1/1f/Dory-white.jpg/revision/latest?cb=20110924203518",
+    "img_src": "fandom"
+  },
+  {
+    "id": "dragonite",
+    "name": "Dragonite",
+    "series": "Pokemon",
+    "rarity": "B",
+    "emoji": "🐉",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/1/1c/0149Dragonite.png/revision/latest?cb=20260203160231",
+    "img_src": "fandom"
+  },
+  {
+    "id": "drax",
+    "name": "Drax",
+    "series": "Marvel",
+    "rarity": "B",
+    "emoji": "🔪",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b8/Arthur_Douglas_%28Clone%29_%28Earth-616%29_from_Guardians_of_the_Galaxy_Vol_7_15_cover_001.jpg/revision/latest?cb=20210729022738",
+    "img_src": "fandom"
+  },
+  {
+    "id": "dumbledore",
+    "name": "Dumbledore",
+    "series": "Harry Potter",
+    "rarity": "S",
+    "emoji": "🧙‍♂️",
+    "image": "https://static.wikia.nocookie.net/harrypotter/images/7/75/Albus_Dumbledore_%28HBPF_promo%29.jpg/revision/latest?cb=20150822232849",
+    "img_src": "fandom"
+  },
+  {
+    "id": "ebisu",
+    "name": "Ebisu",
+    "series": "Dorohedoro",
+    "rarity": "A",
+    "emoji": "🦆",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88241-3NQSKNgaQRNC.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "edward-elric",
+    "name": "Edward Elric",
+    "series": "Fullmetal Alchemist",
+    "rarity": "S",
+    "emoji": "⚙",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11-TA5Nuk7EDUZG.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "eevee",
+    "name": "Eevee",
+    "series": "Pokemon",
+    "rarity": "A",
+    "emoji": "🐾",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/1/1f/0133PEevee.png/revision/latest?cb=20260203153649",
+    "img_src": "fandom"
+  },
+  {
+    "id": "eijiro-kirishima",
+    "name": "Eijiro Kirishima",
+    "series": "My Hero Academia",
+    "rarity": "A",
+    "emoji": "🪨",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89243-R2WJlNuj3aEs.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "elsa",
+    "name": "Elsa",
+    "series": "Frozen",
+    "rarity": "S",
+    "emoji": "❄️",
+    "image": "https://static.wikia.nocookie.net/disney/images/9/95/Profile_-_Elsa.jpeg/revision/latest?cb=20241222112925",
+    "img_src": "fandom"
+  },
+  {
+    "id": "emilia",
+    "name": "Emilia",
+    "series": "Re:Zero",
+    "rarity": "SS",
+    "emoji": "💐",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88572-IzTwXEHSobRs.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "emiya",
+    "name": "Emiya",
+    "series": "Fate",
+    "rarity": "A",
+    "emoji": "🏹",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b496-GI0waavDjyk3.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "en",
+    "name": "En",
+    "series": "Dorohedoro",
+    "rarity": "S",
+    "emoji": "👉🏼",
+    "image": "https://static.wikia.nocookie.net/dorohedoro/images/7/72/Snimok2-1.png/revision/latest/scale-to-width-down/600?cb=20200202220440",
+    "img_src": "fandom"
+  },
+  {
+    "id": "endeavor",
+    "name": "Endeavor",
+    "series": "My Hero Academia",
+    "rarity": "S",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126158-Wix9rh7unTDQ.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "eren",
+    "name": "Eren",
+    "series": "Attack on Titan",
+    "rarity": "SS",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40882-dsj7IP943WFF.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "eren-yeager",
+    "name": "Eren Yeager",
+    "series": "Attack on Titan",
+    "rarity": "S",
+    "emoji": "🌲",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40882-dsj7IP943WFF.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "ereshkigal",
+    "name": "Ereshkigal",
+    "series": "Fate",
+    "rarity": "A",
+    "emoji": "🗡️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b150759-VGIPIiMzriqI.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "eric-cartman",
+    "name": "Eric Cartman",
+    "series": "South Park",
+    "rarity": "A",
+    "emoji": "🧸",
+    "image": "https://static.wikia.nocookie.net/southpark/images/c/c4/Eric-cartman.png/revision/latest?cb=20180718082504",
+    "img_src": "fandom"
+  },
+  {
+    "id": "erika",
+    "name": "Erika",
+    "series": "Pokemon",
+    "rarity": "B",
+    "emoji": "🌺",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/b/b7/Erika_Let%27s_Go%2C_Pikachu%21_and_Let%27s_Go%2C_Eevee%21.png/revision/latest?cb=20240818135254",
+    "img_src": "fandom"
+  },
+  {
+    "id": "erwin",
+    "name": "Erwin",
+    "series": "Attack on Titan",
+    "rarity": "S",
+    "emoji": "🦅",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46496-Mu86MENd5wNB.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "erwin-smith",
+    "name": "Erwin Smith",
+    "series": "Attack on Titan",
+    "rarity": "S",
+    "emoji": "🦅",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46496-Mu86MENd5wNB.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "erza",
+    "name": "Erza",
+    "series": "Fairy Tail",
+    "rarity": "SS",
+    "emoji": "⚔️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5189-GR1xdok9SFsN.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "erza-scarlet",
+    "name": "Erza Scarlet",
+    "series": "Fairy Tail",
+    "rarity": "S",
+    "emoji": "⚔",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5189-GR1xdok9SFsN.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "espeon",
+    "name": "Espeon",
+    "series": "Pokemon",
+    "rarity": "B",
+    "emoji": "☀️",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/6/67/0196Espeon.png/revision/latest?cb=20260207051436",
+    "img_src": "fandom"
+  },
+  {
+    "id": "eto-yoshimura",
+    "name": "Eto Yoshimura",
+    "series": "Tokyo Ghoul",
+    "rarity": "SS",
+    "emoji": "🍅",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b90231-7ZeFK1DbrAxw.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "felix-argyle",
+    "name": "Felix Argyle",
+    "series": "Re:Zero",
+    "rarity": "A",
+    "emoji": "😺",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b90184-o1ZFF6osCZX7.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "finral",
+    "name": "Finral",
+    "series": "Black Clover",
+    "rarity": "B",
+    "emoji": "🌀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124433-QyoZrgIUsSpd.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "foxy",
+    "name": "Foxy",
+    "series": "FNAF",
+    "rarity": "B",
+    "emoji": "🦊",
+    "image": "https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/a/a2/ClassicFoxy_Infobox.png/revision/latest?cb=20260105105541",
+    "img_src": "fandom"
+  },
+  {
+    "id": "franky",
+    "name": "Franky",
+    "series": "One Piece",
+    "rarity": "A",
+    "emoji": "🤖",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n64-ChX6ZzHHjXqA.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "freddy-fazbear",
+    "name": "Freddy Fazbear",
+    "series": "FNAF",
+    "rarity": "A",
+    "emoji": "🐻",
+    "image": "https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/b/b5/Freddy_Fazbear_Render.png/revision/latest?cb=20251105172837",
+    "img_src": "fandom"
+  },
+  {
+    "id": "frieza",
+    "name": "Frieza",
+    "series": "Dragon Ball",
+    "rarity": "SS",
+    "emoji": "💀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3694-bDfOdSSdFfPv.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "frisk",
+    "name": "Frisk",
+    "series": "Undertale",
+    "rarity": "A",
+    "emoji": "❤️",
+    "image": "https://static.wikia.nocookie.net/undertale/images/f/f8/Frisk_overworld.png/revision/latest?cb=20260713203559",
+    "img_src": "fandom"
+  },
+  {
+    "id": "frost",
+    "name": "Frost",
+    "series": "Dragon Ball",
+    "rarity": "A",
+    "emoji": "❄️",
+    "image": "https://static.wikia.nocookie.net/dragonball/images/4/4b/FrostFinalForm.png/revision/latest?cb=20170724232039",
+    "img_src": "fandom"
+  },
+  {
+    "id": "fubuki",
+    "name": "Fubuki",
+    "series": "One Punch Man",
+    "rarity": "A",
+    "emoji": "💨",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b81931-fmouMoprPVbV.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "fujita",
+    "name": "Fujita",
+    "series": "Dorohedoro",
+    "rarity": "B",
+    "emoji": "🦭",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/16062.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "furuta",
+    "name": "Furuta",
+    "series": "Tokyo Ghoul",
+    "rarity": "S",
+    "emoji": "🦈",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126031-3tBpl6tvYwaZ.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "fushiguro",
+    "name": "Fushiguro",
+    "series": "Jujutsu Kaisen",
+    "rarity": "A",
+    "emoji": "🐕",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126635-L0y3I92JSUkN.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "gaara",
+    "name": "Gaara",
+    "series": "Naruto",
+    "rarity": "S",
+    "emoji": "🏜",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1662-4E5J0LX9jZKZ.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "gajeel",
+    "name": "Gajeel",
+    "series": "Fairy Tail",
+    "rarity": "A",
+    "emoji": "⚙️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16893-l9HhHQ8j09H5.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "gamora",
+    "name": "Gamora",
+    "series": "Marvel",
+    "rarity": "A",
+    "emoji": "⚔️",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/e/e9/Gomorrah_%28Earth-311%29_from_1602_Witch_Hunter_Angela_Vol_1_2_001.jpg/revision/latest?cb=20160307002210",
+    "img_src": "fandom"
+  },
+  {
+    "id": "ganondorf",
+    "name": "Ganondorf",
+    "series": "Zelda",
+    "rarity": "S",
+    "emoji": "⚔️",
+    "image": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/6/66/TotK_Ganondorf.png/revision/latest?cb=20230513141802",
+    "img_src": "fandom"
+  },
+  {
+    "id": "gardevoir",
+    "name": "Gardevoir",
+    "series": "Pokemon",
+    "rarity": "A",
+    "emoji": "💃",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/f/f8/0282Gardevoir.png/revision/latest?cb=20260207063627",
+    "img_src": "fandom"
+  },
+  {
+    "id": "garou",
+    "name": "Garou",
+    "series": "One Punch Man",
+    "rarity": "SS",
+    "emoji": "🐺",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89277-xBGb4B5YISXg.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "gary",
+    "name": "Gary",
+    "series": "SpongeBob",
+    "rarity": "C",
+    "emoji": "🐌",
+    "image": "https://static.wikia.nocookie.net/spongebob/images/9/96/300px-SpongeBob_SquarePants_Gary_the_Snail_Transparent_PNG.png/revision/latest?cb=20251103060900",
+    "img_src": "fandom"
+  },
+  {
+    "id": "gauche",
+    "name": "Gauche",
+    "series": "Black Clover",
+    "rarity": "B",
+    "emoji": "🪞",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124446-4YXFoCIllCKh.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "gengar",
+    "name": "Gengar",
+    "series": "Pokemon",
+    "rarity": "B",
+    "emoji": "👻",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/4/47/0094Gengar.png/revision/latest?cb=20260203120236",
+    "img_src": "fandom"
+  },
+  {
+    "id": "genos",
+    "name": "Genos",
+    "series": "One Punch Man",
+    "rarity": "S",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b73979-tVi9maPID881.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "geto",
+    "name": "Geto",
+    "series": "Jujutsu Kaisen",
+    "rarity": "S",
+    "emoji": "😈",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133699-FCnXaISgazAi.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "gildarts",
+    "name": "Gildarts",
+    "series": "Fairy Tail",
+    "rarity": "S",
+    "emoji": "⭐",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b29502-znlVXVdXEQqg.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "gilgamesh",
+    "name": "Gilgamesh",
+    "series": "Fate",
+    "rarity": "SS",
+    "emoji": "🏆",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2514-hnE6LEdqm7Su.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "gin",
+    "name": "Gin",
+    "series": "Bleach",
+    "rarity": "A",
+    "emoji": "🐍",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1087-wMTny26FezYB.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "gintama",
+    "name": "Gintama",
+    "series": "Gintama",
+    "rarity": "A",
+    "emoji": "🦄",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b672-cP5VPriN67xJ.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "giyu-tomioka",
+    "name": "Giyu Tomioka",
+    "series": "Demon Slayer",
+    "rarity": "S",
+    "emoji": "💧",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b130050-qsLThJs5VIbz.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "giyuu",
+    "name": "Giyuu",
+    "series": "Demon Slayer",
+    "rarity": "S",
+    "emoji": "🌊",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b130050-qsLThJs5VIbz.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "gohan",
+    "name": "Gohan",
+    "series": "Dragon Ball",
+    "rarity": "A",
+    "emoji": "📖",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2093-kdFZhqcNSsqW.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "gojo-satoru",
+    "name": "Gojo Satoru",
+    "series": "Jujutsu Kaisen",
+    "rarity": "SS",
+    "emoji": "😎",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127691-9zqh1xpIubn7.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "goku",
+    "name": "Goku",
+    "series": "Dragon Ball",
+    "rarity": "SS",
+    "emoji": "🌟",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/246-wsRRr6z1kii8.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "goku-black",
+    "name": "Goku Black",
+    "series": "Dragon Ball",
+    "rarity": "SS",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126199-SKYF7o73fQtX.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "goku-ssj",
+    "name": "Goku SSJ",
+    "series": "Dragon Ball",
+    "rarity": "SS",
+    "emoji": "✨",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/246-wsRRr6z1kii8.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "gon-freecss",
+    "name": "Gon Freecss",
+    "series": "Hunter x Hunter",
+    "rarity": "S",
+    "emoji": "🎣",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b30-lyFExKyDhefc.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "goofy",
+    "name": "Goofy",
+    "series": "Disney",
+    "rarity": "B",
+    "emoji": "🤕",
+    "image": "https://static.wikia.nocookie.net/disney/images/e/e5/Goofy.png/revision/latest?cb=20250827192413",
+    "img_src": "fandom"
+  },
+  {
+    "id": "goten",
+    "name": "Goten",
+    "series": "Dragon Ball",
+    "rarity": "B",
+    "emoji": "🌀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/2551.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "gray-fullbuster",
+    "name": "Gray Fullbuster",
+    "series": "Fairy Tail",
+    "rarity": "S",
+    "emoji": "❄️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4839-p2SBgjdTxHxk.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "green-arrow",
+    "name": "Green Arrow",
+    "series": "DC",
+    "rarity": "B",
+    "emoji": "🏹",
+    "image": "https://static.wikia.nocookie.net/marvel_dc/images/c/c2/Green_Arrow_Vol_7_17_Textless.jpg/revision/latest?cb=20241023154840",
+    "img_src": "fandom"
+  },
+  {
+    "id": "green-lantern",
+    "name": "Green Lantern",
+    "series": "DC",
+    "rarity": "A",
+    "emoji": "💚",
+    "image": "https://static.wikia.nocookie.net/marvel_dc/images/0/06/Green_Lantern_Vol_7_16_Textless.jpg/revision/latest?cb=20241017144307",
+    "img_src": "fandom"
+  },
+  {
+    "id": "greninja",
+    "name": "Greninja",
+    "series": "Pokemon",
+    "rarity": "A",
+    "emoji": "🐸",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/d/d9/0658Greninja.png/revision/latest?cb=20260223181149",
+    "img_src": "fandom"
+  },
+  {
+    "id": "grimmjow",
+    "name": "Grimmjow",
+    "series": "Bleach",
+    "rarity": "S",
+    "emoji": "🐆",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1080-JUNo2Or0UGZg.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "groot",
+    "name": "Groot",
+    "series": "Marvel",
+    "rarity": "B",
+    "emoji": "🌳",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/83/Groot_%28Earth-8%29_from_Spider-Gwen_Vol_2_18.jpg/revision/latest?cb=20181230141050",
+    "img_src": "fandom"
+  },
+  {
+    "id": "gumi",
+    "name": "Gumi",
+    "series": "Vocaloid",
+    "rarity": "A",
+    "emoji": "🎧",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126635-L0y3I92JSUkN.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "guts",
+    "name": "Guts",
+    "series": "Berserk",
+    "rarity": "SS",
+    "emoji": "⚔️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b422-XTaiTuvRohsV.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "gyarados",
+    "name": "Gyarados",
+    "series": "Pokemon",
+    "rarity": "B",
+    "emoji": "🐉",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/b/ba/0130MGyarados.png/revision/latest?cb=20260203152456",
+    "img_src": "fandom"
+  },
+  {
+    "id": "gyomei-himejima",
+    "name": "Gyomei Himejima",
+    "series": "Demon Slayer",
+    "rarity": "S",
+    "emoji": "🙏",
+    "image": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/85/Gyomei_anime.png/revision/latest?cb=20200317170337",
+    "img_src": "fandom"
+  },
+  {
+    "id": "hange",
+    "name": "Hange",
+    "series": "Attack on Titan",
+    "rarity": "A",
+    "emoji": "🧪",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71121-7R7CnQd3lHgt.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "hantengu",
+    "name": "Hantengu",
+    "series": "Demon Slayer",
+    "rarity": "A",
+    "emoji": "👹",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b260323-2zytvxsXp7rG.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "happy",
+    "name": "Happy",
+    "series": "Fairy Tail",
+    "rarity": "B",
+    "emoji": "🐱",
+    "image": "https://static.wikia.nocookie.net/fairytail/images/4/41/Happy_proposal.png/revision/latest?cb=20190204191609",
+    "img_src": "fandom"
+  },
+  {
+    "id": "harley-quinn",
+    "name": "Harley Quinn",
+    "series": "DC",
+    "rarity": "S",
+    "emoji": "🔨",
+    "image": "https://static.wikia.nocookie.net/marvel_dc/images/0/00/Harley_Quinn_Vol_4_44_Textless_Variant.jpg/revision/latest?cb=20241028144848",
+    "img_src": "fandom"
+  },
+  {
+    "id": "harry-potter",
+    "name": "Harry Potter",
+    "series": "Harry Potter",
+    "rarity": "A",
+    "emoji": "⚡",
+    "image": "https://static.wikia.nocookie.net/harrypotter/images/c/ce/Harry_Potter_DHF1.jpg/revision/latest?cb=20140603201724",
+    "img_src": "fandom"
+  },
+  {
+    "id": "haru",
+    "name": "Haru",
+    "series": "Dorohedoro",
+    "rarity": "B",
+    "emoji": "🐱",
+    "image": "https://static.wikia.nocookie.net/dorohedoro/images/9/96/MUD_%26_SLUDGE_252.jpg/revision/latest/scale-to-width-down/600?cb=20260206095127",
+    "img_src": "fandom"
+  },
+  {
+    "id": "hashirama-senju",
+    "name": "Hashirama Senju",
+    "series": "Naruto",
+    "rarity": "SS",
+    "emoji": "🌲",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n12464-fcgqkCPZoREw.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "hatsune-miku",
+    "name": "Hatsune Miku",
+    "series": "Vocaloid",
+    "rarity": "SS",
+    "emoji": "🎵",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b7156-DUwViOmpWw2B.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "hayasaka",
+    "name": "Hayasaka",
+    "series": "Kaguya-sama",
+    "rarity": "A",
+    "emoji": "🎀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121104-7TYRl3EEsDYU.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "hei-hei",
+    "name": "Hei Hei",
+    "series": "Disney",
+    "rarity": "C",
+    "emoji": "🐓",
+    "image": "https://static.wikia.nocookie.net/disney/images/6/6b/Profile_-_Heihei.jpeg/revision/latest?cb=20241112180334",
+    "img_src": "fandom"
+  },
+  {
+    "id": "hercules",
+    "name": "Hercules",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "🏛️",
+    "image": "https://static.wikia.nocookie.net/disney/images/7/70/Profile_-_Hercules.jpeg/revision/latest?cb=20220125211152",
+    "img_src": "fandom"
+  },
+  {
+    "id": "hermione-granger",
+    "name": "Hermione Granger",
+    "series": "Harry Potter",
+    "rarity": "A",
+    "emoji": "📚",
+    "image": "https://static.wikia.nocookie.net/harrypotter/images/3/34/Hermione_Granger.jpg/revision/latest?cb=20251206062840",
+    "img_src": "fandom"
+  },
+  {
+    "id": "heroic-spirit",
+    "name": "Heroic Spirit",
+    "series": "Fate",
+    "rarity": "S",
+    "emoji": "⚔️",
+    "image": "https://static.wikia.nocookie.net/fategrandorder/images/2/25/Archercardborder1.webp/revision/latest?cb=20221104091953",
+    "img_src": "fandom"
+  },
+  {
+    "id": "hidan",
+    "name": "Hidan",
+    "series": "Naruto",
+    "rarity": "S",
+    "emoji": "⛏️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2792-lyvtbiT4COp0.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "hideyoshi-nagachika",
+    "name": "Hideyoshi Nagachika",
+    "series": "Tokyo Ghoul",
+    "rarity": "A",
+    "emoji": "🎟️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88421-F8yaeVfHjwYn.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "himeno",
+    "name": "Himeno",
+    "series": "Chainsaw Man",
+    "rarity": "A",
+    "emoji": "🚬",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b144596-kvL6SD2litJu.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "hinami-fueguchi",
+    "name": "Hinami Fueguchi",
+    "series": "Tokyo Ghoul",
+    "rarity": "A",
+    "emoji": "🐧",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88293-4J36uyflNWvb.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "hinata",
+    "name": "Hinata",
+    "series": "Haikyuu",
+    "rarity": "A",
+    "emoji": "🦊",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b64769-WoWlCMLLgJ14.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "hinata-hyuga",
+    "name": "Hinata Hyuga",
+    "series": "Naruto",
+    "rarity": "A",
+    "emoji": "🌸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1555-Q41GLTV3FvYF.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "hinata-shoyo",
+    "name": "Hinata Shoyo",
+    "series": "Haikyuu",
+    "rarity": "A",
+    "emoji": "🏐",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b64769-WoWlCMLLgJ14.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "hiruzen-sarutobi",
+    "name": "Hiruzen Sarutobi",
+    "series": "Naruto",
+    "rarity": "A",
+    "emoji": "🪶",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n7571-fKldLuBWUtCO.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "historia-reiss",
+    "name": "Historia Reiss",
+    "series": "Attack on Titan",
+    "rarity": "A",
+    "emoji": "👑",
+    "image": "https://static.wikia.nocookie.net/shingekinokyojin/images/9/9f/Historia_Reiss_character_image.png/revision/latest?cb=20210411172422",
+    "img_src": "fandom"
+  },
+  {
+    "id": "hit",
+    "name": "Hit",
+    "series": "Dragon Ball",
+    "rarity": "S",
+    "emoji": "⏱️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22037-sY7GWSKYr2Nl.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "ho-oh",
+    "name": "Ho-Oh",
+    "series": "Pokemon",
+    "rarity": "S",
+    "emoji": "🔥",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/d/d6/0250Ho-Oh_VI.gif/revision/latest?cb=20140201153115",
+    "img_src": "fandom"
+  },
+  {
+    "id": "homer-simpson",
+    "name": "Homer Simpson",
+    "series": "Simpsons",
+    "rarity": "A",
+    "emoji": "🍩",
+    "image": "https://static.wikia.nocookie.net/simpsons/images/6/67/S34E19_Write_Off_This_Episode_-_Homer.png/revision/latest?cb=20260201075614",
+    "img_src": "fandom"
+  },
+  {
+    "id": "homunculus",
+    "name": "Homunculus",
+    "series": "Fullmetal Alchemist",
+    "rarity": "S",
+    "emoji": "💢",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n15542-7kL0vJ9U8bVR.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "hughes",
+    "name": "Hughes",
+    "series": "Fullmetal Alchemist",
+    "rarity": "B",
+    "emoji": "📸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b69-MRetSG8Qevvu.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "hulk",
+    "name": "Hulk",
+    "series": "Marvel",
+    "rarity": "S",
+    "emoji": "🦍",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b0/Totally_Awesome_Hulk_Vol_1_1_Textless.jpg/revision/latest?cb=20150908201942",
+    "img_src": "fandom"
+  },
+  {
+    "id": "ichigo",
+    "name": "Ichigo",
+    "series": "Bleach",
+    "rarity": "SS",
+    "emoji": "⚔️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5-a7bkJgjhhigE.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "ichigo-kurosaki",
+    "name": "Ichigo Kurosaki",
+    "series": "Bleach",
+    "rarity": "SS",
+    "emoji": "🗡",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5-a7bkJgjhhigE.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "illyasviel",
+    "name": "Illyasviel",
+    "series": "Fate",
+    "rarity": "A",
+    "emoji": "🎀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b503-SmS87yq6l2tD.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "incineroar",
+    "name": "Incineroar",
+    "series": "Pokemon",
+    "rarity": "C",
+    "emoji": "🐯",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/a/af/0727Incineroar.png/revision/latest?cb=20260322093731",
+    "img_src": "fandom"
+  },
+  {
+    "id": "ino-yamanaka",
+    "name": "Ino Yamanaka",
+    "series": "Naruto",
+    "rarity": "B",
+    "emoji": "🌼",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2009-H7n38Ns1fr0Y.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "inosuke",
+    "name": "Inosuke",
+    "series": "Demon Slayer",
+    "rarity": "S",
+    "emoji": "🐗",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n129130-SJC0Kn1DU39E.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "iron-man",
+    "name": "Iron Man",
+    "series": "Marvel",
+    "rarity": "SS",
+    "emoji": "🧰",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/8/8b/Invincible_Iron_Man_Vol_2_518_Textless.jpg/revision/latest?cb=20200612014506",
+    "img_src": "fandom"
+  },
+  {
+    "id": "ishigami",
+    "name": "Ishigami",
+    "series": "Kaguya-sama",
+    "rarity": "B",
+    "emoji": "🎮",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124142-XUO1g7wRqkaT.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "ishtar",
+    "name": "Ishtar",
+    "series": "Fate",
+    "rarity": "A",
+    "emoji": "⭐",
+    "image": "https://static.wikia.nocookie.net/fategrandorder/images/b/b5/S142_Stage1.webp/revision/latest?cb=20260613045037",
+    "img_src": "fandom"
+  },
+  {
+    "id": "itachi-uchiha",
+    "name": "Itachi Uchiha",
+    "series": "Naruto",
+    "rarity": "SS",
+    "emoji": "🐦⬛",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b14-9Kb1E5oel1ke.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "james",
+    "name": "James",
+    "series": "Pokemon",
+    "rarity": "A",
+    "emoji": "🦅",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/6/69/James-journeys2.jpeg/revision/latest?cb=20250712083336",
+    "img_src": "fandom"
+  },
+  {
+    "id": "jasmine",
+    "name": "Jasmine",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "🕌",
+    "image": "https://static.wikia.nocookie.net/disney/images/c/cd/Profile_-_Jasmine.jpeg/revision/latest?cb=20260322105441",
+    "img_src": "fandom"
+  },
+  {
+    "id": "jean-kirstein",
+    "name": "Jean Kirstein",
+    "series": "Attack on Titan",
+    "rarity": "B",
+    "emoji": "🐴",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46498-ritqAj9FW6jX.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "jerry",
+    "name": "Jerry",
+    "series": "Tom and Jerry",
+    "rarity": "B",
+    "emoji": "🐭",
+    "image": "https://static.wikia.nocookie.net/tomandjerry/images/e/ec/Kisspng-jerry-mouse-tom-cat-nibbles-tom-and-jerry-5afa8781629bc3.8019112615263681294039.png/revision/latest?cb=20231206221420",
+    "img_src": "fandom"
+  },
+  {
+    "id": "jessie",
+    "name": "Jessie",
+    "series": "Pokemon",
+    "rarity": "A",
+    "emoji": "🦄",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3935-m000RuoIVOGI.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "jigglypuff",
+    "name": "Jigglypuff",
+    "series": "Pokemon",
+    "rarity": "C",
+    "emoji": "🎤",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/3/3a/0039Jigglypuff.png/revision/latest?cb=20260203100343",
+    "img_src": "fandom"
+  },
+  {
+    "id": "jinbe",
+    "name": "Jinbe",
+    "series": "One Piece",
+    "rarity": "A",
+    "emoji": "🌊",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b18938-yZANEfjsVhW4.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "jiraiya",
+    "name": "Jiraiya",
+    "series": "Naruto",
+    "rarity": "S",
+    "emoji": "🐸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2423-RO5MyoXSA9OL.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "jiren",
+    "name": "Jiren",
+    "series": "Dragon Ball",
+    "rarity": "S",
+    "emoji": "💪",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126257-nGjgbsnxZkUB.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "jogo",
+    "name": "Jogo",
+    "series": "Jujutsu Kaisen",
+    "rarity": "A",
+    "emoji": "🔥",
+    "image": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/2/29/Jogo_%28Anime%29.png/revision/latest?cb=20210109005534",
+    "img_src": "fandom"
+  },
+  {
+    "id": "joker",
+    "name": "Joker",
+    "series": "DC",
+    "rarity": "S",
+    "emoji": "🎭",
+    "image": "https://static.wikia.nocookie.net/marvel_dc/images/3/35/Joker_Earth-Two_001.jpg/revision/latest?cb=20160110070539",
+    "img_src": "fandom"
+  },
+  {
+    "id": "jugo",
+    "name": "Jugo",
+    "series": "Naruto",
+    "rarity": "B",
+    "emoji": "💢",
+    "image": "https://static.wikia.nocookie.net/naruto/images/4/42/Jugo.png/revision/latest?cb=20150616195401",
+    "img_src": "fandom"
+  },
+  {
+    "id": "julius-novachrono",
+    "name": "Julius Novachrono",
+    "series": "Black Clover",
+    "rarity": "S",
+    "emoji": "⏳",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124435-gXFVXWrCcieK.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "juuzou-suzuya",
+    "name": "Juuzou Suzuya",
+    "series": "Tokyo Ghoul",
+    "rarity": "S",
+    "emoji": "🔨",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88412-sIOJUnIkyFRe.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "juvia",
+    "name": "Juvia",
+    "series": "Fairy Tail",
+    "rarity": "A",
+    "emoji": "🌊",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b9719-xh4xqTV6byNl.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kaai-yuki",
+    "name": "Kaai Yuki",
+    "series": "Vocaloid",
+    "rarity": "B",
+    "emoji": "🐤",
+    "image": "https://static.wikia.nocookie.net/vocaloid/images/9/9e/Kaai_Yuki_V4.png/revision/latest?cb=20250208060130",
+    "img_src": "fandom"
+  },
+  {
+    "id": "kabuto-yakushi",
+    "name": "Kabuto Yakushi",
+    "series": "Naruto",
+    "rarity": "B",
+    "emoji": "🐍",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2405-CqbcGW2tfaMV.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kagamine-len",
+    "name": "Kagamine Len",
+    "series": "Vocaloid",
+    "rarity": "A",
+    "emoji": "🎤",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b9274-CcJGYzAAEUH4.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kagamine-rin",
+    "name": "Kagamine Rin",
+    "series": "Vocaloid",
+    "rarity": "A",
+    "emoji": "🎤",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b9272-ngVhoFsVSmCM.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kagaya-ubuyashiki",
+    "name": "Kagaya Ubuyashiki",
+    "series": "Demon Slayer",
+    "rarity": "A",
+    "emoji": "🌸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137808-4yA8XQUDrAho.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kageyama-tobio",
+    "name": "Kageyama Tobio",
+    "series": "Haikyuu",
+    "rarity": "A",
+    "emoji": "🧊",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b64771-BuCVs7B8bBdh.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kaguya-shinomiya",
+    "name": "Kaguya Shinomiya",
+    "series": "Kaguya-sama",
+    "rarity": "A",
+    "emoji": "🍫",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b120649-NPaWaIpWy60E.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kai",
+    "name": "Kai",
+    "series": "Dorohedoro",
+    "rarity": "A",
+    "emoji": "🧘",
+    "image": "https://static.wikia.nocookie.net/dorohedoro/images/1/18/Kai_3.jpg/revision/latest/scale-to-width-down/600?cb=20220715184043",
+    "img_src": "fandom"
+  },
+  {
+    "id": "kaido",
+    "name": "Kaido",
+    "series": "One Piece",
+    "rarity": "SS",
+    "emoji": "🐉",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b90112-KVRcvbKBKLxY.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kaito",
+    "name": "Kaito",
+    "series": "Vocaloid",
+    "rarity": "A",
+    "emoji": "❄️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b20594-QQJBR3LYobbv.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kakashi",
+    "name": "Kakashi",
+    "series": "Naruto",
+    "rarity": "S",
+    "emoji": "🔮",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b85-mkVBh2yjxjmx.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kakashi-hatake",
+    "name": "Kakashi Hatake",
+    "series": "Naruto",
+    "rarity": "S",
+    "emoji": "🐍",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b85-mkVBh2yjxjmx.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kale",
+    "name": "Kale",
+    "series": "Dragon Ball",
+    "rarity": "A",
+    "emoji": "😠",
+    "image": "https://static.wikia.nocookie.net/dragonball/images/d/df/Kale_01.png/revision/latest?cb=20171227051452",
+    "img_src": "fandom"
+  },
+  {
+    "id": "kallen",
+    "name": "Kallen",
+    "series": "Code Geass",
+    "rarity": "A",
+    "emoji": "⚔️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b558-8tSMZ4a0LWrn.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kanao",
+    "name": "Kanao",
+    "series": "Demon Slayer",
+    "rarity": "A",
+    "emoji": "🌸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139038-OcOoDUyLEsRn.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kanao-tsuyuri",
+    "name": "Kanao Tsuyuri",
+    "series": "Demon Slayer",
+    "rarity": "A",
+    "emoji": "🌸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139038-OcOoDUyLEsRn.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kasumi-miwa",
+    "name": "Kasumi Miwa",
+    "series": "Jujutsu Kaisen",
+    "rarity": "B",
+    "emoji": "⚔️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b156848-Rf0tuoQCNyZV.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kaworu",
+    "name": "Kaworu",
+    "series": "Evangelion",
+    "rarity": "A",
+    "emoji": "🎹",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1261-HYRv3HpsSL92.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kazuma-satou",
+    "name": "Kazuma Satou",
+    "series": "Konosuba",
+    "rarity": "A",
+    "emoji": "🌱",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89364-7Th8Tv1XKJtt.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kefla",
+    "name": "Kefla",
+    "series": "Dragon Ball",
+    "rarity": "S",
+    "emoji": "⚡",
+    "image": "https://static.wikia.nocookie.net/dragonball/images/a/af/Kefla_01.png/revision/latest?cb=20171105024801",
+    "img_src": "fandom"
+  },
+  {
+    "id": "ken-kaneki",
+    "name": "Ken Kaneki",
+    "series": "Tokyo Ghoul",
+    "rarity": "S",
+    "emoji": "👄",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b87275-mb13EWZBdbh3.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kenma",
+    "name": "Kenma",
+    "series": "Haikyuu",
+    "rarity": "B",
+    "emoji": "🐈",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71267-q44J2MXMinXD.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kenny",
+    "name": "Kenny",
+    "series": "South Park",
+    "rarity": "B",
+    "emoji": "🧣",
+    "image": "https://static.wikia.nocookie.net/southpark/images/6/6f/KennyMcCormick.png/revision/latest?cb=20160409020502",
+    "img_src": "fandom"
+  },
+  {
+    "id": "kenpachi-zaraki",
+    "name": "Kenpachi Zaraki",
+    "series": "Bleach",
+    "rarity": "SS",
+    "emoji": "🗡️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b909-slhoFBon7oiH.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kiba-inuzuka",
+    "name": "Kiba Inuzuka",
+    "series": "Naruto",
+    "rarity": "B",
+    "emoji": "🐕",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n3495-dtw0gHa5SOo6.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kiki",
+    "name": "Kiki",
+    "series": "Kiki's Delivery Service",
+    "rarity": "S",
+    "emoji": "🐈",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b6866-Fe38ZMNvevnF.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "killer-bee",
+    "name": "Killer Bee",
+    "series": "Naruto",
+    "rarity": "A",
+    "emoji": "🐂",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b18473-AiI3mk28a1Nm.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "killua-zoldyck",
+    "name": "Killua Zoldyck",
+    "series": "Hunter x Hunter",
+    "rarity": "SS",
+    "emoji": "⚡",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b27-Z5O02kQUydpT.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kin-emon",
+    "name": "Kin'emon",
+    "series": "One Piece",
+    "rarity": "B",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67345-YYWagqYcgghY.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "king",
+    "name": "King",
+    "series": "One Punch Man",
+    "rarity": "S",
+    "emoji": "👑",
+    "image": "https://static.wikia.nocookie.net/onepunchman/images/7/7d/King_Manga.jpg/revision/latest?cb=20191019062240",
+    "img_src": "fandom"
+  },
+  {
+    "id": "king-dedede",
+    "name": "King Dedede",
+    "series": "Kirby",
+    "rarity": "B",
+    "emoji": "👑",
+    "image": "https://static.wikia.nocookie.net/kirby/images/9/9c/DededeAirRidersRender.png/revision/latest?cb=20250819185651&path-prefix=en",
+    "img_src": "fandom"
+  },
+  {
+    "id": "kirby",
+    "name": "Kirby",
+    "series": "Kirby",
+    "rarity": "A",
+    "emoji": "🧠",
+    "image": "https://static.wikia.nocookie.net/kirby/images/2/2a/Kirby_KARs.png/revision/latest?cb=20250819175353&path-prefix=en",
+    "img_src": "fandom"
+  },
+  {
+    "id": "kirito",
+    "name": "Kirito",
+    "series": "Sword Art Online",
+    "rarity": "A",
+    "emoji": "🖥️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b36765-BnLbXg0Tzzh9.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kisame",
+    "name": "Kisame",
+    "series": "Naruto",
+    "rarity": "S",
+    "emoji": "🦈",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/2672-oxbHx8n3N7WY.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kishibe",
+    "name": "Kishibe",
+    "series": "Chainsaw Man",
+    "rarity": "A",
+    "emoji": "🔫",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12659-hgT3g7q7oHnU.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kishou-arima",
+    "name": "Kishou Arima",
+    "series": "Tokyo Ghoul",
+    "rarity": "SS",
+    "emoji": "🗡️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88946-YbTQAGJAdpoH.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kiyoko-shimizu",
+    "name": "Kiyoko Shimizu",
+    "series": "Haikyuu",
+    "rarity": "A",
+    "emoji": "📷",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67689-QaYw1qDMjwKM.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kizaru",
+    "name": "Kizaru",
+    "series": "One Piece",
+    "rarity": "S",
+    "emoji": "🌞",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21093-Pc4kOjUn3ZkZ.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "klein",
+    "name": "Klein",
+    "series": "Sword Art Online",
+    "rarity": "B",
+    "emoji": "👺",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b36830-41SWIDvhqOo4.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "knuckles",
+    "name": "Knuckles",
+    "series": "Sonic",
+    "rarity": "B",
+    "emoji": "🥊",
+    "image": "https://static.wikia.nocookie.net/sonic/images/2/2c/SRCKnuckles.png/revision/latest?cb=20250826092333",
+    "img_src": "fandom"
+  },
+  {
+    "id": "kobeni",
+    "name": "Kobeni",
+    "series": "Chainsaw Man",
+    "rarity": "B",
+    "emoji": "😱",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b144594-0dbO1NSYeZ12.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kokushibo",
+    "name": "Kokushibo",
+    "series": "Demon Slayer",
+    "rarity": "SS",
+    "emoji": "👁️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b141918-Bfgq88XJFOPz.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "koma",
+    "name": "Koma",
+    "series": "Tokyo Ghoul",
+    "rarity": "B",
+    "emoji": "🐞",
+    "image": "https://static.wikia.nocookie.net/tokyoghoul/images/6/69/Koma_manga.png/revision/latest/scale-to-width-down/385?cb=20150617022441",
+    "img_src": "fandom"
+  },
+  {
+    "id": "konan",
+    "name": "Konan",
+    "series": "Naruto",
+    "rarity": "S",
+    "emoji": "🦋",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/3179-YVD5zJSYrnPg.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "koutarou-amon",
+    "name": "Koutarou Amon",
+    "series": "Tokyo Ghoul",
+    "rarity": "A",
+    "emoji": "⚔️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88407-YwE6D75Xskxl.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "koyuki-hikawa",
+    "name": "Koyuki Hikawa",
+    "series": "Parede de Gelo",
+    "rarity": "A",
+    "emoji": "❄️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b354440-baufwO1gkKDE.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "krilin",
+    "name": "Krilin",
+    "series": "Dragon Ball",
+    "rarity": "B",
+    "emoji": "🧑‍🦲",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2159-qtEuMYyOUkwY.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kurapika",
+    "name": "Kurapika",
+    "series": "Hunter x Hunter",
+    "rarity": "S",
+    "emoji": "⛓",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b28-ivA7UGnfE40a.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kurenai-yuhi",
+    "name": "Kurenai Yuhi",
+    "series": "Naruto",
+    "rarity": "B",
+    "emoji": "🌹",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n4773-mfDggINe9pMD.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kurisu-makise",
+    "name": "Kurisu Makise",
+    "series": "Steins;Gate",
+    "rarity": "SS",
+    "emoji": "⚗",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b34470-Jw2LXZBL5R8i.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kuroo",
+    "name": "Kuroo",
+    "series": "Haikyuu",
+    "rarity": "A",
+    "emoji": "🐱",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71269-pi9vjyxKPFAu.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kushina-uzumaki",
+    "name": "Kushina Uzumaki",
+    "series": "Naruto",
+    "rarity": "A",
+    "emoji": "🔴",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b7302-KQ6ddZtOkvUf.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "kyouko-mado",
+    "name": "Kyouko Mado",
+    "series": "Tokyo Ghoul",
+    "rarity": "B",
+    "emoji": "🗡️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88838-LWDgYMTqb1pd.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "l",
+    "name": "L",
+    "series": "Death Note",
+    "rarity": "S",
+    "emoji": "🍰",
+    "image": "https://static.wikia.nocookie.net/deathnote/images/7/76/299276L.jpg/revision/latest?cb=20160609084420",
+    "img_src": "fandom"
+  },
+  {
+    "id": "l-lawliet",
+    "name": "L Lawliet",
+    "series": "Death Note",
+    "rarity": "S",
+    "emoji": "🍰",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71-1W4panC53vfs.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "laxus",
+    "name": "Laxus",
+    "series": "Fairy Tail",
+    "rarity": "A",
+    "emoji": "⚡",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b8294-24LS3f4VMrfs.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "leafa",
+    "name": "Leafa",
+    "series": "Sword Art Online",
+    "rarity": "A",
+    "emoji": "🍃",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b36831-JfyFU7gPPVmr.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "lelouch",
+    "name": "Lelouch",
+    "series": "Code Geass",
+    "rarity": "SS",
+    "emoji": "👑",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b417-gVLmIJu9phcK.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "lelouch-lamperouge",
+    "name": "Lelouch Lamperouge",
+    "series": "Code Geass",
+    "rarity": "SS",
+    "emoji": "🎭",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b417-gVLmIJu9phcK.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "levi",
+    "name": "Levi",
+    "series": "Attack on Titan",
+    "rarity": "SS",
+    "emoji": "🩸",
+    "image": "https://static.wikia.nocookie.net/shingekinokyojin/images/9/94/Levi_Ackerman_character_image.png/revision/latest?cb=20210410135001",
+    "img_src": "fandom"
+  },
+  {
+    "id": "levi-ackerman",
+    "name": "Levi Ackerman",
+    "series": "Attack on Titan",
+    "rarity": "SS",
+    "emoji": "🗡️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b45627-CR68RyZmddGG.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "levy-mcgarden",
+    "name": "Levy McGarden",
+    "series": "Fairy Tail",
+    "rarity": "B",
+    "emoji": "📚",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b29493-XcqFX69oipzX.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "light",
+    "name": "Light",
+    "series": "Death Note",
+    "rarity": "S",
+    "emoji": "📓",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b80-26EhwSsSqQ50.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "light-yagami",
+    "name": "Light Yagami",
+    "series": "Death Note",
+    "rarity": "S",
+    "emoji": "📓",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b80-26EhwSsSqQ50.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "link",
+    "name": "Link",
+    "series": "The Legend of Zelda",
+    "rarity": "S",
+    "emoji": "⚔️",
+    "image": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/47/TLoZ_Series_Link_Render.png/revision/latest?cb=20210220213135",
+    "img_src": "fandom"
+  },
+  {
+    "id": "lizbeth",
+    "name": "Lizbeth",
+    "series": "Sword Art Online",
+    "rarity": "B",
+    "emoji": "⚒️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b43906-15QwTm2ZFDse.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "loid",
+    "name": "Loid",
+    "series": "Spy x Family",
+    "rarity": "S",
+    "emoji": "🎩",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138101-7NCB0Md8zA6G.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "loid-forger",
+    "name": "Loid Forger",
+    "series": "Spy x Family",
+    "rarity": "S",
+    "emoji": "🕵",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138101-7NCB0Md8zA6G.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "lucario",
+    "name": "Lucario",
+    "series": "Pokemon",
+    "rarity": "A",
+    "emoji": "🥋",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/4/42/0448Lucario.png/revision/latest?cb=20260223055233",
+    "img_src": "fandom"
+  },
+  {
+    "id": "luck-voltia",
+    "name": "Luck Voltia",
+    "series": "Black Clover",
+    "rarity": "A",
+    "emoji": "⚡",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/124449-M67Ex2GcxmYM.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "lucy",
+    "name": "Lucy",
+    "series": "Fairy Tail",
+    "rarity": "A",
+    "emoji": "🐉",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5186-izgXf2S86K9u.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "lucy-heartfilia",
+    "name": "Lucy Heartfilia",
+    "series": "Fairy Tail",
+    "rarity": "A",
+    "emoji": "🐉",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5186-izgXf2S86K9u.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "luffy",
+    "name": "Luffy",
+    "series": "One Piece",
+    "rarity": "SS",
+    "emoji": "👔",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "lugia",
+    "name": "Lugia",
+    "series": "Pokemon",
+    "rarity": "S",
+    "emoji": "🐉",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/2/2b/0249Lugia_VI.gif/revision/latest?cb=20140131072650",
+    "img_src": "fandom"
+  },
+  {
+    "id": "luigi",
+    "name": "Luigi",
+    "series": "Super Mario",
+    "rarity": "B",
+    "emoji": "🟢",
+    "image": "https://static.wikia.nocookie.net/mario/images/7/76/SMPJ_Luigi.png/revision/latest?cb=20241220173902",
+    "img_src": "fandom"
+  },
+  {
+    "id": "lust",
+    "name": "Lust",
+    "series": "Fullmetal Alchemist",
+    "rarity": "B",
+    "emoji": "💅",
+    "image": "https://static.wikia.nocookie.net/fma/images/1/1a/7s-lust.png/revision/latest?cb=20140622230622",
+    "img_src": "fandom"
+  },
+  {
+    "id": "luz",
+    "name": "Luz",
+    "series": "The Owl House",
+    "rarity": "A",
+    "emoji": "🐱",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/89653-RatgxsCjlgZ6.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "madara-uchiha",
+    "name": "Madara Uchiha",
+    "series": "Naruto",
+    "rarity": "SS",
+    "emoji": "🌀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b53901-HnRKSoHMG5Vg.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "magneto",
+    "name": "Magneto",
+    "series": "Marvel",
+    "rarity": "A",
+    "emoji": "🧲",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/43/Earth-27_from_Exiles_Vol_1_83_0001.jpg/revision/latest?cb=20191209061256",
+    "img_src": "fandom"
+  },
+  {
+    "id": "mahito",
+    "name": "Mahito",
+    "series": "Jujutsu Kaisen",
+    "rarity": "S",
+    "emoji": "👻",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133702-Y7JRG5vAvjIL.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "mai-sakurajima",
+    "name": "Mai Sakurajima",
+    "series": "Bunny Girl Senpai",
+    "rarity": "A",
+    "emoji": "👆",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127222-Jh5hhP7vZ7s1.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "majin-buu",
+    "name": "Majin Buu",
+    "series": "Dragon Ball",
+    "rarity": "S",
+    "emoji": "🍬",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/1012.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "maki-zenin",
+    "name": "Maki Zenin",
+    "series": "Jujutsu Kaisen",
+    "rarity": "S",
+    "emoji": "🗡️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b134167-5TCytk45YByD.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "makima",
+    "name": "Makima",
+    "series": "Chainsaw Man",
+    "rarity": "SS",
+    "emoji": "🐕",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137080-UHcynYNjb5ZU.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "maleficent",
+    "name": "Maleficent",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "🐉",
+    "image": "https://static.wikia.nocookie.net/disney/images/0/05/Profile_-_Maleficent.jpeg/revision/latest?cb=20250118085922",
+    "img_src": "fandom"
+  },
+  {
+    "id": "manatsu-atagawa",
+    "name": "Manatsu Atagawa",
+    "series": "Parede de Gelo",
+    "rarity": "C",
+    "emoji": "🌞",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b396044-TRpLmEsz2VjD.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "mari",
+    "name": "Mari",
+    "series": "Evangelion",
+    "rarity": "B",
+    "emoji": "👓",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b62-S7oAeA9WInjV.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "mario",
+    "name": "Mario",
+    "series": "Super Mario",
+    "rarity": "A",
+    "emoji": "👻",
+    "image": "https://static.wikia.nocookie.net/mario/images/0/0d/MarioAlternateJamboreeRender.png/revision/latest?cb=20260203182408",
+    "img_src": "fandom"
+  },
+  {
+    "id": "matsuda",
+    "name": "Matsuda",
+    "series": "Death Note",
+    "rarity": "B",
+    "emoji": "🎮",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n1906-JCWKEGGook3Z.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "matsumura",
+    "name": "Matsumura",
+    "series": "Dorohedoro",
+    "rarity": "B",
+    "emoji": "💨",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b153900-xkxJEO91rdaV.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "maui",
+    "name": "Maui",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "🗡️",
+    "image": "https://static.wikia.nocookie.net/disney/images/6/6f/Profile_-_Maui.jpeg/revision/latest?cb=20250309150414",
+    "img_src": "fandom"
+  },
+  {
+    "id": "mayuri",
+    "name": "Mayuri",
+    "series": "Steins;Gate",
+    "rarity": "A",
+    "emoji": "📿",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b35253-u6QVgLLyHq2W.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "megara",
+    "name": "Megara",
+    "series": "Disney",
+    "rarity": "B",
+    "emoji": "💀",
+    "image": "https://static.wikia.nocookie.net/disney/images/9/91/Profile_-_Megara.jpeg/revision/latest?cb=20190312030229",
+    "img_src": "fandom"
+  },
+  {
+    "id": "megumi-fushiguro",
+    "name": "Megumi Fushiguro",
+    "series": "Jujutsu Kaisen",
+    "rarity": "S",
+    "emoji": "🐕",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126635-L0y3I92JSUkN.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "megumin",
+    "name": "Megumin",
+    "series": "Konosuba",
+    "rarity": "S",
+    "emoji": "💥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89361-tq8PQQ4MmF0M.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "megurine-luka",
+    "name": "Megurine Luka",
+    "series": "Vocaloid",
+    "rarity": "S",
+    "emoji": "🎤",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b19274-ss1vl76VcLtU.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "mei-mei",
+    "name": "Mei Mei",
+    "series": "Jujutsu Kaisen",
+    "rarity": "B",
+    "emoji": "🪓",
+    "image": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/a/a8/Mei_Mei_%28Anime_2%29.png/revision/latest?cb=20231124134449",
+    "img_src": "fandom"
+  },
+  {
+    "id": "mello",
+    "name": "Mello",
+    "series": "Death Note",
+    "rarity": "B",
+    "emoji": "🍫",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b463-QBLeLf6XxVg6.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "meta-knight",
+    "name": "Meta Knight",
+    "series": "Kirby",
+    "rarity": "A",
+    "emoji": "🗡️",
+    "image": "https://static.wikia.nocookie.net/kirby/images/0/03/MetaKnightAirRidersRender.png/revision/latest?cb=20250819200945&path-prefix=en",
+    "img_src": "fandom"
+  },
+  {
+    "id": "metal-bat",
+    "name": "Metal Bat",
+    "series": "One Punch Man",
+    "rarity": "A",
+    "emoji": "🏏",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89156-kGKJyhWnCTHy.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "mewtwo",
+    "name": "Mewtwo",
+    "series": "Pokemon",
+    "rarity": "S",
+    "emoji": "🧬",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/8/89/0150Mewtwo.png/revision/latest?cb=20260203160233",
+    "img_src": "fandom"
+  },
+  {
+    "id": "mickey",
+    "name": "Mickey",
+    "series": "Disney",
+    "rarity": "S",
+    "emoji": "🐭",
+    "image": "https://static.wikia.nocookie.net/disney/images/2/2e/Disney_Mickey_Mouse.png/revision/latest?cb=20250301192111",
+    "img_src": "fandom"
+  },
+  {
+    "id": "mickey-mouse",
+    "name": "Mickey Mouse",
+    "series": "Disney",
+    "rarity": "S",
+    "emoji": "🐭",
+    "image": "https://static.wikia.nocookie.net/disney/images/2/2e/Disney_Mickey_Mouse.png/revision/latest?cb=20250301192111",
+    "img_src": "fandom"
+  },
+  {
+    "id": "might-guy",
+    "name": "Might Guy",
+    "series": "Naruto",
+    "rarity": "A",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b307-xieUEdhdTVwQ.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "miharu",
+    "name": "Miharu",
+    "series": "Parede de Gelo",
+    "rarity": "C",
+    "emoji": "🌹",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b396043-0YDlU6eeZACJ.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "mihawk",
+    "name": "Mihawk",
+    "series": "One Piece",
+    "rarity": "SS",
+    "emoji": "🗡️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n2064-OpnF4nLi6bvL.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "mikasa",
+    "name": "Mikasa",
+    "series": "Attack on Titan",
+    "rarity": "S",
+    "emoji": "💫",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40881-F3gr1PkreDvj.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "mikasa-ackerman",
+    "name": "Mikasa Ackerman",
+    "series": "Attack on Titan",
+    "rarity": "S",
+    "emoji": "💫",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40881-F3gr1PkreDvj.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "miki-azumi",
+    "name": "Miki Azumi",
+    "series": "Parede de Gelo",
+    "rarity": "B",
+    "emoji": "⭐",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b354442-FdfLbziapdYB.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "mimosa",
+    "name": "Mimosa",
+    "series": "Black Clover",
+    "rarity": "B",
+    "emoji": "🌸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124438-nTvKfJaMD4d5.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "mina-ashido",
+    "name": "Mina Ashido",
+    "series": "My Hero Academia",
+    "rarity": "B",
+    "emoji": "💜",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89247-hu5MCqfoN82E.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "minato-amamiya",
+    "name": "Minato Amamiya",
+    "series": "Parede de Gelo",
+    "rarity": "A",
+    "emoji": "🔑",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b354441-KvKq0Zb8K1nd.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "minato-namikaze",
+    "name": "Minato Namikaze",
+    "series": "Naruto",
+    "rarity": "SS",
+    "emoji": "⚡",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2535-Xq9WKNPJQEt3.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "minnie-mouse",
+    "name": "Minnie Mouse",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "🎀",
+    "image": "https://static.wikia.nocookie.net/disney/images/6/67/Minnie_Mouse.png/revision/latest?cb=20251231222653",
+    "img_src": "fandom"
+  },
+  {
+    "id": "mirajane",
+    "name": "Mirajane",
+    "series": "Fairy Tail",
+    "rarity": "A",
+    "emoji": "😈",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5190-Xql1rGKUv1ql.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "mirio",
+    "name": "Mirio",
+    "series": "My Hero Academia",
+    "rarity": "A",
+    "emoji": "💪",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123527-rz0OotcLY0E4.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "misa",
+    "name": "Misa",
+    "series": "Death Note",
+    "rarity": "A",
+    "emoji": "🎀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b835-CiZa8y2z2gCz.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "misa-amane",
+    "name": "Misa Amane",
+    "series": "Death Note",
+    "rarity": "A",
+    "emoji": "💀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b835-CiZa8y2z2gCz.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "misato",
+    "name": "Misato",
+    "series": "Evangelion",
+    "rarity": "A",
+    "emoji": "🍺",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1259-afTQkZ5SVMOn.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "misty",
+    "name": "Misty",
+    "series": "Pokemon",
+    "rarity": "B",
+    "emoji": "🌊",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/2/25/Misty_Let%27s_Go%2C_Pikachu%21_and_Let%27s_Go%2C_Eevee%21.png/revision/latest?cb=20181120184447",
+    "img_src": "fandom"
+  },
+  {
+    "id": "mitsuri",
+    "name": "Mitsuri",
+    "series": "Demon Slayer",
+    "rarity": "A",
+    "emoji": "💖",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136072-xVwyRUKdpybi.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "miyako",
+    "name": "Miyako",
+    "series": "Hidamari Sketch",
+    "rarity": "B",
+    "emoji": "🍙",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b155702-S8irhsg4QTPf.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "miyuki-shirogane",
+    "name": "Miyuki Shirogane",
+    "series": "Kaguya-sama",
+    "rarity": "A",
+    "emoji": "👑",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121101-Q8HzKP15At2d.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "moana",
+    "name": "Moana",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "🌺",
+    "image": "https://static.wikia.nocookie.net/disney/images/7/7d/Profile_-_Moana.png/revision/latest?cb=20251203061411",
+    "img_src": "fandom"
+  },
+  {
+    "id": "moeka",
+    "name": "Moeka",
+    "series": "Steins;Gate",
+    "rarity": "B",
+    "emoji": "📱",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b35257-uepVZyOvuqhi.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "momo-yaoyorozu",
+    "name": "Momo Yaoyorozu",
+    "series": "My Hero Academia",
+    "rarity": "A",
+    "emoji": "🛍️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89241-Q8KzAfX4Qe2y.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "momoka-kuriki",
+    "name": "Momoka Kuriki",
+    "series": "Parede de Gelo",
+    "rarity": "C",
+    "emoji": "🍀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b394745-hF9aiz6X3xbE.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "monkey-d-luffy",
+    "name": "Monkey D. Luffy",
+    "series": "One Piece",
+    "rarity": "SS",
+    "emoji": "👒",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "mr-krabs",
+    "name": "Mr. Krabs",
+    "series": "SpongeBob",
+    "rarity": "B",
+    "emoji": "🦀",
+    "image": "https://static.wikia.nocookie.net/spongebob/images/7/7f/Eugene_Krabs.png/revision/latest?cb=20251118195241",
+    "img_src": "fandom"
+  },
+  {
+    "id": "mufasa",
+    "name": "Mufasa",
+    "series": "Disney",
+    "rarity": "S",
+    "emoji": "🦁",
+    "image": "https://static.wikia.nocookie.net/disney/images/5/5e/Mufasa_Lion_King_.jpg/revision/latest?cb=20240910202509",
+    "img_src": "fandom"
+  },
+  {
+    "id": "mugman",
+    "name": "Mugman",
+    "series": "Cuphead",
+    "rarity": "B",
+    "emoji": "🥤",
+    "image": "https://static.wikia.nocookie.net/cuphead/images/9/9e/Mugman_results.png/revision/latest?cb=20220727224539",
+    "img_src": "fandom"
+  },
+  {
+    "id": "muichiro",
+    "name": "Muichiro",
+    "series": "Demon Slayer",
+    "rarity": "S",
+    "emoji": "🌫️",
+    "image": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/4c/Muichiro_Tokito_Full_Body_%28Anime%29.png/revision/latest?cb=20241010231022",
+    "img_src": "fandom"
+  },
+  {
+    "id": "mulan",
+    "name": "Mulan",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "⚔️",
+    "image": "https://static.wikia.nocookie.net/disney/images/0/04/Profile_-_Mulan.jpeg/revision/latest?cb=20230904010800",
+    "img_src": "fandom"
+  },
+  {
+    "id": "muzan-kibutsuji",
+    "name": "Muzan Kibutsuji",
+    "series": "Demon Slayer",
+    "rarity": "SS",
+    "emoji": "🩸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129132-4nIZakUZ1o8W.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "nagato",
+    "name": "Nagato",
+    "series": "Naruto",
+    "rarity": "SS",
+    "emoji": "🌀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b249-2YImP6IQTe8t.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "nagisa-amamiya",
+    "name": "Nagisa Amamiya",
+    "series": "Parede de Gelo",
+    "rarity": "C",
+    "emoji": "👽",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b396247-j24nATc4x3Ri.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "nala",
+    "name": "Nala",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "🦁",
+    "image": "https://static.wikia.nocookie.net/disney/images/5/55/Profile_-_Nala.jpeg/revision/latest?cb=20190312044211",
+    "img_src": "fandom"
+  },
+  {
+    "id": "nami",
+    "name": "Nami",
+    "series": "One Piece",
+    "rarity": "A",
+    "emoji": "💰",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b723-vp5hPptgnNEC.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "nanami",
+    "name": "Nanami",
+    "series": "Jujutsu Kaisen",
+    "rarity": "A",
+    "emoji": "🔪",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133704-8wLTGjc234q2.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "naruto",
+    "name": "Naruto",
+    "series": "Naruto",
+    "rarity": "SS",
+    "emoji": "🍥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b17-phjcWCkRuIhu.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "naruto-uzumaki",
+    "name": "Naruto Uzumaki",
+    "series": "Naruto",
+    "rarity": "S",
+    "emoji": "🥰",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b17-phjcWCkRuIhu.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "natsu",
+    "name": "Natsu",
+    "series": "Fairy Tail",
+    "rarity": "SS",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5187-y1OEdRu9sPN2.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "natsu-dragneel",
+    "name": "Natsu Dragneel",
+    "series": "Fairy Tail",
+    "rarity": "S",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5187-y1OEdRu9sPN2.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "near",
+    "name": "Near",
+    "series": "Death Note",
+    "rarity": "B",
+    "emoji": "🧸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n464-6KeJpU6g7Hwj.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "neji-hyuga",
+    "name": "Neji Hyuga",
+    "series": "Naruto",
+    "rarity": "A",
+    "emoji": "🌀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1694-TL4obouDwJ7k.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "nel",
+    "name": "Nel",
+    "series": "Bleach",
+    "rarity": "B",
+    "emoji": "🦌",
+    "image": "https://static.wikia.nocookie.net/bleach/images/a/a3/Ep398NellielProfile.png/revision/latest?cb=20260410211102&path-prefix=en",
+    "img_src": "fandom"
+  },
+  {
+    "id": "nemo",
+    "name": "Nemo",
+    "series": "Disney",
+    "rarity": "C",
+    "emoji": "🐠",
+    "image": "https://static.wikia.nocookie.net/pixar/images/a/aa/Nemo-FN.png/revision/latest?cb=20160710221104",
+    "img_src": "fandom"
+  },
+  {
+    "id": "nezuko",
+    "name": "Nezuko",
+    "series": "Demon Slayer",
+    "rarity": "SS",
+    "emoji": "💋",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127518-NRlq1CQ1v1ro.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "nico-robin",
+    "name": "Nico Robin",
+    "series": "One Piece",
+    "rarity": "S",
+    "emoji": "📚",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b61-ywXUyyocEEqt.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "nightwing",
+    "name": "Nightwing",
+    "series": "DC",
+    "rarity": "A",
+    "emoji": "🦇",
+    "image": "https://static.wikia.nocookie.net/marvel_dc/images/4/4d/Nightwing_Vol_4_107_Textless_Mora_Variant.jpg/revision/latest?cb=20251207094540",
+    "img_src": "fandom"
+  },
+  {
+    "id": "nikaido",
+    "name": "Nikaido",
+    "series": "Dorohedoro",
+    "rarity": "S",
+    "emoji": "🍴",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16057-eFteZol4cg9t.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "nishiki-nishio",
+    "name": "Nishiki Nishio",
+    "series": "Tokyo Ghoul",
+    "rarity": "B",
+    "emoji": "🐀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88409-rOaEex2Ml2ah.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "nishinoya",
+    "name": "Nishinoya",
+    "series": "Haikyuu",
+    "rarity": "A",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67327-zQb1dlC7joPb.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "nobara",
+    "name": "Nobara",
+    "series": "Jujutsu Kaisen",
+    "rarity": "A",
+    "emoji": "🔨",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133700-f6sOO3TcgLV6.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "nobara-kugisaki",
+    "name": "Nobara Kugisaki",
+    "series": "Jujutsu Kaisen",
+    "rarity": "A",
+    "emoji": "🧷",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133700-f6sOO3TcgLV6.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "nobita",
+    "name": "Nobita",
+    "series": "Doraemon",
+    "rarity": "B",
+    "emoji": "👤",
+    "image": "https://static.wikia.nocookie.net/doraemon/images/6/62/NobitaNobi2005R.png/revision/latest?cb=20260806024520&path-prefix=en",
+    "img_src": "fandom"
+  },
+  {
+    "id": "noelle",
+    "name": "Noelle",
+    "series": "Black Clover",
+    "rarity": "A",
+    "emoji": "🌊",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123283-7nJHtKha0LSm.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "noelle-silva",
+    "name": "Noelle Silva",
+    "series": "Black Clover",
+    "rarity": "A",
+    "emoji": "💧",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123283-7nJHtKha0LSm.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "noi",
+    "name": "Noi",
+    "series": "Dorohedoro",
+    "rarity": "A",
+    "emoji": "⛲",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16059-mUfErMfV09e5.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "noriko",
+    "name": "Noriko",
+    "series": "Parede de Gelo",
+    "rarity": "C",
+    "emoji": "💎",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89295-kkcSVFCgqP8L.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "nurse-joy",
+    "name": "Nurse Joy",
+    "series": "Pokemon",
+    "rarity": "A",
+    "emoji": "💉",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/9/9c/Galarian_Nurse_Joy.jpg/revision/latest?cb=20210602073344",
+    "img_src": "fandom"
+  },
+  {
+    "id": "obanai",
+    "name": "Obanai",
+    "series": "Demon Slayer",
+    "rarity": "A",
+    "emoji": "🐍",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137777-kGViiNyx0wa7.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "obito-uchiha",
+    "name": "Obito Uchiha",
+    "series": "Naruto",
+    "rarity": "SS",
+    "emoji": "🌑",
+    "image": "https://static.wikia.nocookie.net/naruto/images/4/4a/Obito_Uchiha.png/revision/latest?cb=20220223045744",
+    "img_src": "fandom"
+  },
+  {
+    "id": "ochaco",
+    "name": "Ochaco",
+    "series": "My Hero Academia",
+    "rarity": "A",
+    "emoji": "🎈",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89221-gSF2a4gPbG4m.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "ochaco-uraraka",
+    "name": "Ochaco Uraraka",
+    "series": "My Hero Academia",
+    "rarity": "A",
+    "emoji": "🎈",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89221-gSF2a4gPbG4m.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "oikawa",
+    "name": "Oikawa",
+    "series": "Haikyuu",
+    "rarity": "A",
+    "emoji": "🏐",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71611-cUZwVfzeNXD9.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "olaf",
+    "name": "Olaf",
+    "series": "Frozen",
+    "rarity": "B",
+    "emoji": "☁️",
+    "image": "https://static.wikia.nocookie.net/disney/images/5/53/Profile_-_Olaf.jpeg/revision/latest?cb=20200221075027",
+    "img_src": "fandom"
+  },
+  {
+    "id": "orihime",
+    "name": "Orihime",
+    "series": "Bleach",
+    "rarity": "A",
+    "emoji": "🌸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b7-JdR4betokDjR.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "orihime-inoue",
+    "name": "Orihime Inoue",
+    "series": "Bleach",
+    "rarity": "A",
+    "emoji": "🍞",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b7-JdR4betokDjR.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "orochimaru",
+    "name": "Orochimaru",
+    "series": "Naruto",
+    "rarity": "S",
+    "emoji": "🐍",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n2455-V9tLMS3TIgJW.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "pain",
+    "name": "Pain",
+    "series": "Naruto",
+    "rarity": "SS",
+    "emoji": "👁️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3180-ITMGBLWNBOgV.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "panda",
+    "name": "Panda",
+    "series": "Jujutsu Kaisen",
+    "rarity": "B",
+    "emoji": "🐼",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137974-9qnK3DPrvLKh.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "papyrus",
+    "name": "Papyrus",
+    "series": "Undertale",
+    "rarity": "B",
+    "emoji": "💀",
+    "image": "https://static.wikia.nocookie.net/undertale/images/3/32/Papyrus_Sprite.webp/revision/latest?cb=20260714045619",
+    "img_src": "fandom"
+  },
+  {
+    "id": "patrick",
+    "name": "Patrick",
+    "series": "SpongeBob",
+    "rarity": "B",
+    "emoji": "⭐",
+    "image": "https://static.wikia.nocookie.net/spongebob/images/c/cc/Patrick_stock_art_%28oil_pianted%29.png/revision/latest?cb=20220801050245",
+    "img_src": "fandom"
+  },
+  {
+    "id": "patrick-star",
+    "name": "Patrick Star",
+    "series": "SpongeBob",
+    "rarity": "B",
+    "emoji": "⭐",
+    "image": "https://static.wikia.nocookie.net/spongebob/images/c/cc/Patrick_stock_art_%28oil_pianted%29.png/revision/latest?cb=20220801050245",
+    "img_src": "fandom"
+  },
+  {
+    "id": "piccolo",
+    "name": "Piccolo",
+    "series": "Dragon Ball",
+    "rarity": "A",
+    "emoji": "👽",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b914-KuS8AWjqBrqa.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "pikachu",
+    "name": "Pikachu",
+    "series": "Pokemon",
+    "rarity": "S",
+    "emoji": "⚡",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/0/0d/0025PPikachu.png/revision/latest?cb=20260203150816",
+    "img_src": "fandom"
+  },
+  {
+    "id": "pink-panther",
+    "name": "Pink Panther",
+    "series": "The Pink Panther",
+    "rarity": "A",
+    "emoji": "🐭",
+    "image": "https://static.wikia.nocookie.net/pinkpanther/images/5/52/PInky.png/revision/latest?cb=20220526140435",
+    "img_src": "fandom"
+  },
+  {
+    "id": "plankton",
+    "name": "Plankton",
+    "series": "SpongeBob",
+    "rarity": "C",
+    "emoji": "🦠",
+    "image": "https://static.wikia.nocookie.net/spongebob/images/6/6b/EvilPlankton24.png/revision/latest?cb=20251104033338",
+    "img_src": "fandom"
+  },
+  {
+    "id": "pluto",
+    "name": "Pluto",
+    "series": "Disney",
+    "rarity": "C",
+    "emoji": "🐕",
+    "image": "https://static.wikia.nocookie.net/disney/images/1/13/Pluto_the_pup.png/revision/latest?cb=20240613035106",
+    "img_src": "fandom"
+  },
+  {
+    "id": "portgas-d-ace",
+    "name": "Portgas D. Ace",
+    "series": "One Piece",
+    "rarity": "SS",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2072-Lc6jEdsueJUK.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "power",
+    "name": "Power",
+    "series": "Chainsaw Man",
+    "rarity": "A",
+    "emoji": "🩸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "princess-peach",
+    "name": "Princess Peach",
+    "series": "Super Mario",
+    "rarity": "S",
+    "emoji": "👑",
+    "image": "https://static.wikia.nocookie.net/mario/images/7/7c/Peach_Posing_Alt_3D_Artwork.png/revision/latest?cb=20250809092529",
+    "img_src": "fandom"
+  },
+  {
+    "id": "professor-x",
+    "name": "Professor X",
+    "series": "Marvel",
+    "rarity": "A",
+    "emoji": "♿",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/2/2d/Charles_Xavier_%28Earth-10%29_from_Top_10_Vol_1_8_001.png/revision/latest?cb=20260622060924",
+    "img_src": "fandom"
+  },
+  {
+    "id": "pua",
+    "name": "Pua",
+    "series": "Disney",
+    "rarity": "C",
+    "emoji": "🐗",
+    "image": "https://static.wikia.nocookie.net/disney/images/9/97/Profile_-_Pua.jpeg/revision/latest?cb=20241122193128",
+    "img_src": "fandom"
+  },
+  {
+    "id": "pumbaa",
+    "name": "Pumbaa",
+    "series": "Disney",
+    "rarity": "B",
+    "emoji": "🐗",
+    "image": "https://static.wikia.nocookie.net/disney/images/e/e6/Profile_-_Pumbaa.jpeg/revision/latest?cb=20190312043302",
+    "img_src": "fandom"
+  },
+  {
+    "id": "puri-puri-prisoner",
+    "name": "Puri Puri Prisoner",
+    "series": "One Punch Man",
+    "rarity": "B",
+    "emoji": "💪",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n86029-iomUtQtGfJOU.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "ralph",
+    "name": "Ralph",
+    "series": "Disney",
+    "rarity": "B",
+    "emoji": "👊",
+    "image": "https://static.wikia.nocookie.net/disney/images/d/da/Wreck_it_Ralph_pose_transparent.png/revision/latest?cb=20151202214156",
+    "img_src": "fandom"
+  },
+  {
+    "id": "ram",
+    "name": "Ram",
+    "series": "Re:Zero",
+    "rarity": "A",
+    "emoji": "🩸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88576-NWkotUiJ3mK3.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "rapunzel",
+    "name": "Rapunzel",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "💇",
+    "image": "https://static.wikia.nocookie.net/disney/images/a/ae/Profile_-_Rapunzel.jpeg/revision/latest?cb=20260511164915",
+    "img_src": "fandom"
+  },
+  {
+    "id": "rayquaza",
+    "name": "Rayquaza",
+    "series": "Pokemon",
+    "rarity": "A",
+    "emoji": "🐉",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/c/c5/0384MRayquaza.png/revision/latest?cb=20260218095138",
+    "img_src": "fandom"
+  },
+  {
+    "id": "rei-ayanami",
+    "name": "Rei Ayanami",
+    "series": "Evangelion",
+    "rarity": "SS",
+    "emoji": "🩹",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/86-cA1zL7fyls8E.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "reiner",
+    "name": "Reiner",
+    "series": "Attack on Titan",
+    "rarity": "A",
+    "emoji": "☠️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46484-P6A2GjNQn49F.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "rem",
+    "name": "Rem",
+    "series": "Re:Zero",
+    "rarity": "SS",
+    "emoji": "👵",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88575-Ayu8UPDA8NS6.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "rengoku",
+    "name": "Rengoku",
+    "series": "Demon Slayer",
+    "rarity": "SS",
+    "emoji": "🔥",
+    "image": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/de/Kyojuro_anime_right_face.png/revision/latest?cb=20241228001647",
+    "img_src": "fandom"
+  },
+  {
+    "id": "rengoku-kyojuro",
+    "name": "Rengoku Kyojuro",
+    "series": "Demon Slayer",
+    "rarity": "S",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129133-VlTPowwt68rJ.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "renji",
+    "name": "Renji",
+    "series": "Bleach",
+    "rarity": "A",
+    "emoji": "🗡️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b906-ImRjx5HFM8X6.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "reze",
+    "name": "Reze",
+    "series": "Chainsaw Man",
+    "rarity": "S",
+    "emoji": "💣",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b148740-ceAibPxLW8rR.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "rin",
+    "name": "Rin",
+    "series": "Fate",
+    "rarity": "A",
+    "emoji": "💎",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b498-lwawtSpLyATL.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "rin-tohsaka",
+    "name": "Rin Tohsaka",
+    "series": "Fate",
+    "rarity": "S",
+    "emoji": "💎",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b498-lwawtSpLyATL.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "rintaro-okabe",
+    "name": "Rintaro Okabe",
+    "series": "Steins;Gate",
+    "rarity": "A",
+    "emoji": "🥼",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b35252-DY9TW6pusqeh.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "risu",
+    "name": "Risu",
+    "series": "Dorohedoro",
+    "rarity": "A",
+    "emoji": "🦊",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b34470-Jw2LXZBL5R8i.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "riza-hawkeye",
+    "name": "Riza Hawkeye",
+    "series": "Fullmetal Alchemist",
+    "rarity": "A",
+    "emoji": "🔫",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b70-k4bCgDspyOdI.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "rize-kamishiro",
+    "name": "Rize Kamishiro",
+    "series": "Tokyo Ghoul",
+    "rarity": "A",
+    "emoji": "🦇",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88413-FmAvV0hGSljG.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "robin",
+    "name": "Robin",
+    "series": "One Piece",
+    "rarity": "S",
+    "emoji": "📚",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b61-ywXUyyocEEqt.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "rock-lee",
+    "name": "Rock Lee",
+    "series": "Naruto",
+    "rarity": "B",
+    "emoji": "🍀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b306-oUTOO45xInXt.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "rocket-raccoon",
+    "name": "Rocket Raccoon",
+    "series": "Marvel",
+    "rarity": "B",
+    "emoji": "🦝",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/5c/Aroughcun_%28Earth-311%29_from_1602_Witch_Hunter_Angela_Vol_1_2_001.jpg/revision/latest?cb=20160306235723",
+    "img_src": "fandom"
+  },
+  {
+    "id": "roma",
+    "name": "Roma",
+    "series": "Tokyo Ghoul",
+    "rarity": "B",
+    "emoji": "💀",
+    "image": "https://static.wikia.nocookie.net/tokyoghoul/images/2/2b/Roma_interfere_Kanou_from_being_capture.png/revision/latest/scale-to-width-down/382?cb=20161005155608",
+    "img_src": "fandom"
+  },
+  {
+    "id": "roronoa-zoro",
+    "name": "Roronoa Zoro",
+    "series": "One Piece",
+    "rarity": "S",
+    "emoji": "⚔️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b62-S7oAeA9WInjV.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "rosalina",
+    "name": "Rosalina",
+    "series": "Super Mario",
+    "rarity": "A",
+    "emoji": "⭐",
+    "image": "https://static.wikia.nocookie.net/mario/images/d/d4/SMBW_NS2E_Artwork_Rosalina_and_Luma.png/revision/latest?cb=20260824050604",
+    "img_src": "fandom"
+  },
+  {
+    "id": "roy-mustang",
+    "name": "Roy Mustang",
+    "series": "Fullmetal Alchemist",
+    "rarity": "S",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b68-moBLY2WO2am3.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "rukia",
+    "name": "Rukia",
+    "series": "Bleach",
+    "rarity": "A",
+    "emoji": "❄️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b6-25WoBeWMZXBc.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "rukia-kuchiki",
+    "name": "Rukia Kuchiki",
+    "series": "Bleach",
+    "rarity": "S",
+    "emoji": "❄️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b6-25WoBeWMZXBc.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "ryuk",
+    "name": "Ryuk",
+    "series": "Death Note",
+    "rarity": "A",
+    "emoji": "🍎",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b75-IkEpzO21LgFy.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "ryuko-matoi",
+    "name": "Ryuko Matoi",
+    "series": "Kill la Kill",
+    "rarity": "S",
+    "emoji": "✂",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b83797-ix0Cl5OMfV22.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "saber",
+    "name": "Saber",
+    "series": "Fate",
+    "rarity": "SS",
+    "emoji": "⚔",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b497-Yg5pNmC8kxzs.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "sabo",
+    "name": "Sabo",
+    "series": "One Piece",
+    "rarity": "SS",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b32893-3weZS61cdwLD.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "sachi",
+    "name": "Sachi",
+    "series": "Parede de Gelo",
+    "rarity": "C",
+    "emoji": "💋",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b58443-DNpfQUX72UMs.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "sai",
+    "name": "Sai",
+    "series": "Naruto",
+    "rarity": "B",
+    "emoji": "🎨",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b90107-ZULW5HlPX1uU.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "sailor-moon",
+    "name": "Sailor Moon",
+    "series": "Sailor Moon",
+    "rarity": "S",
+    "emoji": "🎀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2030-GQvVYPEYkXCy.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "saitama",
+    "name": "Saitama",
+    "series": "One Punch Man",
+    "rarity": "SS",
+    "emoji": "👊",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b73935-ON5d0mAcrItd.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "sakura-haruno",
+    "name": "Sakura Haruno",
+    "series": "Naruto",
+    "rarity": "A",
+    "emoji": "🌸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145-IorfpI8arxeX.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "sakura-hino",
+    "name": "Sakura Hino",
+    "series": "Parede de Gelo",
+    "rarity": "C",
+    "emoji": "🌸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b402218-FCt9NWAAFH21.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "samus",
+    "name": "Samus",
+    "series": "Metroid",
+    "rarity": "S",
+    "emoji": "🚀",
+    "image": "https://static.wikia.nocookie.net/metroid/images/7/7f/Mom_vignette.jpg/revision/latest?cb=20150704073331",
+    "img_src": "fandom"
+  },
+  {
+    "id": "sandy",
+    "name": "Sandy",
+    "series": "SpongeBob",
+    "rarity": "B",
+    "emoji": "🐿️",
+    "image": "https://static.wikia.nocookie.net/spongebob/images/1/19/Sandy_arm_out_%28oil_painted%29.png/revision/latest?cb=20220801050159",
+    "img_src": "fandom"
+  },
+  {
+    "id": "sanemi",
+    "name": "Sanemi",
+    "series": "Demon Slayer",
+    "rarity": "A",
+    "emoji": "🌪️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137774-O1iYrnGLB71l.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "sanji",
+    "name": "Sanji",
+    "series": "One Piece",
+    "rarity": "S",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b305-6lisPmHtCnLT.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "sans",
+    "name": "Sans",
+    "series": "Undertale",
+    "rarity": "S",
+    "emoji": "💀",
+    "image": "https://static.wikia.nocookie.net/undertale/images/9/90/Sans_Sprite.webp/revision/latest?cb=20260713210817",
+    "img_src": "fandom"
+  },
+  {
+    "id": "sasha",
+    "name": "Sasha",
+    "series": "Attack on Titan",
+    "rarity": "B",
+    "emoji": "🍗",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b45887-QPtJH0KwqthW.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "sasha-blouse",
+    "name": "Sasha Blouse",
+    "series": "Attack on Titan",
+    "rarity": "B",
+    "emoji": "🥔",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b45887-QPtJH0KwqthW.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "sasori",
+    "name": "Sasori",
+    "series": "Naruto",
+    "rarity": "S",
+    "emoji": "👥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1900-Dpd9wVWtlvIx.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "sasuke",
+    "name": "Sasuke",
+    "series": "Naruto",
+    "rarity": "SS",
+    "emoji": "🌀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13-SISLEw1oAD7a.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "sasuke-uchiha",
+    "name": "Sasuke Uchiha",
+    "series": "Naruto",
+    "rarity": "S",
+    "emoji": "😈",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13-SISLEw1oAD7a.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "scarlet-witch",
+    "name": "Scarlet Witch",
+    "series": "Marvel",
+    "rarity": "S",
+    "emoji": "🟥",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/1/1d/Wanda_Maximoff_%28Earth-12%29_from_Exiles_Vol_1_14_0001.jpg/revision/latest?cb=20191231013147",
+    "img_src": "fandom"
+  },
+  {
+    "id": "scrooge-mcduck",
+    "name": "Scrooge McDuck",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "💰",
+    "image": "https://static.wikia.nocookie.net/disney/images/5/54/Scrooge_McDuck.png/revision/latest?cb=20240221055606",
+    "img_src": "fandom"
+  },
+  {
+    "id": "seras",
+    "name": "Seras",
+    "series": "Hellsing",
+    "rarity": "B",
+    "emoji": "🧛",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b624-qdFGCDB5Zhco.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "shadow",
+    "name": "Shadow",
+    "series": "Sonic",
+    "rarity": "A",
+    "emoji": "🦔",
+    "image": "https://static.wikia.nocookie.net/sonic/images/4/45/SRCShadow.png/revision/latest?cb=20251008005300",
+    "img_src": "fandom"
+  },
+  {
+    "id": "shanks",
+    "name": "Shanks",
+    "series": "One Piece",
+    "rarity": "SS",
+    "emoji": "🍺",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b727-wUJx7M1z5xON.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "shigaraki",
+    "name": "Shigaraki",
+    "series": "My Hero Academia",
+    "rarity": "S",
+    "emoji": "✋",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89226-qGXqFthO4SM3.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "shikamaru-nara",
+    "name": "Shikamaru Nara",
+    "series": "Naruto",
+    "rarity": "A",
+    "emoji": "♟️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2007-QaesJlIZDifj.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "shin",
+    "name": "Shin",
+    "series": "Dorohedoro",
+    "rarity": "A",
+    "emoji": "🦴",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b141060-ZJFvHqBBSvhN.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "shin-chan",
+    "name": "Shin-chan",
+    "series": "Crayon Shin-chan",
+    "rarity": "A",
+    "emoji": "🐍",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2951-Bs571jmT5Xym.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "shinji-ikari",
+    "name": "Shinji Ikari",
+    "series": "Evangelion",
+    "rarity": "A",
+    "emoji": "🎧",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89-ZtZhXkh1rITn.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "shino-aburame",
+    "name": "Shino Aburame",
+    "series": "Naruto",
+    "rarity": "B",
+    "emoji": "🪲",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n3428-KVeHMgx0xMqO.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "shinobu",
+    "name": "Shinobu",
+    "series": "Demon Slayer",
+    "rarity": "S",
+    "emoji": "🦋",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136070-MC9LLxJsHyHE.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "shinobu-kocho",
+    "name": "Shinobu Kocho",
+    "series": "Demon Slayer",
+    "rarity": "A",
+    "emoji": "🦋",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136070-MC9LLxJsHyHE.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "shirogane",
+    "name": "Shirogane",
+    "series": "Kaguya-sama",
+    "rarity": "A",
+    "emoji": "🎓",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121101-Q8HzKP15At2d.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "shoto-todoroki",
+    "name": "Shoto Todoroki",
+    "series": "My Hero Academia",
+    "rarity": "S",
+    "emoji": "❄️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89220-KNBwaVFAR8FD.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "shrek",
+    "name": "Shrek",
+    "series": "Shrek",
+    "rarity": "S",
+    "emoji": "🦠",
+    "image": "https://static.wikia.nocookie.net/shrek/images/9/9b/GoodShrekImage.png/revision/latest?cb=20201220080410",
+    "img_src": "fandom"
+  },
+  {
+    "id": "shuu-tsukiyama",
+    "name": "Shuu Tsukiyama",
+    "series": "Tokyo Ghoul",
+    "rarity": "A",
+    "emoji": "🍷",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88424-mFPgcZlCuODC.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "silica",
+    "name": "Silica",
+    "series": "Sword Art Online",
+    "rarity": "B",
+    "emoji": "🐱",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b37681-GDtOAN6NiJ9M.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "simba",
+    "name": "Simba",
+    "series": "Disney",
+    "rarity": "S",
+    "emoji": "🦁",
+    "image": "https://static.wikia.nocookie.net/disney/images/3/37/Profile_-_Simba.jpeg/revision/latest?cb=20190312043852",
+    "img_src": "fandom"
+  },
+  {
+    "id": "sinon",
+    "name": "Sinon",
+    "series": "Sword Art Online",
+    "rarity": "A",
+    "emoji": "🎯",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b55147-1fCU8lONEuZQ.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "sister-lily",
+    "name": "Sister Lily",
+    "series": "Black Clover",
+    "rarity": "B",
+    "emoji": "⛪",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124443-T2JuU6c7Z9Tk.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "snorlax",
+    "name": "Snorlax",
+    "series": "Pokemon",
+    "rarity": "C",
+    "emoji": "😴",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/3/3f/0143Snorlax.png/revision/latest?cb=20260203155155",
+    "img_src": "fandom"
+  },
+  {
+    "id": "snow-white",
+    "name": "Snow White",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "🍎",
+    "image": "https://static.wikia.nocookie.net/disney/images/3/33/Profile_-_Snow_White.jpeg/revision/latest?cb=20260519055153",
+    "img_src": "fandom"
+  },
+  {
+    "id": "soi-fon",
+    "name": "Soi Fon",
+    "series": "Bleach",
+    "rarity": "B",
+    "emoji": "🐝",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b905-zKwCoIRiYJSr.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "sonic",
+    "name": "Sonic",
+    "series": "Sonic",
+    "rarity": "A",
+    "emoji": "🦇",
+    "image": "https://static.wikia.nocookie.net/sonic/images/1/10/SRCSonic.png/revision/latest?cb=20251202132714",
+    "img_src": "fandom"
+  },
+  {
+    "id": "sora-amano",
+    "name": "Sora Amano",
+    "series": "Parede de Gelo",
+    "rarity": "C",
+    "emoji": "🌙",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b316669-BEjMfZC7RZ1j.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "sosuke-aizen",
+    "name": "Sosuke Aizen",
+    "series": "Bleach",
+    "rarity": "SS",
+    "emoji": "👻",
+    "image": "https://static.wikia.nocookie.net/bleach/images/6/68/682Aizen_profile.png/revision/latest?cb=20260319222423&path-prefix=en",
+    "img_src": "fandom"
+  },
+  {
+    "id": "spider-man",
+    "name": "Spider-Man",
+    "series": "Marvel",
+    "rarity": "SS",
+    "emoji": "🕷️",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/a/ae/Amazing_Spider-Man_Vol_5_75_Lee_Virgin_Variant.jpg/revision/latest?cb=20220405001421",
+    "img_src": "fandom"
+  },
+  {
+    "id": "spongebob",
+    "name": "SpongeBob",
+    "series": "SpongeBob",
+    "rarity": "A",
+    "emoji": "🌊",
+    "image": "https://static.wikia.nocookie.net/spongebob/images/6/6b/Spongebob_happy_stock_art_1.octet-stream.png/revision/latest?cb=20260401183834",
+    "img_src": "fandom"
+  },
+  {
+    "id": "springtrap",
+    "name": "Springtrap",
+    "series": "FNAF",
+    "rarity": "A",
+    "emoji": "🐰",
+    "image": "https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/7/71/Purple_man.png/revision/latest?cb=20150723044740",
+    "img_src": "fandom"
+  },
+  {
+    "id": "squid-game-guard",
+    "name": "Squid Game Guard",
+    "series": "Squid Game",
+    "rarity": "A",
+    "emoji": "🔵",
+    "image": "https://static.wikia.nocookie.net/thesquidgame/images/f/f7/Last_one_was_evil.png/revision/latest?cb=20260506020634",
+    "img_src": "fandom"
+  },
+  {
+    "id": "squidward",
+    "name": "Squidward",
+    "series": "SpongeBob",
+    "rarity": "B",
+    "emoji": "🎺",
+    "image": "https://static.wikia.nocookie.net/spongebob/images/4/49/Squidward_unhappy_stock_art.png/revision/latest?cb=20251102234328",
+    "img_src": "fandom"
+  },
+  {
+    "id": "squirtle",
+    "name": "Squirtle",
+    "series": "Pokemon",
+    "rarity": "C",
+    "emoji": "🐢",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/5/54/0007Squirtle.png/revision/latest?cb=20240714154016",
+    "img_src": "fandom"
+  },
+  {
+    "id": "star-lord",
+    "name": "Star-Lord",
+    "series": "Marvel",
+    "rarity": "B",
+    "emoji": "🕶️",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/4/40/Peadar_O%27Cuill_%28Earth-311%29_from_1602_Witch_Hunter_Angela_Vol_1_2_001.jpg/revision/latest?cb=20160307084444",
+    "img_src": "fandom"
+  },
+  {
+    "id": "stewie",
+    "name": "Stewie",
+    "series": "Family Guy",
+    "rarity": "A",
+    "emoji": "🍼",
+    "image": "https://static.wikia.nocookie.net/familyguy/images/9/90/FamilyGuy_Single_StewieBackpack_R7.jpg/revision/latest?cb=20200526171841",
+    "img_src": "fandom"
+  },
+  {
+    "id": "stitch",
+    "name": "Stitch",
+    "series": "Disney",
+    "rarity": "S",
+    "emoji": "👽",
+    "image": "https://static.wikia.nocookie.net/disney/images/b/b7/Profile_-_Stitch.jpg/revision/latest?cb=20190312072323",
+    "img_src": "fandom"
+  },
+  {
+    "id": "storm",
+    "name": "Storm",
+    "series": "Marvel",
+    "rarity": "A",
+    "emoji": "⛈️",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/5d/Ororo_Munroe_%28Earth-12%29_from_Exiles_Vol_1_14_0001.jpg/revision/latest?cb=20191231020331",
+    "img_src": "fandom"
+  },
+  {
+    "id": "subaru",
+    "name": "Subaru",
+    "series": "Re:Zero",
+    "rarity": "A",
+    "emoji": "🧩",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88573-F8yMTK9GhnTA.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "sugawara",
+    "name": "Sugawara",
+    "series": "Haikyuu",
+    "rarity": "B",
+    "emoji": "🕊️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67321-cxP7NdI0JC3H.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "suigetsu",
+    "name": "Suigetsu",
+    "series": "Naruto",
+    "rarity": "B",
+    "emoji": "💧",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/1903.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "sukuna",
+    "name": "Sukuna",
+    "series": "Jujutsu Kaisen",
+    "rarity": "SS",
+    "emoji": "👹",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133701-rCQuDpHr3UZL.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "superman",
+    "name": "Superman",
+    "series": "DC",
+    "rarity": "SS",
+    "emoji": "🔽",
+    "image": "https://static.wikia.nocookie.net/marvel_dc/images/0/0d/Action_Comics_Vol_1_1060_1-25_Textless_Variant.jpg/revision/latest?cb=20240825161257",
+    "img_src": "fandom"
+  },
+  {
+    "id": "suzaku",
+    "name": "Suzaku",
+    "series": "Code Geass",
+    "rarity": "A",
+    "emoji": "🐺",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b559-KRvTdc6zdCuU.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "suzuha",
+    "name": "Suzuha",
+    "series": "Steins;Gate",
+    "rarity": "A",
+    "emoji": "🕐",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b35255-Ra9Aq5Kn9lYq.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "sylveon",
+    "name": "Sylveon",
+    "series": "Pokemon",
+    "rarity": "B",
+    "emoji": "🎀",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/d/d0/0700Sylveon.png/revision/latest?cb=20260227162344",
+    "img_src": "fandom"
+  },
+  {
+    "id": "tails",
+    "name": "Tails",
+    "series": "Sonic",
+    "rarity": "B",
+    "emoji": "🦊",
+    "image": "https://static.wikia.nocookie.net/sonic/images/a/a8/SRCTails.png/revision/latest?cb=20250826092341",
+    "img_src": "fandom"
+  },
+  {
+    "id": "tanjiro",
+    "name": "Tanjiro",
+    "series": "Demon Slayer",
+    "rarity": "SS",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12607",
+    "img_src": "anilist"
+  },
+  {
+    "id": "tanjirou",
+    "name": "Tanjirou",
+    "series": "Demon Slayer",
+    "rarity": "SS",
+    "emoji": "🌊",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126071-BTNEc1nRIv68.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "tarzan",
+    "name": "Tarzan",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "🌴",
+    "image": "https://static.wikia.nocookie.net/disney/images/b/b7/Tarzan_cover.jpg/revision/latest?cb=20121105231027",
+    "img_src": "fandom"
+  },
+  {
+    "id": "team-rocket-meowth",
+    "name": "Team Rocket Meowth",
+    "series": "Pokemon",
+    "rarity": "A",
+    "emoji": "🐈",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/d/d6/0052Meowth.png/revision/latest?cb=20260203103425",
+    "img_src": "fandom"
+  },
+  {
+    "id": "temari",
+    "name": "Temari",
+    "series": "Naruto",
+    "rarity": "A",
+    "emoji": "🌪️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2174-XTX0TtzkZCnO.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "tengen",
+    "name": "Tengen",
+    "series": "Demon Slayer",
+    "rarity": "A",
+    "emoji": "💎",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136071-99Kexnnn2PiV.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "the-flash",
+    "name": "The Flash",
+    "series": "DC",
+    "rarity": "S",
+    "emoji": "⚡",
+    "image": "https://static.wikia.nocookie.net/marvel_dc/images/7/74/Flash_0006.jpg/revision/latest?cb=20120215162619",
+    "img_src": "fandom"
+  },
+  {
+    "id": "thor",
+    "name": "Thor",
+    "series": "Marvel",
+    "rarity": "S",
+    "emoji": "⛈️",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/b/b2/Eric_Masterson_%28Earth-616%29_from_Thor_Vol_1_443_001.jpg/revision/latest?cb=20210621055633",
+    "img_src": "fandom"
+  },
+  {
+    "id": "timon",
+    "name": "Timon",
+    "series": "Disney",
+    "rarity": "B",
+    "emoji": "🐈",
+    "image": "https://static.wikia.nocookie.net/disney/images/4/45/Profile_-_Timon.jpeg/revision/latest?cb=20250211134324",
+    "img_src": "fandom"
+  },
+  {
+    "id": "toad",
+    "name": "Toad",
+    "series": "Super Mario",
+    "rarity": "C",
+    "emoji": "🍄",
+    "image": "https://static.wikia.nocookie.net/mario/images/4/4d/SMG1%2BSMG2_Toad_Artwork.png/revision/latest?cb=20251021045216",
+    "img_src": "fandom"
+  },
+  {
+    "id": "tobirama-senju",
+    "name": "Tobirama Senju",
+    "series": "Naruto",
+    "rarity": "S",
+    "emoji": "💧",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/n12465-y8ByDAvzC5cA.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "todoroki",
+    "name": "Todoroki",
+    "series": "My Hero Academia",
+    "rarity": "S",
+    "emoji": "❄️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89220-KNBwaVFAR8FD.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "toga",
+    "name": "Toga",
+    "series": "My Hero Academia",
+    "rarity": "A",
+    "emoji": "🔪",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b125619-iQxQoGHJvjRJ.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "toji-fushiguro",
+    "name": "Toji Fushiguro",
+    "series": "Jujutsu Kaisen",
+    "rarity": "SS",
+    "emoji": "🔪",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b162722-btzdghBizxKS.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "tom",
+    "name": "Tom",
+    "series": "Tom and Jerry",
+    "rarity": "B",
+    "emoji": "🐱",
+    "image": "https://static.wikia.nocookie.net/tomandjerry/images/1/14/Tom_Cat_2.png/revision/latest?cb=20231206221420",
+    "img_src": "fandom"
+  },
+  {
+    "id": "tomura-shigaraki",
+    "name": "Tomura Shigaraki",
+    "series": "My Hero Academia",
+    "rarity": "S",
+    "emoji": "🖐",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89226-qGXqFthO4SM3.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "toppo",
+    "name": "Toppo",
+    "series": "Dragon Ball",
+    "rarity": "A",
+    "emoji": "📣",
+    "image": "https://static.wikia.nocookie.net/dragonball/images/8/87/Top.png/revision/latest?cb=20180123150059",
+    "img_src": "fandom"
+  },
+  {
+    "id": "toriel",
+    "name": "Toriel",
+    "series": "Undertale",
+    "rarity": "B",
+    "emoji": "🐐",
+    "image": "https://static.wikia.nocookie.net/undertale/images/f/f3/Toriel_battle.png/revision/latest?cb=20250731154745",
+    "img_src": "fandom"
+  },
+  {
+    "id": "tornado",
+    "name": "Tornado",
+    "series": "One Punch Man",
+    "rarity": "A",
+    "emoji": "🌀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b81929-WPVp2LQoWgkc.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "tornado-of-terror",
+    "name": "Tornado of Terror",
+    "series": "One Punch Man",
+    "rarity": "S",
+    "emoji": "👧",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b81929-WPVp2LQoWgkc.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "torterra",
+    "name": "Torterra",
+    "series": "Pokemon",
+    "rarity": "C",
+    "emoji": "🐢",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/a/ac/0389Torterra.png/revision/latest?cb=20260218095556",
+    "img_src": "fandom"
+  },
+  {
+    "id": "toshiro",
+    "name": "Toshiro",
+    "series": "Bleach",
+    "rarity": "A",
+    "emoji": "❄️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b245-buy3Cfn6IFSB.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "toshiro-hitsugaya",
+    "name": "Toshiro Hitsugaya",
+    "series": "Bleach",
+    "rarity": "S",
+    "emoji": "🌊",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b245-buy3Cfn6IFSB.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "totoro",
+    "name": "Totoro",
+    "series": "My Neighbor Totoro",
+    "rarity": "SS",
+    "emoji": "🐼",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b269-sbPL4w1ygjSe.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "touka-kirishima",
+    "name": "Touka Kirishima",
+    "series": "Tokyo Ghoul",
+    "rarity": "A",
+    "emoji": "🐰",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b87277-oUaqrI1iBzu6.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "trafalgar-law",
+    "name": "Trafalgar Law",
+    "series": "One Piece",
+    "rarity": "S",
+    "emoji": "👒",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13767-U604OJN9dxCn.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "trunks",
+    "name": "Trunks",
+    "series": "Dragon Ball",
+    "rarity": "A",
+    "emoji": "🗡",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2707-YKWmn4q87oF8.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "tsubasa-igarashi",
+    "name": "Tsubasa Igarashi",
+    "series": "Parede de Gelo",
+    "rarity": "B",
+    "emoji": "⚽",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b390626-ilCrpqlor7a1.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "tsukiko-shimojima",
+    "name": "Tsukiko Shimojima",
+    "series": "Parede de Gelo",
+    "rarity": "C",
+    "emoji": "🎨",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b393702-3KzxjOqdc36h.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "tsukishima-kei",
+    "name": "Tsukishima Kei",
+    "series": "Haikyuu",
+    "rarity": "B",
+    "emoji": "🦴",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67329-k7mDdqQ6rJ4w.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "tsunade",
+    "name": "Tsunade",
+    "series": "Naruto",
+    "rarity": "S",
+    "emoji": "🔨",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2767-r61Cj9v8I0wl.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "tsuyu",
+    "name": "Tsuyu",
+    "series": "My Hero Academia",
+    "rarity": "B",
+    "emoji": "🐸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89223-5762vburxnlz.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "tsuyu-asui",
+    "name": "Tsuyu Asui",
+    "series": "My Hero Academia",
+    "rarity": "B",
+    "emoji": "🐸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89223-5762vburxnlz.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "turkey",
+    "name": "Turkey",
+    "series": "Dorohedoro",
+    "rarity": "B",
+    "emoji": "🦃",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b79491-EAqLGoXVxTcO.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "tuxedo-mask",
+    "name": "Tuxedo Mask",
+    "series": "Sailor Moon",
+    "rarity": "A",
+    "emoji": "🍄",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4013-pnQ2obKyW7Tv.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "twice",
+    "name": "Twice",
+    "series": "My Hero Academia",
+    "rarity": "B",
+    "emoji": "👥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89589-0ICQRy2iXj2l.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "ulquiorra",
+    "name": "Ulquiorra",
+    "series": "Bleach",
+    "rarity": "S",
+    "emoji": "🦋",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1081-xLTqHfLL2I2W.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "umbreon",
+    "name": "Umbreon",
+    "series": "Pokemon",
+    "rarity": "B",
+    "emoji": "🌙",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/e/e1/0197Umbreon.png/revision/latest?cb=20260207051613",
+    "img_src": "fandom"
+  },
+  {
+    "id": "urahara",
+    "name": "Urahara",
+    "series": "Bleach",
+    "rarity": "S",
+    "emoji": "⛱️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b210-mw01NrQfRjzT.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "ursula",
+    "name": "Ursula",
+    "series": "Disney",
+    "rarity": "B",
+    "emoji": "🐙",
+    "image": "https://static.wikia.nocookie.net/disney/images/7/72/Profile_-_Ursula.jpeg/revision/latest?cb=20201204230949",
+    "img_src": "fandom"
+  },
+  {
+    "id": "uryu",
+    "name": "Uryu",
+    "series": "Bleach",
+    "rarity": "A",
+    "emoji": "🏹",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b564-a6LJitrjSfKC.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "usopp",
+    "name": "Usopp",
+    "series": "One Piece",
+    "rarity": "A",
+    "emoji": "🎯",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b724-GFGgI9AJQkfy.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "uta",
+    "name": "Uta",
+    "series": "Tokyo Ghoul",
+    "rarity": "S",
+    "emoji": "💀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88414-r2Xd7jJeMrvR.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "vados",
+    "name": "Vados",
+    "series": "Dragon Ball",
+    "rarity": "A",
+    "emoji": "✨",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/127218-JwMt8dLYwdRr.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "vanellope",
+    "name": "Vanellope",
+    "series": "Disney",
+    "rarity": "B",
+    "emoji": "🎮",
+    "image": "https://static.wikia.nocookie.net/disney/images/2/25/Profile_-_Vanellope_Von_schweetz.jpeg/revision/latest?cb=20190312023329",
+    "img_src": "fandom"
+  },
+  {
+    "id": "vanir",
+    "name": "Vanir",
+    "series": "Konosuba",
+    "rarity": "A",
+    "emoji": "😈",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b130106-SmSbkyTcmmTl.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "vegeta",
+    "name": "Vegeta",
+    "series": "Dragon Ball",
+    "rarity": "SS",
+    "emoji": "😡",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b913-NIFkKazWM8VO.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "vision",
+    "name": "Vision",
+    "series": "Marvel",
+    "rarity": "B",
+    "emoji": "💠",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/5/55/Aarkus_%28Earth-616%29_from_All-New_Invaders_Vol_1_2_001.jpg/revision/latest?cb=20161105185221",
+    "img_src": "fandom"
+  },
+  {
+    "id": "vivi",
+    "name": "Vivi",
+    "series": "One Piece",
+    "rarity": "B",
+    "emoji": "💦",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b726-DqAIpscMuYYx.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "waluigi",
+    "name": "Waluigi",
+    "series": "Super Mario",
+    "rarity": "B",
+    "emoji": "💜",
+    "image": "https://static.wikia.nocookie.net/mario/images/2/27/SuperMarioParty_Waluigi.png/revision/latest?cb=20260110155652",
+    "img_src": "fandom"
+  },
+  {
+    "id": "wario",
+    "name": "Wario",
+    "series": "Super Mario",
+    "rarity": "B",
+    "emoji": "🧄",
+    "image": "https://static.wikia.nocookie.net/mario/images/b/b4/Wario_%28SMP_Render%29.png/revision/latest?cb=20230703220901",
+    "img_src": "fandom"
+  },
+  {
+    "id": "wendy-marvell",
+    "name": "Wendy Marvell",
+    "series": "Fairy Tail",
+    "rarity": "A",
+    "emoji": "🐉",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b28886-unO1rEi3zdyF.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "whis",
+    "name": "Whis",
+    "series": "Dragon Ball",
+    "rarity": "S",
+    "emoji": "🌀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b76346-BNh2DE5Rh2IW.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "winry",
+    "name": "Winry",
+    "series": "Fullmetal Alchemist",
+    "rarity": "A",
+    "emoji": "🔧",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/63-xloedtYxiJ2E.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "wiz",
+    "name": "Wiz",
+    "series": "Konosuba",
+    "rarity": "A",
+    "emoji": "🧙",
+    "image": "https://static.wikia.nocookie.net/konosuba/images/c/cb/Wiz-anime.png/revision/latest?cb=20180328171357",
+    "img_src": "fandom"
+  },
+  {
+    "id": "wolverine",
+    "name": "Wolverine",
+    "series": "Marvel",
+    "rarity": "S",
+    "emoji": "🗡️",
+    "image": "https://static.wikia.nocookie.net/marveldatabase/images/9/9e/Dark_Wolverine_Vol_1_77_Textless.jpg/revision/latest?cb=20090712125221",
+    "img_src": "fandom"
+  },
+  {
+    "id": "wonder-woman",
+    "name": "Wonder Woman",
+    "series": "DC",
+    "rarity": "S",
+    "emoji": "👭",
+    "image": "https://static.wikia.nocookie.net/marvel_dc/images/b/bd/Wonder_Woman_Earth-Two_002.jpg/revision/latest?cb=20221222001726",
+    "img_src": "fandom"
+  },
+  {
+    "id": "woody",
+    "name": "Woody",
+    "series": "Disney",
+    "rarity": "A",
+    "emoji": "🤠",
+    "image": "https://static.wikia.nocookie.net/pixar/images/e/ef/Woody_profile.jpg/revision/latest?cb=20260706180047",
+    "img_src": "fandom"
+  },
+  {
+    "id": "yagami-light",
+    "name": "Yagami Light",
+    "series": "Death Note",
+    "rarity": "SS",
+    "emoji": "📓",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b80-26EhwSsSqQ50.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "yamamoto",
+    "name": "Yamamoto",
+    "series": "Bleach",
+    "rarity": "SS",
+    "emoji": "🔥",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5726-mO7kc8Abka9J.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "yamato",
+    "name": "Yamato",
+    "series": "One Piece",
+    "rarity": "S",
+    "emoji": "🐺",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b176840-8KRqXXLJeLOg.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "yami",
+    "name": "Yami",
+    "series": "Black Clover",
+    "rarity": "S",
+    "emoji": "🗡️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124440-Lpdo6y8cljV6.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "yamori",
+    "name": "Yamori",
+    "series": "Tokyo Ghoul",
+    "rarity": "B",
+    "emoji": "🖹️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b168866-zf5bb7rmZpxX.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "ymir",
+    "name": "Ymir",
+    "series": "Attack on Titan",
+    "rarity": "B",
+    "emoji": "🐷",
+    "image": "https://static.wikia.nocookie.net/shingekinokyojin/images/c/cb/Ymir_character_image.png/revision/latest?cb=20190820142730",
+    "img_src": "fandom"
+  },
+  {
+    "id": "yor",
+    "name": "Yor",
+    "series": "Spy x Family",
+    "rarity": "S",
+    "emoji": "🔪",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138102-ZOAu9jI2d5ke.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "yor-forger",
+    "name": "Yor Forger",
+    "series": "Spy x Family",
+    "rarity": "S",
+    "emoji": "🔪",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138102-ZOAu9jI2d5ke.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "yoruichi-shihoin",
+    "name": "Yoruichi Shihoin",
+    "series": "Bleach",
+    "rarity": "S",
+    "emoji": "🐈",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b908-JSYUkJLCw1f0.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "yoshi",
+    "name": "Yoshi",
+    "series": "Super Mario",
+    "rarity": "B",
+    "emoji": "🦕",
+    "image": "https://static.wikia.nocookie.net/mario/images/5/5f/SMPJ_Yoshi.png/revision/latest?cb=20250427211829",
+    "img_src": "fandom"
+  },
+  {
+    "id": "youta-hino",
+    "name": "Youta Hino",
+    "series": "Parede de Gelo",
+    "rarity": "B",
+    "emoji": "🏀",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b354443-SzGQVXaJn8C9.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "yu-ishigami",
+    "name": "Yu Ishigami",
+    "series": "Kaguya-sama",
+    "rarity": "B",
+    "emoji": "🎮",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121102-tiQFxnSEIAwm.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "yui",
+    "name": "Yui",
+    "series": "Sword Art Online",
+    "rarity": "B",
+    "emoji": "✨",
+    "image": "https://static.wikia.nocookie.net/swordartonline/images/e/ee/Yui.png/revision/latest?cb=20140228061052",
+    "img_src": "fandom"
+  },
+  {
+    "id": "yui-hirasawa",
+    "name": "Yui Hirasawa",
+    "series": "K-On",
+    "rarity": "A",
+    "emoji": "🎸",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b19565-7gMiEAm7NGNK.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "yuji-itadori",
+    "name": "Yuji Itadori",
+    "series": "Jujutsu Kaisen",
+    "rarity": "S",
+    "emoji": "🦕",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127212-FVm2tD0erQ5B.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "yuno",
+    "name": "Yuno",
+    "series": "Black Clover",
+    "rarity": "S",
+    "emoji": "🍀",
+    "image": "https://static.wikia.nocookie.net/blackclover/images/e/eb/Yuno_profile.png/revision/latest?cb=20220731212525",
+    "img_src": "fandom"
+  },
+  {
+    "id": "yuta",
+    "name": "Yuta",
+    "series": "Jujutsu Kaisen",
+    "rarity": "S",
+    "emoji": "⛩️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129571-GHJk7gviHOOw.jpg",
+    "img_src": "anilist"
+  },
+  {
+    "id": "yuuki-azumi",
+    "name": "Yuuki Azumi",
+    "series": "Parede de Gelo",
+    "rarity": "C",
+    "emoji": "😎",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b394746-3yW47W4vfx7I.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "zatanna",
+    "name": "Zatanna",
+    "series": "DC",
+    "rarity": "B",
+    "emoji": "🎩",
+    "image": "https://static.wikia.nocookie.net/marvel_dc/images/e/e7/Superman_Vol_6_18_Textless_Variant.jpg/revision/latest?cb=20240918150815",
+    "img_src": "fandom"
+  },
+  {
+    "id": "zeke-yeager",
+    "name": "Zeke Yeager",
+    "series": "Attack on Titan",
+    "rarity": "SS",
+    "emoji": "🐒",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b125661-FiqFvAtNlL0v.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "zelda",
+    "name": "Zelda",
+    "series": "Zelda",
+    "rarity": "S",
+    "emoji": "🏹",
+    "image": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/c/c9/TotK_Princess_Zelda_Artwork.png/revision/latest?cb=20240929143055",
+    "img_src": "fandom"
+  },
+  {
+    "id": "zenitsu",
+    "name": "Zenitsu",
+    "series": "Demon Slayer",
+    "rarity": "S",
+    "emoji": "⚡",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129131-FZrQ7lSlxmEr.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "zeref",
+    "name": "Zeref",
+    "series": "Fairy Tail",
+    "rarity": "S",
+    "emoji": "📕",
+    "image": "https://static.wikia.nocookie.net/fairytail/images/f/fa/Zeref_discovers_Irene.png/revision/latest?cb=20190616090207",
+    "img_src": "fandom"
+  },
+  {
+    "id": "zero-two",
+    "name": "Zero Two",
+    "series": "Darling in the Franxx",
+    "rarity": "SS",
+    "emoji": "🐻",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124381-2gAVq76HPfL2.png",
+    "img_src": "anilist"
+  },
+  {
+    "id": "zoro",
+    "name": "Zoro",
+    "series": "One Piece",
+    "rarity": "S",
+    "emoji": "⚔️",
+    "image": "https://s4.anilist.co/file/anilistcdn/character/large/b62-S7oAeA9WInjV.png",
+    "img_src": "anilist"
+  }
+]
