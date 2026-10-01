@@ -190,6 +190,20 @@
   </div>
 </div>
 
+<!-- Modal corte de imagem -->
+<div id="cropModal" class="modal hidden">
+  <div class="modal-card">
+    <h2 id="cropTitle">Ajustar imagem</h2>
+    <div id="cropStage"><img id="cropImg" alt="Corte" /></div>
+    <input id="cropZoom" type="range" min="1" max="3" step="0.01" value="1" />
+    <p class="hint">Arraste para posicionar • use a barra para zoom</p>
+    <div class="row">
+      <button id="cropApply" class="btn primary small">Aplicar</button>
+      <button id="cropCancel" class="btn small">Cancelar</button>
+    </div>
+  </div>
+</div>
+
 <script src="./firebase-config.js"></script>
 <script src="./app.js"></script>
 </body>

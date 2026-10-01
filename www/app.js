@@ -214,22 +214,52 @@ const BANNERS = {
 const AVATAR_EMOJIS = ["💍", "🦊", "🐱", "🐼", "🦁", "🐸", "👾", "🌸", "⚡", "💫", "😎", "👑"];
 function applyTheme() { document.body.dataset.theme = state.theme === "violeta" ? "" : state.theme; document.querySelectorAll("#themeRow .theme-btn").forEach(b => b.classList.toggle("sel", b.dataset.theme === state.theme)); }
 function avatarSrc() { if (state.profile.avatarCustom) return state.profile.avatarCustom; const c = state.profile.avatarId && byId[state.profile.avatarId]; return c ? c.image : null; }
-// Reduz imagem da galeria para caber no armazenamento local
-function fileToDataURL(file, maxW, q) {
-  return new Promise((res, rej) => {
-    const url = URL.createObjectURL(file);
-    const img = new Image();
-    img.onload = () => {
-      const scale = Math.min(1, maxW / img.width);
-      const w = Math.round(img.width * scale), h = Math.round(img.height * scale);
-      const cv = document.createElement("canvas"); cv.width = w; cv.height = h;
-      cv.getContext("2d").drawImage(img, 0, 0, w, h);
-      URL.revokeObjectURL(url);
-      res(cv.toDataURL("image/jpeg", q));
-    };
-    img.onerror = rej;
-    img.src = url;
-  });
+// Ferramenta de corte: avatar quadrado 256px, banner 900x300
+let crop = null;
+function openCropper(objectUrl, mode, cb) {
+  crop = { url: objectUrl, mode, outW: mode === "avatar" ? 256 : 900, outH: mode === "avatar" ? 256 : 300,
+    zoom: 1, dx: 0, dy: 0, natW: 0, natH: 0, base: 1, cb };
+  $("#cropTitle").textContent = mode === "avatar" ? "Ajustar avatar" : "Ajustar banner";
+  const stage = $("#cropStage");
+  stage.style.aspectRatio = mode === "avatar" ? "1 / 1" : "3 / 1";
+  const img = $("#cropImg");
+  img.style.width = ""; img.style.height = ""; img.style.left = ""; img.style.top = "";
+  $("#cropZoom").value = 1;
+  $("#cropModal").classList.remove("hidden");
+  img.onload = () => { crop.natW = img.naturalWidth; crop.natH = img.naturalHeight; layoutCrop(); };
+  img.onerror = () => { closeCrop(); alert("Não foi possível ler a imagem."); };
+  img.src = objectUrl;
+}
+function layoutCrop() {
+  const stage = $("#cropStage");
+  crop.base = Math.max(stage.clientWidth / crop.natW, stage.clientHeight / crop.natH);
+  crop.dx = 0; crop.dy = 0;
+  applyCropTransform();
+}
+function applyCropTransform() {
+  const stage = $("#cropStage"), img = $("#cropImg");
+  const sw = stage.clientWidth, sh = stage.clientHeight;
+  const w = crop.natW * crop.base * crop.zoom, h = crop.natH * crop.base * crop.zoom;
+  crop.dx = Math.max(-(w - sw) / 2, Math.min((w - sw) / 2, crop.dx));
+  crop.dy = Math.max(-(h - sh) / 2, Math.min((h - sh) / 2, crop.dy));
+  img.style.width = w + "px"; img.style.height = h + "px";
+  img.style.left = (sw - w) / 2 + crop.dx + "px";
+  img.style.top = (sh - h) / 2 + crop.dy + "px";
+}
+function closeCrop() { if (crop) URL.revokeObjectURL(crop.url); crop = null; $("#cropModal").classList.add("hidden"); }
+function applyCrop() {
+  if (!crop || !crop.natW) return;
+  const stage = $("#cropStage"), img = $("#cropImg");
+  const sw = stage.clientWidth, sh = stage.clientHeight, k = crop.base * crop.zoom;
+  const dispW = crop.natW * k, dispH = crop.natH * k;
+  const left = (sw - dispW) / 2 + crop.dx, top = (sh - dispH) / 2 + crop.dy;
+  const sx = Math.max(0, -left / k), sy = Math.max(0, -top / k);
+  const sW = Math.min(crop.natW - sx, sw / k), sH = Math.min(crop.natH - sy, sh / k);
+  const cv = document.createElement("canvas"); cv.width = crop.outW; cv.height = crop.outH;
+  cv.getContext("2d").drawImage(img, sx, sy, sW, sH, 0, 0, crop.outW, crop.outH);
+  const cb = crop.cb;
+  closeCrop();
+  cb(cv.toDataURL("image/jpeg", 0.82));
 }
 function renderProfile() {
   applyTheme();
@@ -246,8 +276,8 @@ function renderProfile() {
     av.src = placeholder(state.profile.avatarEmoji + " " + state.nickname); }
   const b = state.profile.banner;
   const bn = $("#profileBanner");
-  if (state.profile.bannerCustom) { bn.style.backgroundImage = `url("${state.profile.bannerCustom}")`; bn.style.background = "#0b0718"; }
-  else if (b && b.startsWith("char:")) { const c = byId[b.slice(5)]; bn.style.background = "#0b0718"; bn.style.backgroundImage = c ? `url("${c.image}")` : "none"; }
+  if (state.profile.bannerCustom) { bn.style.background = "#0b0718"; bn.style.backgroundImage = `url('${state.profile.bannerCustom}')`; bn.style.backgroundSize = "cover"; bn.style.backgroundPosition = "center"; }
+  else if (b && b.startsWith("char:")) { const c = byId[b.slice(5)]; bn.style.background = "#0b0718"; bn.style.backgroundImage = c ? `url('${c.image}')` : "none"; bn.style.backgroundSize = "cover"; bn.style.backgroundPosition = "center"; }
   else { bn.style.backgroundImage = "none"; bn.style.background = BANNERS[b] || BANNERS.g1; }
   // swatches
   const br = $("#bannerRow"); if (br && !br.children.length) {
@@ -298,16 +328,34 @@ async function init() {
   };
   $("#profileAvatar").onclick = () => $("#avatarFile").click();
   $("#profileBanner").onclick = () => $("#bannerFile").click();
-  $("#avatarFile").onchange = async (e) => {
+  $("#avatarFile").onchange = (e) => {
     const f = e.target.files[0]; e.target.value = ""; if (!f) return;
-    try { state.profile.avatarCustom = await fileToDataURL(f, 256, 0.8); state.profile.avatarId = null; save(); renderProfile(); fbSyncPlayer(); }
-    catch { alert("Não foi possível ler a imagem."); }
+    openCropper(URL.createObjectURL(f), "avatar", (dataUrl) => {
+      try { state.profile.avatarCustom = dataUrl; state.profile.avatarId = null; save(); }
+      catch { alert("Imagem muito grande para salvar. Tente outra foto."); return; }
+      renderProfile(); fbSyncPlayer();
+    });
   };
-  $("#bannerFile").onchange = async (e) => {
+  $("#bannerFile").onchange = (e) => {
     const f = e.target.files[0]; e.target.value = ""; if (!f) return;
-    try { state.profile.bannerCustom = await fileToDataURL(f, 960, 0.7); save(); renderProfile(); }
-    catch { alert("Não foi possível ler a imagem."); }
+    openCropper(URL.createObjectURL(f), "banner", (dataUrl) => {
+      try { state.profile.bannerCustom = dataUrl; save(); }
+      catch { alert("Imagem muito grande para salvar. Tente outra foto."); return; }
+      renderProfile();
+    });
   };
+  // interações do cortador
+  $("#cropZoom").oninput = (e) => { if (!crop) return; crop.zoom = parseFloat(e.target.value); applyCropTransform(); };
+  $("#cropApply").onclick = applyCrop;
+  $("#cropCancel").onclick = closeCrop;
+  $("#cropModal").onclick = (e) => { if (e.target.id === "cropModal") closeCrop(); };
+  (() => {
+    const stage = $("#cropStage");
+    let drag = null;
+    stage.addEventListener("pointerdown", (e) => { if (!crop) return; drag = { x: e.clientX, y: e.clientY, dx: crop.dx, dy: crop.dy }; stage.setPointerCapture(e.pointerId); });
+    stage.addEventListener("pointermove", (e) => { if (!drag || !crop) return; crop.dx = drag.dx + (e.clientX - drag.x); crop.dy = drag.dy + (e.clientY - drag.y); applyCropTransform(); });
+    ["pointerup", "pointercancel"].forEach(ev => stage.addEventListener(ev, () => drag = null));
+  })();
   $("#mClose").onclick = () => $("#modal").classList.add("hidden");
   $("#modal").onclick = (e) => { if (e.target.id === "modal") $("#modal").classList.add("hidden"); };
   $("#mWish").onclick = () => {
