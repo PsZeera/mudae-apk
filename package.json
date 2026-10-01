@@ -1,1 +1,1 @@
-{"name": "mudae-apk", "version": "1.0.0", "private": true, "scripts": {"build": "cap sync android"}, "dependencies": {"@capacitor/android": "^6.1.0", "@capacitor/cli": "^6.1.0", "@capacitor/core": "^6.1.0"}}
+{"name": "mudae-apk", "version": "1.2.0", "private": true, "scripts": {"build": "cap sync android"}, "dependencies": {"@capacitor/android": "^6.1.0", "@capacitor/cli": "^6.1.0", "@capacitor/core": "^6.1.0"}}

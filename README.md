@@ -25,6 +25,15 @@ Funciona **offline solo** de cara; vira **multiplayer** ao configurar Firebase.
   após ajustar `MISSING`/`NON_ANIME`, depois `py mudae-apk/scripts/clean_images.py` de novo.
   Fandom bloqueia hotlink em alguns WebViews — o fallback cobre isso.
 
+## Atualização automática (sem reinstalar)
+
+O APK agora é híbrido: continua offline, mas avisa quando há versão nova.
+
+1. No GitHub vá em Settings > Pages > Build and deployment > selecione **GitHub Actions**. O workflow `Deploy Web (Pages)` publica `www/` a cada push na `main` em `https://pszeera.github.io/mudae-apk/`.
+2. A cada alteração em `www/`, suba o número em `www/version.json`.
+3. No app aparece o banner **Nova versão disponível** com o botão **Usar versão atualizada**, que abre a versão live com as mudanças na hora, sem rebuild.
+4. Rebuild do APK só é necessário para mudanças nativas (ícone, permissão, plugin). Mudança de layout, regra, rank e personagens chega via live.
+
 ## Gerar o APK (sem Android Studio — via GitHub)
 Você não tem Node/Java aqui, então o build roda na nuvem:
 1. Crie repo no GitHub, suba a pasta `mudae-apk/` como raiz (com `.github/`).

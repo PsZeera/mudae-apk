@@ -19,6 +19,14 @@
   </header>
 
   <main id="screens">
+    <div id="updateBanner" class="hidden" style="max-width:720px;margin:10px auto;padding:10px 14px;border:1px solid #fbbf24;border-radius:12px;background:#2a2111;">
+      <b>Nova versão disponível (<span id="updateVer"></span>).</b>
+      <span class="muted">Toque para usar a versão atualizada sem reinstalar.</span>
+      <div class="row">
+        <button id="btnUseOnline" class="btn primary small">Usar versão atualizada</button>
+        <button id="btnLater" class="btn small">Depois</button>
+      </div>
+    </div>
     <!-- ROLL -->
     <section id="screen-roll" class="screen active">
       <div id="rollCard" class="card">
@@ -115,6 +123,7 @@
         <h3>🌐 Multiplayer (Firebase — opcional)</h3>
         <p class="hint">Sem Firebase o app é 100% offline solo. Para jogar com amigos: crie um projeto no Firebase, ative Auth anônimo + Firestore, copie as chaves em <code>firebase-config.js</code>.</p>
         <p id="fbStatus" class="hint">Status: offline solo.</p>
+        <p class="hint">Versão instalada: <b id="appVer">...</b> • <button id="btnCheckUpdate" class="btn small">Verificar atualização</button></p>
         <button id="btnWipe" class="btn danger small">🗑 Resetar tudo</button>
       </div>
     </section>

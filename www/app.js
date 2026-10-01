@@ -284,9 +284,28 @@ async function init() {
   $("#nickInput").value = state.nickname;
   renderAll();
   setInterval(renderWallet, 15000);
+  $("#btnUseOnline").onclick = () => { window.location.href = LIVE_URL; };
+  $("#btnLater").onclick = () => $("#updateBanner").classList.add("hidden");
+  $("#btnCheckUpdate").onclick = () => checkUpdate(true);
+  checkUpdate(false);
+  setInterval(() => checkUpdate(false), 5 * 60 * 1000);
   initFirebase();
 }
 
+// ---------- OTA / AUTO-UPDATE ----------
+const LIVE_URL = "https://pszeera.github.io/mudae-apk/";
+let LOCAL_VER = null;
+async function checkUpdate(manual = false) {
+  try {
+    if (!LOCAL_VER) { try { LOCAL_VER = (await (await fetch("./version.json", { cache: "no-store" })).json()).version; } catch { LOCAL_VER = "0"; } const v = $("#appVer"); if (v) v.textContent = LOCAL_VER; }
+    const remote = await (await fetch(LIVE_URL + "version.json?t=" + Date.now(), { cache: "no-store" })).json();
+    if (remote.version && remote.version !== LOCAL_VER) {
+      $("#updateVer").textContent = remote.version;
+      $("#updateBanner").classList.remove("hidden");
+      if (manual) setStatus("Nova versão " + remote.version + " disponível.");
+    } else if (manual) setStatus("Você já está na versão mais recente (" + LOCAL_VER + ").");
+  } catch (e) { if (manual) setStatus("Não foi possível verificar atualização (sem internet?)."); }
+}
 // ---------- FIREBASE OPCIONAL ----------
 let FB_DB = null;
 function calcScore() { return state.harem.length * 10 + state.kakera; }
