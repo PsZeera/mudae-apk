@@ -219,6 +219,15 @@ const BANNERS = {
   g6: "linear-gradient(90deg,#f59e0b,#ef4444,#8b5cf6)",
 };
 const AVATAR_EMOJIS = ["💍", "🦊", "🐱", "🐼", "🦁", "🐸", "👾", "🌸", "⚡", "💫", "😎", "👑"];
+// Presença: sync a cada 10s, online = visto há <45s
+function isOnline(v) { return !!(v && v.at && (Date.now() - v.at < 45000)); }
+function ago(ts) {
+  const s = Math.max(0, Math.floor((Date.now() - (ts || 0)) / 1000));
+  if (s < 45) return "agora mesmo";
+  if (s < 3600) { const m = Math.floor(s / 60); return `há ${m}min`; }
+  if (s < 86400) { const h = Math.floor(s / 3600); return `há ${h}h`; }
+  return `há ${Math.floor(s / 86400)}d`;
+}
 function applyTheme() { document.body.dataset.theme = state.theme === "violeta" ? "" : state.theme; document.querySelectorAll("#themeRow .theme-btn").forEach(b => b.classList.toggle("sel", b.dataset.theme === state.theme)); }
 function avatarSrc() { if (state.profile.avatarCustom) return state.profile.avatarCustom; const c = state.profile.avatarId && byId[state.profile.avatarId]; return c ? c.image : null; }
 // Ferramenta de corte: moldura móvel + redimensionável (avatar 1:1 256px, banner 3:1 900x300)
@@ -288,6 +297,12 @@ function renderProfile() {
   $("#statSS").textContent = ss; $("#statScore").textContent = calcScore();
   const titles = [[100, "Lenda do harém"], [50, "Colecionador master"], [20, "Caçador elite"], [5, "Colecionador"], [0, "Novato"]];
   $("#profileTitle").textContent = titles.find(t => state.harem.length >= t[0])[1];
+  const mine = $("#myOnline");
+  if (window._fbOnline) { mine.textContent = "🟢 online"; mine.style.color = "var(--ok)"; }
+  else { mine.textContent = "⚫ offline"; mine.style.color = ""; }
+  const next = [5, 20, 50, 100].find(t => state.harem.length < t);
+  if (next) { const pct = Math.min(100, Math.round(state.harem.length / next * 100)); $("#progFill").style.width = pct + "%"; $("#progLabel").textContent = `Faltam ${next - state.harem.length} para ${titles.find(t => t[0] === next)[1]} • ${pct}%`; }
+  else { $("#progFill").style.width = "100%"; $("#progLabel").textContent = "Nível máximo alcançado!"; }
   const av = $("#profileAvatar");
   const src = avatarSrc();
   if (src) { av.src = src; av.style.objectFit = "cover"; av.onerror = () => imgFail(av); }
@@ -325,23 +340,32 @@ function openModal(c) {
 function openUser(nick, v) {
   v = v || {};
   $("#uName").textContent = nick;
-  $("#uTitle").textContent = v.theme ? "Tema " + v.theme : "Colecionador";
+  $("#uThemeChip").textContent = v.theme ? "🎨 " + v.theme : "🎨 violeta";
+  const on = isOnline(v);
+  const uo = $("#uOnline");
+  uo.textContent = on ? "🟢 Online agora" : `⚫ Visto ${ago(v.at)}`;
+  uo.style.color = on ? "var(--ok)" : "";
+  window._openNick = nick;
   const bn = $("#uBanner");
-  if (v.banner && v.banner.startsWith("char:") && byId[v.banner.slice(5)]) {
+  if (v.bannerImg) { bn.style.background = "#0b0718"; bn.style.backgroundImage = `url('${v.bannerImg}')`; }
+  else if (v.banner && v.banner.startsWith("char:") && byId[v.banner.slice(5)]) {
     bn.style.background = "#0b0718"; bn.style.backgroundImage = `url('${byId[v.banner.slice(5)].image}')`;
-    bn.style.backgroundSize = "cover"; bn.style.backgroundPosition = "center";
-  } else if (v.banner && BANNERS[v.banner]) { bn.style.backgroundImage = "none"; bn.style.background = BANNERS[v.banner]; }
-  else { bn.style.backgroundImage = "none"; bn.style.background = BANNERS.g1; }
+  } else { bn.style.backgroundImage = "none"; bn.style.background = (v.banner && BANNERS[v.banner]) || BANNERS.g1; }
+  bn.style.backgroundSize = "cover"; bn.style.backgroundPosition = "center";
   const av = $("#uAvatar");
-  if (v.avatar && byId[v.avatar]) { av.src = byId[v.avatar].image; av.onerror = () => imgFail(av); }
+  if (v.avatarImg) { av.onerror = null; av.src = v.avatarImg; }
+  else if (v.avatar && byId[v.avatar]) { av.src = byId[v.avatar].image; av.onerror = () => imgFail(av); }
   else { av.onerror = null; av.src = placeholder(((v.avatar && v.avatar !== "custom") ? v.avatar + " " : "") + nick); }
-  $("#uStats").textContent = `${v.harem || 0} 💍 • ${v.ss || 0} SS/SSS • ${v.kakera || 0}💠 • ${v.score ?? ((v.harem || 0) * 10 + (v.kakera || 0))} pts`;
+  const harem = v.harem || 0, kak = v.kakera || 0, ss = v.ss || 0;
+  $("#uHaremN").textContent = harem; $("#uKakeraN").textContent = kak;
+  $("#uSSN").textContent = ss; $("#uScoreN").textContent = v.score ?? (harem * 10 + kak);
   const g = $("#uHarem"); g.innerHTML = "";
   const ids = (v.haremIds || []).map(id => byId[id]).filter(Boolean).slice(0, 60);
-  if (!ids.length) g.innerHTML = "<p class='muted'>Harém não compartilhado nesta versão.</p>";
+  $("#uHaremTitle").textContent = `💒 Harém (${(v.haremIds || []).length}${(v.haremIds || []).length > 60 ? ", top 60" : ""})`;
+  if (!ids.length) g.innerHTML = "<p class='muted'>Harém não compartilhado nesta versão do app.</p>";
   ids.forEach(c => {
     const d = document.createElement("div"); d.className = "cell";
-    d.innerHTML = `<img loading="lazy" src="${c.image}" alt="" onerror="imgFail(this)" data-name="${c.name.replace(/"/g, "")}"><div class="pad"><b>${c.emoji} ${c.name}</b><span class="badge">${c.rarity}</span></div>`;
+    d.innerHTML = `<img loading="lazy" src="${c.image}" alt="" onerror="imgFail(this)" data-name="${c.name.replace(/"/g, "")}"><div class="pad"><b>${c.emoji} ${c.name}</b><span class="badge">${c.rarity}</span><span class="badge">${c.series.slice(0, 14)}</span></div>`;
     g.appendChild(d);
   });
   $("#userModal").classList.remove("hidden");
@@ -354,7 +378,7 @@ async function init() {
     document.querySelectorAll(".tabbar button").forEach(x => x.classList.remove("active"));
     document.querySelectorAll(".screen").forEach(x => x.classList.remove("active"));
     b.classList.add("active"); $("#screen-" + b.dataset.tab).classList.add("active");
-    if (b.dataset.tab === "rank") fbSyncPlayer();
+    if (b.dataset.tab === "rank") fbSyncPlayer(true);
   });
   $("#btnRoll").onclick = doRoll;
   $("#btnMarry").onclick = doMarry;
@@ -411,8 +435,9 @@ async function init() {
   })();
   $("#mClose").onclick = () => $("#modal").classList.add("hidden");
   $("#modal").onclick = (e) => { if (e.target.id === "modal") $("#modal").classList.add("hidden"); };
-  $("#uClose").onclick = () => $("#userModal").classList.add("hidden");
-  $("#userModal").onclick = (e) => { if (e.target.id === "userModal") $("#userModal").classList.add("hidden"); };
+  $("#uClose").onclick = () => { window._openNick = null; $("#userModal").classList.add("hidden"); };
+  $("#uCloseX").onclick = () => { window._openNick = null; $("#userModal").classList.add("hidden"); };
+  $("#userModal").onclick = (e) => { if (e.target.id === "userModal") { window._openNick = null; $("#userModal").classList.add("hidden"); } };
   $("#mWish").onclick = () => {
     if (!modalChar) return;
     const i = state.wishlist.indexOf(modalChar.id);
@@ -495,15 +520,21 @@ async function checkUpdate(manual = false) {
 let FB_DB = null;
 function calcScore() { return state.harem.length * 10 + state.kakera; }
 function calcSS() { return state.harem.map(id => byId[id]).filter(c => c && (c.rarity === "SS" || c.rarity === "SSS")).length; }
-function fbSyncPlayer() {
+function fbSyncPlayer(lite) {
   if (!FB_DB) return;
-  FB_DB.collection("players").doc(state.nickname).set({
+  const data = {
     nick: state.nickname, harem: state.harem.length, kakera: state.kakera,
     ss: calcSS(), score: calcScore(), at: Date.now(),
     avatar: state.profile.avatarCustom ? "custom" : (state.profile.avatarId || state.profile.avatarEmoji), theme: state.theme,
     banner: state.profile.bannerCustom ? "custom" : state.profile.banner,
-    haremIds: state.harem.slice(0, 300)
-  }, { merge: true }).then(() => {
+    haremIds: state.harem.slice(0, 120)
+  };
+  // fotos reais só no sync completo (intervalo rápido manda só números)
+  if (!lite) {
+    if (state.profile.avatarCustom) data.avatarImg = state.profile.avatarCustom;
+    if (state.profile.bannerCustom) data.bannerImg = state.profile.bannerCustom;
+  }
+  FB_DB.collection("players").doc(state.nickname).set(data, { merge: true }).then(() => {
     const el = $("#fbStatus"); if (el) el.textContent = "Status: online 🌐 (Firestore conectado). Sync " + new Date().toLocaleTimeString();
   }).catch((e) => {
     const el = $("#fbStatus"); if (el) el.textContent = "Falha ao salvar rank: " + e.message + " (verifique Rules)";
@@ -511,7 +542,8 @@ function fbSyncPlayer() {
 }
 function initFirebase() {
   const cfg = window.FIREBASE_CONFIG;
-  if (!cfg || !cfg.apiKey || cfg.apiKey.includes("SUA_")) { $("#fbStatus").textContent = "Status: offline solo (sem config)."; return; }
+  window._fbOnline = false;
+  if (!cfg || !cfg.apiKey || cfg.apiKey.includes("SUA_")) { $("#fbStatus").textContent = "Status: offline solo (sem config)."; renderProfile(); return; }
   // carrega compat via CDN só quando configurado
   const load = (src) => new Promise((res, rej) => { const s = document.createElement("script"); s.src = src; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
   (async () => {
@@ -523,6 +555,7 @@ function initFirebase() {
       const db = firebase.firestore();
       FB_DB = db;
       await firebase.auth().signInAnonymously();
+      window._fbOnline = true; renderProfile();
       $("#fbStatus").textContent = "Status: online 🌐 (Firestore conectado).";
       $("#onlineDot").classList.add("on");
       window._fbClaimed = {};
@@ -533,9 +566,9 @@ function initFirebase() {
       window._fbMarry = (c) => { fbSyncPlayer(); return db.collection("claims").doc(c.id).set({ owner: state.nickname, at: Date.now(), series: c.series, rarity: c.rarity }); };
       window._fbDivorce = (c) => { fbSyncPlayer(); return db.collection("claims").doc(c.id).delete(); };
       fbSyncPlayer();
-      setInterval(fbSyncPlayer, 10000);
-      document.addEventListener("visibilitychange", () => { if (!document.hidden) fbSyncPlayer(); });
-      window.addEventListener("online", fbSyncPlayer);
+      setInterval(() => fbSyncPlayer(true), 10000);
+      document.addEventListener("visibilitychange", () => { if (!document.hidden) fbSyncPlayer(true); });
+      window.addEventListener("online", () => fbSyncPlayer(true));
       const renderPlayers = (snap) => {
         const el = $("#rankGlobal"); el.innerHTML = "";
         const up = $("#rankUpdated"); if (up) up.textContent = "Atualizado em tempo real • " + new Date().toLocaleTimeString();
@@ -548,19 +581,32 @@ function initFirebase() {
           const li = document.createElement("li");
           li.className = "rank-row";
           const me = d.id === state.nickname;
-          // fundo com o banner da pessoa
+          // fundo com o banner real da pessoa
           let bg = "";
-          if (v.banner && v.banner.startsWith("char:") && byId[v.banner.slice(5)]) bg = `background-image:url('${byId[v.banner.slice(5)].image}')`;
+          if (v.bannerImg) bg = `background-image:url('${v.bannerImg}')`;
+          else if (v.banner && v.banner.startsWith("char:") && byId[v.banner.slice(5)]) bg = `background-image:url('${byId[v.banner.slice(5)].image}')`;
           else if (v.banner && BANNERS[v.banner]) bg = `background:${BANNERS[v.banner]}`;
-          // avatar da pessoa (personagem, emoji ou inicial)
+          // avatar real: foto da galeria, personagem, emoji ou inicial
+          const safeNick = (v.nick || d.id).replace(/"/g, "");
+          const on = isOnline(v);
           let av = "";
-          if (v.avatar && byId[v.avatar]) av = `<img class="rank-av" src="${byId[v.avatar].image}" alt="" loading="lazy" onerror="imgFail(this)" data-name="${(v.nick || d.id).replace(/"/g, "")}" />`;
+          if (v.avatarImg) av = `<img class="rank-av" src="${v.avatarImg}" alt="" loading="lazy" />`;
+          else if (v.avatar && byId[v.avatar]) av = `<img class="rank-av" src="${byId[v.avatar].image}" alt="" loading="lazy" onerror="imgFail(this)" data-name="${safeNick}" />`;
           else if (v.avatar && v.avatar !== "custom") av = `<span class="rank-av rank-emoji">${v.avatar}</span>`;
-          else av = `<span class="rank-av rank-emoji">${(v.nick || d.id).trim().charAt(0).toUpperCase()}</span>`;
-          li.innerHTML = `<div class="rbg" style="${bg}"></div><div class="rfg">${av}<div><b>${medals[pos - 1] || pos + "º"} ${v.nick || d.id}</b>${me ? " — você" : ""}<br><span class="muted">${v.harem || 0} 💍 • ${v.ss || 0} SS • ${v.kakera || 0}💠 • ${v.score ?? ((v.harem || 0) * 10 + (v.kakera || 0))} pts</span></div></div>`;
+          else av = `<span class="rank-av rank-emoji">${safeNick.trim().charAt(0).toUpperCase()}</span>`;
+          av = `<span class="ril">${av}<span class="odot${on ? " on" : ""}"></span></span>`;
+          li.innerHTML = `<div class="rbg" style="${bg}"></div><div class="rfg">${av}<div><b>${medals[pos - 1] || pos + "º"} ${v.nick || d.id}</b>${me ? " — você" : ""} <span class="muted">• ${on ? "🟢 online" : "visto " + ago(v.at)}</span><br><span class="muted">${v.harem || 0} 💍 • ${v.ss || 0} SS • ${v.kakera || 0}💠 • ${v.score ?? ((v.harem || 0) * 10 + (v.kakera || 0))} pts</span></div></div>`;
           if (me) li.style.borderColor = "var(--gold)";
           li.onclick = () => openUser(v.nick || d.id, v);
           el.appendChild(li);
+          // atualiza perfil aberto em tempo real (só números, sem perder a rolagem)
+          if (window._openNick === (v.nick || d.id) && !$("#userModal").classList.contains("hidden")) {
+            $("#uHaremN").textContent = v.harem || 0; $("#uKakeraN").textContent = v.kakera || 0;
+            $("#uSSN").textContent = v.ss || 0; $("#uScoreN").textContent = v.score ?? ((v.harem || 0) * 10 + (v.kakera || 0));
+            const l = $("#uOnline"), o2 = isOnline(v);
+            l.textContent = o2 ? "🟢 Online agora" : `⚫ Visto ${ago(v.at)}`;
+            l.style.color = o2 ? "var(--ok)" : "";
+          }
         });
       };
       // tenta por score, cai para harem se faltar índice (docs antigos)
@@ -569,7 +615,7 @@ function initFirebase() {
           $("#rankGlobal").innerHTML = `<li class='muted'>Erro no rank: ${err2.message} (verifique Rules)</li>`;
         });
       });
-    } catch (e) { $("#fbStatus").textContent = "Firebase falhou: " + e.message; }
+    } catch (e) { window._fbOnline = false; renderProfile(); $("#fbStatus").textContent = "Firebase falhou: " + e.message; }
   })();
 }
 
