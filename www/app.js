@@ -220,6 +220,7 @@ async function init() {
     document.querySelectorAll(".tabbar button").forEach(x => x.classList.remove("active"));
     document.querySelectorAll(".screen").forEach(x => x.classList.remove("active"));
     b.classList.add("active"); $("#screen-" + b.dataset.tab).classList.add("active");
+    if (b.dataset.tab === "rank") fbSyncPlayer();
   });
   $("#btnRoll").onclick = doRoll;
   $("#btnMarry").onclick = doMarry;
@@ -254,9 +255,9 @@ async function init() {
   };
   $("#btnShopReset").onclick = () => {
     if (state.kakera < 50) return alert("Kakera insuficiente (50💠).");
-    state.kakera -= 50; state.cd = {}; save(); renderAll();
+    state.kakera -= 50; state.cd = {}; save(); renderAll(); fbSyncPlayer();
   };
-  $("#btnWipe").onclick = () => { if (confirm("Apagar tudo?")) { state = fresh(); save(); renderAll(); } };
+  $("#btnWipe").onclick = () => { if (confirm("Apagar tudo?")) { const old = state.nickname; state = fresh(); state.nickname = old; save(); renderAll(); fbSyncPlayer(); } };
   // trade por código
   $("#btnTradeExport").onclick = async () => {
     const code = btoa(unescape(encodeURIComponent(JSON.stringify({ n: state.nickname, h: state.harem })))).slice(0, 2000);
@@ -295,7 +296,11 @@ function fbSyncPlayer() {
   FB_DB.collection("players").doc(state.nickname).set({
     nick: state.nickname, harem: state.harem.length, kakera: state.kakera,
     ss: calcSS(), score: calcScore(), at: Date.now()
-  }, { merge: true }).catch(() => {});
+  }, { merge: true }).then(() => {
+    const el = $("#fbStatus"); if (el) el.textContent = "Status: online 🌐 (Firestore conectado). Sync " + new Date().toLocaleTimeString();
+  }).catch((e) => {
+    const el = $("#fbStatus"); if (el) el.textContent = "Falha ao salvar rank: " + e.message + " (verifique Rules)";
+  });
 }
 function initFirebase() {
   const cfg = window.FIREBASE_CONFIG;
@@ -321,9 +326,12 @@ function initFirebase() {
       window._fbMarry = (c) => { fbSyncPlayer(); return db.collection("claims").doc(c.id).set({ owner: state.nickname, at: Date.now(), series: c.series, rarity: c.rarity }); };
       window._fbDivorce = (c) => { fbSyncPlayer(); return db.collection("claims").doc(c.id).delete(); };
       fbSyncPlayer();
-      setInterval(fbSyncPlayer, 30000);
-      db.collection("players").orderBy("score", "desc").limit(10).onSnapshot(snap => {
+      setInterval(fbSyncPlayer, 10000);
+      document.addEventListener("visibilitychange", () => { if (!document.hidden) fbSyncPlayer(); });
+      window.addEventListener("online", fbSyncPlayer);
+      const renderPlayers = (snap) => {
         const el = $("#rankGlobal"); el.innerHTML = "";
+        const up = $("#rankUpdated"); if (up) up.textContent = "Atualizado em tempo real • " + new Date().toLocaleTimeString();
         if (snap.empty) { el.innerHTML = "<li class='muted'>Nenhum jogador ainda. Seja o primeiro!</li>"; return; }
         const medals = ["🥇", "🥈", "🥉"];
         let pos = 0;
@@ -332,11 +340,17 @@ function initFirebase() {
           const v = d.data();
           const li = document.createElement("li");
           const me = d.id === state.nickname ? " — você" : "";
-          li.innerHTML = `<b>${medals[pos - 1] || pos + "º"} ${v.nick || d.id}</b> — ${v.harem} 💍 • ${v.ss || 0} SS • ${v.kakera}💠 • ${v.score} pts${me}`;
+          li.innerHTML = `<b>${medals[pos - 1] || pos + "º"} ${v.nick || d.id}</b> — ${v.harem || 0} 💍 • ${v.ss || 0} SS • ${v.kakera || 0}💠 • ${v.score ?? ((v.harem || 0) * 10 + (v.kakera || 0))} pts${me}`;
           if (me) li.style.color = "#fbbf24";
           el.appendChild(li);
         });
-      }, err => { $("#rankGlobal").innerHTML = `<li class='muted'>Erro no rank: ${err.message} (verifique Rules + índice score)</li>`; });
+      };
+      // tenta por score, cai para harem se faltar índice (docs antigos)
+      db.collection("players").orderBy("score", "desc").limit(10).onSnapshot(renderPlayers, err => {
+        db.collection("players").orderBy("harem", "desc").limit(10).onSnapshot(renderPlayers, err2 => {
+          $("#rankGlobal").innerHTML = `<li class='muted'>Erro no rank: ${err2.message} (verifique Rules)</li>`;
+        });
+      });
     } catch (e) { $("#fbStatus").textContent = "Firebase falhou: " + e.message; }
   })();
 }
