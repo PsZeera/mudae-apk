@@ -32,10 +32,11 @@
     </div>
     <!-- ROLL -->
     <section id="screen-roll" class="screen active">
-      <div id="rollCard" class="card">
-        <div class="card-img-wrap">
-          <img id="rollImg" alt="Personagem" referrerpolicy="no-referrer" />
-          <span id="rollRarity" class="rarity">?</span>
+      <div id="rollCard" class="card roll-card">
+        <div id="rollImgWrap" class="card-img-wrap">
+          <div id="rollMystery" class="mystery"><span>🎲</span><p>Toque em ROLL para revelar</p></div>
+          <img id="rollImg" class="hidden" alt="Personagem" referrerpolicy="no-referrer" />
+          <span id="rollRarity" class="rarity hidden">?</span>
         </div>
         <h2 id="rollName">Toque em ROLL para começar</h2>
         <p id="rollSeries" class="muted">603 personagens • pesos estilo Mudae</p>
@@ -194,9 +195,9 @@
 <div id="cropModal" class="modal hidden">
   <div class="modal-card">
     <h2 id="cropTitle">Ajustar imagem</h2>
-    <div id="cropStage"><img id="cropImg" alt="Corte" /></div>
-    <input id="cropZoom" type="range" min="1" max="3" step="0.01" value="1" />
-    <p class="hint">Arraste para posicionar • use a barra para zoom</p>
+    <div id="cropStage"><img id="cropImg" alt="Corte" /><div id="cropSel"><div id="cropHandle"></div></div></div>
+    <input id="cropZoom" type="range" min="48" max="300" step="1" value="100" />
+    <p class="hint">Arraste a moldura dourada • puxe a bolinha ou use a barra para mudar o tamanho do corte</p>
     <div class="row">
       <button id="cropApply" class="btn primary small">Aplicar</button>
       <button id="cropCancel" class="btn small">Cancelar</button>

@@ -106,11 +106,18 @@ function doRoll() {
   save(); renderWallet(); renderHistory();
 }
 function showCard(c, opts = {}) {
-  const img = $("#rollImg");
+  const img = $("#rollImg"), mys = $("#rollMystery"), wrap = $("#rollImgWrap");
+  if (mys) mys.classList.add("hidden");
+  img.classList.remove("hidden");
   img.dataset.name = c.name; img.onerror = () => imgFail(img); img.src = c.image || placeholder(c.name); img.alt = c.name;
-  $("#rollRarity").textContent = c.rarity; $("#rollRarity").className = "rarity " + c.rarity;
+  const rr = $("#rollRarity");
+  rr.classList.remove("hidden");
+  rr.textContent = c.rarity; rr.className = "rarity " + c.rarity;
+  if (wrap) wrap.className = "card-img-wrap glow-" + (c.rarity || "B");
   $("#rollName").textContent = `${c.emoji} ${c.name}`;
   $("#rollSeries").textContent = `${c.series} • vale ${KAKERA[c.rarity] ?? 10}💠 • ${c.img_src === "fandom" ? "imagem wiki (pode falhar → placeholder)" : "imagem AniList"}`;
+  const card = $("#rollCard");
+  card.classList.remove("pop"); void card.offsetWidth; card.classList.add("pop");
 }
 function setStatus(t) { $("#rollStatus").textContent = t; }
 function startClaim(c) {
@@ -214,52 +221,64 @@ const BANNERS = {
 const AVATAR_EMOJIS = ["💍", "🦊", "🐱", "🐼", "🦁", "🐸", "👾", "🌸", "⚡", "💫", "😎", "👑"];
 function applyTheme() { document.body.dataset.theme = state.theme === "violeta" ? "" : state.theme; document.querySelectorAll("#themeRow .theme-btn").forEach(b => b.classList.toggle("sel", b.dataset.theme === state.theme)); }
 function avatarSrc() { if (state.profile.avatarCustom) return state.profile.avatarCustom; const c = state.profile.avatarId && byId[state.profile.avatarId]; return c ? c.image : null; }
-// Ferramenta de corte: avatar quadrado 256px, banner 900x300
+// Ferramenta de corte: moldura móvel + redimensionável (avatar 1:1 256px, banner 3:1 900x300)
 let crop = null;
 function openCropper(objectUrl, mode, cb) {
-  crop = { url: objectUrl, mode, outW: mode === "avatar" ? 256 : 900, outH: mode === "avatar" ? 256 : 300,
-    zoom: 1, dx: 0, dy: 0, natW: 0, natH: 0, base: 1, cb };
-  $("#cropTitle").textContent = mode === "avatar" ? "Ajustar avatar" : "Ajustar banner";
+  crop = { url: objectUrl, mode, aspect: mode === "avatar" ? 1 : 3,
+    outW: mode === "avatar" ? 256 : 900, outH: mode === "avatar" ? 256 : 300,
+    natW: 0, natH: 0, scale: 1, ox: 0, oy: 0, dw: 0, dh: 0,
+    bx: 0, by: 0, bs: 100, cb };
+  $("#cropTitle").textContent = mode === "avatar" ? "Cortar avatar" : "Cortar banner";
   const stage = $("#cropStage");
   stage.style.aspectRatio = mode === "avatar" ? "1 / 1" : "3 / 1";
-  const img = $("#cropImg");
-  img.style.width = ""; img.style.height = ""; img.style.left = ""; img.style.top = "";
-  $("#cropZoom").value = 1;
   $("#cropModal").classList.remove("hidden");
+  const img = $("#cropImg");
   img.onload = () => { crop.natW = img.naturalWidth; crop.natH = img.naturalHeight; layoutCrop(); };
   img.onerror = () => { closeCrop(); alert("Não foi possível ler a imagem."); };
   img.src = objectUrl;
 }
 function layoutCrop() {
-  const stage = $("#cropStage");
-  crop.base = Math.max(stage.clientWidth / crop.natW, stage.clientHeight / crop.natH);
-  crop.dx = 0; crop.dy = 0;
-  applyCropTransform();
-}
-function applyCropTransform() {
   const stage = $("#cropStage"), img = $("#cropImg");
   const sw = stage.clientWidth, sh = stage.clientHeight;
-  const w = crop.natW * crop.base * crop.zoom, h = crop.natH * crop.base * crop.zoom;
-  crop.dx = Math.max(-(w - sw) / 2, Math.min((w - sw) / 2, crop.dx));
-  crop.dy = Math.max(-(h - sh) / 2, Math.min((h - sh) / 2, crop.dy));
-  img.style.width = w + "px"; img.style.height = h + "px";
-  img.style.left = (sw - w) / 2 + crop.dx + "px";
-  img.style.top = (sh - h) / 2 + crop.dy + "px";
+  crop.scale = Math.min(sw / crop.natW, sh / crop.natH);
+  crop.dw = crop.natW * crop.scale; crop.dh = crop.natH * crop.scale;
+  crop.ox = (sw - crop.dw) / 2; crop.oy = (sh - crop.dh) / 2;
+  img.style.left = crop.ox + "px"; img.style.top = crop.oy + "px";
+  img.style.width = crop.dw + "px"; img.style.height = crop.dh + "px";
+  const maxS = Math.min(crop.dw, crop.dh * crop.aspect);
+  crop.bs = Math.max(48, maxS * 0.85);
+  crop.bx = crop.ox + (crop.dw - crop.bs) / 2;
+  crop.by = crop.oy + (crop.dh - crop.bs / crop.aspect) / 2;
+  const z = $("#cropZoom");
+  z.min = 48; z.max = Math.max(48, Math.floor(maxS)); z.value = Math.floor(crop.bs);
+  drawSel();
+}
+function maxBox() { return Math.min(crop.dw, crop.dh * crop.aspect); }
+function clampBox() {
+  crop.bs = Math.max(48, Math.min(maxBox(), crop.bs));
+  const bh = crop.bs / crop.aspect;
+  crop.bx = Math.max(crop.ox, Math.min(crop.ox + crop.dw - crop.bs, crop.bx));
+  crop.by = Math.max(crop.oy, Math.min(crop.oy + crop.dh - bh, crop.by));
+}
+function drawSel() {
+  clampBox();
+  const sel = $("#cropSel");
+  sel.style.left = crop.bx + "px"; sel.style.top = crop.by + "px";
+  sel.style.width = crop.bs + "px"; sel.style.height = (crop.bs / crop.aspect) + "px";
+  const z = $("#cropZoom");
+  z.max = Math.max(48, Math.floor(maxBox())); z.value = Math.floor(crop.bs);
 }
 function closeCrop() { if (crop) URL.revokeObjectURL(crop.url); crop = null; $("#cropModal").classList.add("hidden"); }
 function applyCrop() {
   if (!crop || !crop.natW) return;
-  const stage = $("#cropStage"), img = $("#cropImg");
-  const sw = stage.clientWidth, sh = stage.clientHeight, k = crop.base * crop.zoom;
-  const dispW = crop.natW * k, dispH = crop.natH * k;
-  const left = (sw - dispW) / 2 + crop.dx, top = (sh - dispH) / 2 + crop.dy;
-  const sx = Math.max(0, -left / k), sy = Math.max(0, -top / k);
-  const sW = Math.min(crop.natW - sx, sw / k), sH = Math.min(crop.natH - sy, sh / k);
+  clampBox();
+  const nx = (crop.bx - crop.ox) / crop.scale, ny = (crop.by - crop.oy) / crop.scale;
+  const nw = crop.bs / crop.scale, nh = (crop.bs / crop.aspect) / crop.scale;
   const cv = document.createElement("canvas"); cv.width = crop.outW; cv.height = crop.outH;
-  cv.getContext("2d").drawImage(img, sx, sy, sW, sH, 0, 0, crop.outW, crop.outH);
+  cv.getContext("2d").drawImage($("#cropImg"), nx, ny, nw, nh, 0, 0, crop.outW, crop.outH);
   const cb = crop.cb;
   closeCrop();
-  cb(cv.toDataURL("image/jpeg", 0.82));
+  cb(cv.toDataURL("image/jpeg", 0.85));
 }
 function renderProfile() {
   applyTheme();
@@ -344,17 +363,25 @@ async function init() {
       renderProfile();
     });
   };
-  // interações do cortador
-  $("#cropZoom").oninput = (e) => { if (!crop) return; crop.zoom = parseFloat(e.target.value); applyCropTransform(); };
+  // interações do cortador: arrastar moldura, alça ou barra redimensiona
+  $("#cropZoom").oninput = (e) => { if (!crop) return; const cx = crop.bx + crop.bs / 2, cy = crop.by + crop.bs / crop.aspect / 2; crop.bs = parseFloat(e.target.value); crop.bx = cx - crop.bs / 2; crop.by = cy - (crop.bs / crop.aspect) / 2; drawSel(); };
   $("#cropApply").onclick = applyCrop;
   $("#cropCancel").onclick = closeCrop;
   $("#cropModal").onclick = (e) => { if (e.target.id === "cropModal") closeCrop(); };
   (() => {
-    const stage = $("#cropStage");
-    let drag = null;
-    stage.addEventListener("pointerdown", (e) => { if (!crop) return; drag = { x: e.clientX, y: e.clientY, dx: crop.dx, dy: crop.dy }; stage.setPointerCapture(e.pointerId); });
-    stage.addEventListener("pointermove", (e) => { if (!drag || !crop) return; crop.dx = drag.dx + (e.clientX - drag.x); crop.dy = drag.dy + (e.clientY - drag.y); applyCropTransform(); });
-    ["pointerup", "pointercancel"].forEach(ev => stage.addEventListener(ev, () => drag = null));
+    const sel = $("#cropSel"), handle = $("#cropHandle");
+    let move = null, resize = null;
+    sel.addEventListener("pointerdown", (e) => { if (!crop || e.target === handle) return; move = { x: e.clientX, y: e.clientY, bx: crop.bx, by: crop.by }; sel.setPointerCapture(e.pointerId); });
+    sel.addEventListener("pointermove", (e) => { if (!move || !crop) return; crop.bx = move.bx + (e.clientX - move.x); crop.by = move.by + (e.clientY - move.y); drawSel(); });
+    ["pointerup", "pointercancel"].forEach(ev => sel.addEventListener(ev, () => move = null));
+    handle.addEventListener("pointerdown", (e) => { if (!crop) return; e.stopPropagation(); resize = { x: e.clientX, y: e.clientY, bs: crop.bs, bx: crop.bx, by: crop.by }; handle.setPointerCapture(e.pointerId); });
+    handle.addEventListener("pointermove", (e) => {
+      if (!resize || !crop) return;
+      const d = Math.max(e.clientX - resize.x, (e.clientY - resize.y) * crop.aspect);
+      crop.bs = resize.bs + d * 2; crop.bx = resize.bx - (crop.bs - resize.bs) / 2; crop.by = resize.by - ((crop.bs - resize.bs) / crop.aspect) / 2;
+      drawSel();
+    });
+    ["pointerup", "pointercancel"].forEach(ev => handle.addEventListener(ev, () => resize = null));
   })();
   $("#mClose").onclick = () => $("#modal").classList.add("hidden");
   $("#modal").onclick = (e) => { if (e.target.id === "modal") $("#modal").classList.add("hidden"); };
