@@ -91,8 +91,37 @@
 
     <!-- PERFIL -->
     <section id="screen-profile" class="screen">
+      <div class="card mini profile-hero">
+        <div id="profileBanner" class="profile-banner"></div>
+        <div class="profile-row">
+          <img id="profileAvatar" class="profile-avatar" alt="Avatar" referrerpolicy="no-referrer" />
+          <div>
+            <p id="profileName" class="profile-name">Player</p>
+            <span class="muted" id="profileTitle">Colecionador</span>
+          </div>
+        </div>
+        <div class="profile-stats">
+          <span>💍 <b id="statHarem">0</b></span>
+          <span>💠 <b id="statKakera">0</b></span>
+          <span>✨ SS/SSS <b id="statSS">0</b></span>
+          <span>🏆 <b id="statScore">0</b> pts</span>
+        </div>
+      </div>
       <div class="card mini">
-        <h3>👤 Perfil</h3>
+        <h3>🎨 Tema do app</h3>
+        <div class="theme-row" id="themeRow">
+          <button class="theme-btn" data-theme="violeta" style="background:linear-gradient(90deg,#8b5cf6,#ec4899)">Violeta</button>
+          <button class="theme-btn" data-theme="oceano" style="background:linear-gradient(90deg,#0ea5e9,#22d3ee)">Oceano</button>
+          <button class="theme-btn" data-theme="carmesim" style="background:linear-gradient(90deg,#ef4444,#f59e0b)">Carmesim</button>
+          <button class="theme-btn" data-theme="esmeralda" style="background:linear-gradient(90deg,#10b981,#84cc16)">Esmeralda</button>
+          <button class="theme-btn" data-theme="sakura" style="background:linear-gradient(90deg,#ec4899,#8b5cf6)">Sakura</button>
+        </div>
+        <h3>🖼 Banner</h3>
+        <div class="swatch-row" id="bannerRow"></div>
+        <h3>😀 Avatar</h3>
+        <p class="hint">Toque num personagem (harém ou busca) → <b>Usar como avatar</b>. Ou escolha um emoji:</p>
+        <div class="swatch-row" id="emojiRow"></div>
+        <h3>👤 Nome</h3>
         <div class="row">
           <input id="nickInput" placeholder="Seu nickname" maxlength="20" />
           <button id="btnSaveNick" class="btn small">Salvar</button>
@@ -147,6 +176,10 @@
     <p id="mOwner"></p>
     <div class="row">
       <button id="mWish" class="btn small">⭐ Wishlist</button>
+      <button id="mAvatar" class="btn small">😀 Avatar</button>
+    </div>
+    <div class="row">
+      <button id="mBanner" class="btn small">🖼 Banner</button>
       <button id="mDivorce" class="btn small danger">💔 Divorciar</button>
       <button id="mClose" class="btn small">Fechar</button>
     </div>

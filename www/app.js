@@ -17,9 +17,10 @@ let current = null, claimDeadline = 0, claimTimerInt = null, currentCanMarry = f
 function fresh() {
   return { nickname: "Player" + Math.floor(Math.random() * 900 + 100),
     kakera: 50, harem: [], wishlist: [], rolls: MAX_ROLLS,
-    lastRegen: Date.now(), lastDaily: 0, lastMarry: 0, history: [], cd: {} };
+    lastRegen: Date.now(), lastDaily: 0, lastMarry: 0, history: [], cd: {},
+    theme: "violeta", profile: { avatarId: null, avatarEmoji: "💍", banner: "g1" } };
 }
-function load() { try { const s = JSON.parse(localStorage.getItem(LS_KEY)); if (s && !s.lastMarry) s.lastMarry = 0; if (s && !s.cd) s.cd = {}; return s; } catch { return null; } }
+function load() { try { const s = JSON.parse(localStorage.getItem(LS_KEY)); if (!s) return null; if (!s.lastMarry) s.lastMarry = 0; if (!s.cd) s.cd = {}; if (!s.theme) s.theme = "violeta"; if (!s.profile) s.profile = { avatarId: null, avatarEmoji: "💍", banner: "g1" }; return s; } catch { return null; } }
 function save() { localStorage.setItem(LS_KEY, JSON.stringify(state)); }
 
 function placeholder(name) {
@@ -198,7 +199,43 @@ function renderWish() {
   state.wishlist.map(id => byId[id]).filter(Boolean).forEach(c => g.appendChild(cell(c)));
   if (!state.wishlist.length) g.innerHTML = "<p class='muted'>Toque num personagem → ⭐ Wishlist.</p>";
 }
-function renderAll() { renderWallet(); renderHistory(); renderHarem(); renderSearch(); renderRank(); renderWish(); }
+const BANNERS = {
+  g1: "linear-gradient(90deg,#8b5cf6,#ec4899)",
+  g2: "linear-gradient(90deg,#0ea5e9,#22d3ee)",
+  g3: "linear-gradient(90deg,#ef4444,#f59e0b)",
+  g4: "linear-gradient(90deg,#10b981,#84cc16)",
+  g5: "linear-gradient(90deg,#f472b6,#8b5cf6)",
+  g6: "linear-gradient(90deg,#f59e0b,#ef4444,#8b5cf6)",
+};
+const AVATAR_EMOJIS = ["💍", "🦊", "🐱", "🐼", "🦁", "🐸", "👾", "🌸", "⚡", "💫", "😎", "👑"];
+function applyTheme() { document.body.dataset.theme = state.theme === "violeta" ? "" : state.theme; document.querySelectorAll("#themeRow .theme-btn").forEach(b => b.classList.toggle("sel", b.dataset.theme === state.theme)); }
+function avatarSrc() { const c = state.profile.avatarId && byId[state.profile.avatarId]; return c ? c.image : null; }
+function renderProfile() {
+  applyTheme();
+  $("#profileName").textContent = state.nickname;
+  const ss = calcSS();
+  $("#statHarem").textContent = state.harem.length; $("#statKakera").textContent = state.kakera;
+  $("#statSS").textContent = ss; $("#statScore").textContent = calcScore();
+  const titles = [[100, "Lenda do harém"], [50, "Colecionador master"], [20, "Caçador elite"], [5, "Colecionador"], [0, "Novato"]];
+  $("#profileTitle").textContent = titles.find(t => state.harem.length >= t[0])[1];
+  const av = $("#profileAvatar");
+  const src = avatarSrc();
+  if (src) { av.src = src; av.style.objectFit = "cover"; av.onerror = () => imgFail(av); }
+  else { av.removeAttribute("src"); av.style.objectFit = "contain"; av.alt = state.profile.avatarEmoji; av.onerror = null;
+    av.src = placeholder(state.profile.avatarEmoji + " " + state.nickname); }
+  const b = state.profile.banner;
+  const bn = $("#profileBanner");
+  if (b && b.startsWith("char:")) { const c = byId[b.slice(5)]; bn.style.background = "#0b0718"; bn.style.backgroundImage = c ? `url("${c.image}")` : "none"; }
+  else { bn.style.backgroundImage = "none"; bn.style.background = BANNERS[b] || BANNERS.g1; }
+  // swatches
+  const br = $("#bannerRow"); if (br && !br.children.length) {
+    Object.entries(BANNERS).forEach(([k, g]) => { const d = document.createElement("div"); d.className = "swatch" + (state.profile.banner === k ? " sel" : ""); d.style.background = g; d.title = k; d.onclick = () => { state.profile.banner = k; save(); renderProfile(); }; br.appendChild(d); });
+  } else if (br) [...br.children].forEach((d, i) => d.classList.toggle("sel", Object.keys(BANNERS)[i] === state.profile.banner));
+  const er = $("#emojiRow"); if (er && !er.children.length) {
+    AVATAR_EMOJIS.forEach(e => { const d = document.createElement("div"); d.className = "swatch" + (state.profile.avatarEmoji === e && !state.profile.avatarId ? " sel" : ""); d.style.background = "var(--card2)"; d.style.display = "flex"; d.style.alignItems = "center"; d.style.justifyContent = "center"; d.style.fontSize = "20px"; d.textContent = e; d.onclick = () => { state.profile.avatarId = null; state.profile.avatarEmoji = e; save(); renderProfile(); fbSyncPlayer(); }; er.appendChild(d); });
+  }
+}
+function renderAll() { renderWallet(); renderHistory(); renderHarem(); renderSearch(); renderRank(); renderWish(); renderProfile(); }
 
 // ---------- MODAL ----------
 let modalChar = null;
@@ -226,6 +263,17 @@ async function init() {
   $("#btnMarry").onclick = doMarry;
   $("#btnKakera").onclick = () => { if (current) { earnKakera(current, "encontro"); $("#btnKakera").classList.add("hidden"); setStatus("Kakera resgatada!"); renderAll(); } };
   ["searchInput", "filterSeries", "filterRarity", "filterWish", "filterOwned"].forEach(id => $("#" + id).addEventListener("input", renderSearch));
+  document.querySelectorAll("#themeRow .theme-btn").forEach(b => b.onclick = () => { state.theme = b.dataset.theme; save(); renderProfile(); fbSyncPlayer(); });
+  $("#mAvatar").onclick = () => {
+    if (!modalChar) return;
+    state.profile.avatarId = modalChar.id; save(); renderProfile(); fbSyncPlayer();
+    setStatus(`Avatar: ${modalChar.name}`);
+  };
+  $("#mBanner").onclick = () => {
+    if (!modalChar) return;
+    state.profile.banner = "char:" + modalChar.id; save(); renderProfile();
+    $("#modal").classList.add("hidden");
+  };
   $("#mClose").onclick = () => $("#modal").classList.add("hidden");
   $("#modal").onclick = (e) => { if (e.target.id === "modal") $("#modal").classList.add("hidden"); };
   $("#mWish").onclick = () => {
@@ -242,7 +290,7 @@ async function init() {
   };
   $("#btnSaveNick").onclick = () => {
     const old = state.nickname;
-    state.nickname = ($("#nickInput").value || state.nickname).slice(0, 20); save(); renderRank();
+    state.nickname = ($("#nickInput").value || state.nickname).slice(0, 20); save(); renderRank(); renderProfile();
     if (FB_DB && old !== state.nickname) { FB_DB.collection("players").doc(old).delete().catch(() => {}); fbSyncPlayer(); }
   };
   $("#btnDaily").onclick = () => {
@@ -314,7 +362,8 @@ function fbSyncPlayer() {
   if (!FB_DB) return;
   FB_DB.collection("players").doc(state.nickname).set({
     nick: state.nickname, harem: state.harem.length, kakera: state.kakera,
-    ss: calcSS(), score: calcScore(), at: Date.now()
+    ss: calcSS(), score: calcScore(), at: Date.now(),
+    avatar: state.profile.avatarId || state.profile.avatarEmoji, theme: state.theme
   }, { merge: true }).then(() => {
     const el = $("#fbStatus"); if (el) el.textContent = "Status: online 🌐 (Firestore conectado). Sync " + new Date().toLocaleTimeString();
   }).catch((e) => {
