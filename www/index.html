@@ -19,6 +19,8 @@
   </header>
 
   <main id="screens">
+    <input id="avatarFile" type="file" accept="image/*" class="hidden" />
+    <input id="bannerFile" type="file" accept="image/*" class="hidden" />
     <div id="updateBanner" class="hidden" style="max-width:720px;margin:10px auto;padding:10px 14px;border:1px solid #fbbf24;border-radius:12px;background:#2a2111;">
       <b>Nova versão disponível (<span id="updateVer"></span>).</b>
       <span class="muted">Toque para usar a versão atualizada sem reinstalar.</span>
@@ -106,6 +108,7 @@
           <span>✨ SS/SSS <b id="statSS">0</b></span>
           <span>🏆 <b id="statScore">0</b> pts</span>
         </div>
+        <p class="hint" style="padding:0 16px 12px;margin:0">Toque no avatar ou no banner para trocar por uma foto da galeria.</p>
       </div>
       <div class="card mini">
         <h3>🎨 Tema do app</h3>

@@ -18,9 +18,9 @@ function fresh() {
   return { nickname: "Player" + Math.floor(Math.random() * 900 + 100),
     kakera: 50, harem: [], wishlist: [], rolls: MAX_ROLLS,
     lastRegen: Date.now(), lastDaily: 0, lastMarry: 0, history: [], cd: {},
-    theme: "violeta", profile: { avatarId: null, avatarEmoji: "💍", banner: "g1" } };
+    theme: "violeta", profile: { avatarId: null, avatarEmoji: "💍", banner: "g1", avatarCustom: null, bannerCustom: null } };
 }
-function load() { try { const s = JSON.parse(localStorage.getItem(LS_KEY)); if (!s) return null; if (!s.lastMarry) s.lastMarry = 0; if (!s.cd) s.cd = {}; if (!s.theme) s.theme = "violeta"; if (!s.profile) s.profile = { avatarId: null, avatarEmoji: "💍", banner: "g1" }; return s; } catch { return null; } }
+function load() { try { const s = JSON.parse(localStorage.getItem(LS_KEY)); if (!s) return null; if (!s.lastMarry) s.lastMarry = 0; if (!s.cd) s.cd = {}; if (!s.theme) s.theme = "violeta"; if (!s.profile) s.profile = { avatarId: null, avatarEmoji: "💍", banner: "g1", avatarCustom: null, bannerCustom: null }; if (!("avatarCustom" in s.profile)) s.profile.avatarCustom = null; if (!("bannerCustom" in s.profile)) s.profile.bannerCustom = null; return s; } catch { return null; } }
 function save() { localStorage.setItem(LS_KEY, JSON.stringify(state)); }
 
 function placeholder(name) {
@@ -209,7 +209,24 @@ const BANNERS = {
 };
 const AVATAR_EMOJIS = ["💍", "🦊", "🐱", "🐼", "🦁", "🐸", "👾", "🌸", "⚡", "💫", "😎", "👑"];
 function applyTheme() { document.body.dataset.theme = state.theme === "violeta" ? "" : state.theme; document.querySelectorAll("#themeRow .theme-btn").forEach(b => b.classList.toggle("sel", b.dataset.theme === state.theme)); }
-function avatarSrc() { const c = state.profile.avatarId && byId[state.profile.avatarId]; return c ? c.image : null; }
+function avatarSrc() { if (state.profile.avatarCustom) return state.profile.avatarCustom; const c = state.profile.avatarId && byId[state.profile.avatarId]; return c ? c.image : null; }
+// Reduz imagem da galeria para caber no armazenamento local
+function fileToDataURL(file, maxW, q) {
+  return new Promise((res, rej) => {
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => {
+      const scale = Math.min(1, maxW / img.width);
+      const w = Math.round(img.width * scale), h = Math.round(img.height * scale);
+      const cv = document.createElement("canvas"); cv.width = w; cv.height = h;
+      cv.getContext("2d").drawImage(img, 0, 0, w, h);
+      URL.revokeObjectURL(url);
+      res(cv.toDataURL("image/jpeg", q));
+    };
+    img.onerror = rej;
+    img.src = url;
+  });
+}
 function renderProfile() {
   applyTheme();
   $("#profileName").textContent = state.nickname;
@@ -225,7 +242,8 @@ function renderProfile() {
     av.src = placeholder(state.profile.avatarEmoji + " " + state.nickname); }
   const b = state.profile.banner;
   const bn = $("#profileBanner");
-  if (b && b.startsWith("char:")) { const c = byId[b.slice(5)]; bn.style.background = "#0b0718"; bn.style.backgroundImage = c ? `url("${c.image}")` : "none"; }
+  if (state.profile.bannerCustom) { bn.style.backgroundImage = `url("${state.profile.bannerCustom}")`; bn.style.background = "#0b0718"; }
+  else if (b && b.startsWith("char:")) { const c = byId[b.slice(5)]; bn.style.background = "#0b0718"; bn.style.backgroundImage = c ? `url("${c.image}")` : "none"; }
   else { bn.style.backgroundImage = "none"; bn.style.background = BANNERS[b] || BANNERS.g1; }
   // swatches
   const br = $("#bannerRow"); if (br && !br.children.length) {
@@ -266,13 +284,25 @@ async function init() {
   document.querySelectorAll("#themeRow .theme-btn").forEach(b => b.onclick = () => { state.theme = b.dataset.theme; save(); renderProfile(); fbSyncPlayer(); });
   $("#mAvatar").onclick = () => {
     if (!modalChar) return;
-    state.profile.avatarId = modalChar.id; save(); renderProfile(); fbSyncPlayer();
+    state.profile.avatarId = modalChar.id; state.profile.avatarCustom = null; save(); renderProfile(); fbSyncPlayer();
     setStatus(`Avatar: ${modalChar.name}`);
   };
   $("#mBanner").onclick = () => {
     if (!modalChar) return;
-    state.profile.banner = "char:" + modalChar.id; save(); renderProfile();
+    state.profile.banner = "char:" + modalChar.id; state.profile.bannerCustom = null; save(); renderProfile();
     $("#modal").classList.add("hidden");
+  };
+  $("#profileAvatar").onclick = () => $("#avatarFile").click();
+  $("#profileBanner").onclick = () => $("#bannerFile").click();
+  $("#avatarFile").onchange = async (e) => {
+    const f = e.target.files[0]; e.target.value = ""; if (!f) return;
+    try { state.profile.avatarCustom = await fileToDataURL(f, 256, 0.8); state.profile.avatarId = null; save(); renderProfile(); fbSyncPlayer(); }
+    catch { alert("Não foi possível ler a imagem."); }
+  };
+  $("#bannerFile").onchange = async (e) => {
+    const f = e.target.files[0]; e.target.value = ""; if (!f) return;
+    try { state.profile.bannerCustom = await fileToDataURL(f, 960, 0.7); save(); renderProfile(); }
+    catch { alert("Não foi possível ler a imagem."); }
   };
   $("#mClose").onclick = () => $("#modal").classList.add("hidden");
   $("#modal").onclick = (e) => { if (e.target.id === "modal") $("#modal").classList.add("hidden"); };
@@ -363,7 +393,7 @@ function fbSyncPlayer() {
   FB_DB.collection("players").doc(state.nickname).set({
     nick: state.nickname, harem: state.harem.length, kakera: state.kakera,
     ss: calcSS(), score: calcScore(), at: Date.now(),
-    avatar: state.profile.avatarId || state.profile.avatarEmoji, theme: state.theme
+    avatar: state.profile.avatarCustom ? "custom" : (state.profile.avatarId || state.profile.avatarEmoji), theme: state.theme
   }, { merge: true }).then(() => {
     const el = $("#fbStatus"); if (el) el.textContent = "Status: online 🌐 (Firestore conectado). Sync " + new Date().toLocaleTimeString();
   }).catch((e) => {
