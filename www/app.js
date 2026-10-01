@@ -24,9 +24,13 @@ function load() { try { const s = JSON.parse(localStorage.getItem(LS_KEY)); if (
 function save() { localStorage.setItem(LS_KEY, JSON.stringify(state)); }
 
 function placeholder(name) {
-  const ini = (name || "?").trim().split(/\s+/).map(w => w[0]).join("").slice(0, 2).toUpperCase();
-  const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#7c3aed'/><stop offset='1' stop-color='#ec4899'/></linearGradient></defs><rect width='600' height='600' fill='url(#g)'/><text x='50%' y='54%' font-size='180' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>${ini}</text></svg>`;
-  return "data:image/svg+xml;utf8," + encodeURIComponent(svg);
+  try {
+    const words = (name || "?").trim().split(/\s+/);
+    const ini = words.map(w => Array.from(w)[0] || "").join("").slice(0, 2).toUpperCase() || "?";
+    const safe = ini.replace(/[<>&"']/g, "");
+    const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#7c3aed'/><stop offset='1' stop-color='#ec4899'/></linearGradient></defs><rect width='600' height='600' fill='url(#g)'/><text x='50%' y='54%' font-size='180' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>${safe}</text></svg>`;
+    return "data:image/svg+xml;utf8," + encodeURIComponent(svg);
+  } catch { return "data:image/svg+xml;utf8," + encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600'><rect width='600' height='600' fill='#7c3aed'/></svg>"); }
 }
 window.imgFail = function (el) { el.onerror = null; const n = el.dataset.name || "?"; el.src = placeholder(n); };
 
@@ -360,7 +364,7 @@ async function init() {
   const series = [...new Set(CHARS.map(c => c.series))].sort();
   series.forEach(s => { const o = document.createElement("option"); o.textContent = s; $("#filterSeries").appendChild(o); });
   $("#nickInput").value = state.nickname;
-  renderAll();
+  try { renderAll(); } catch (e) { console.error("renderAll:", e); }
   setInterval(renderWallet, 15000);
   $("#btnUseOnline").onclick = () => { window.location.href = LIVE_URL; };
   $("#btnLater").onclick = () => $("#updateBanner").classList.add("hidden");

@@ -1,1 +1,1 @@
-{"version": "1.4.0", "updatedAt": "2026-10-01", "notes": "Avatar e banner da galeria"}
+{"version": "1.4.1", "updatedAt": "2026-10-01", "notes": "Fix crash do placeholder que bloqueava o Firebase"}
