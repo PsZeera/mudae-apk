@@ -321,6 +321,32 @@ function openModal(c) {
   $("#modal").classList.remove("hidden");
 }
 
+// ---------- PERFIL PÚBLICO (rank) ----------
+function openUser(nick, v) {
+  v = v || {};
+  $("#uName").textContent = nick;
+  $("#uTitle").textContent = v.theme ? "Tema " + v.theme : "Colecionador";
+  const bn = $("#uBanner");
+  if (v.banner && v.banner.startsWith("char:") && byId[v.banner.slice(5)]) {
+    bn.style.background = "#0b0718"; bn.style.backgroundImage = `url('${byId[v.banner.slice(5)].image}')`;
+    bn.style.backgroundSize = "cover"; bn.style.backgroundPosition = "center";
+  } else if (v.banner && BANNERS[v.banner]) { bn.style.backgroundImage = "none"; bn.style.background = BANNERS[v.banner]; }
+  else { bn.style.backgroundImage = "none"; bn.style.background = BANNERS.g1; }
+  const av = $("#uAvatar");
+  if (v.avatar && byId[v.avatar]) { av.src = byId[v.avatar].image; av.onerror = () => imgFail(av); }
+  else { av.onerror = null; av.src = placeholder(((v.avatar && v.avatar !== "custom") ? v.avatar + " " : "") + nick); }
+  $("#uStats").textContent = `${v.harem || 0} 💍 • ${v.ss || 0} SS/SSS • ${v.kakera || 0}💠 • ${v.score ?? ((v.harem || 0) * 10 + (v.kakera || 0))} pts`;
+  const g = $("#uHarem"); g.innerHTML = "";
+  const ids = (v.haremIds || []).map(id => byId[id]).filter(Boolean).slice(0, 60);
+  if (!ids.length) g.innerHTML = "<p class='muted'>Harém não compartilhado nesta versão.</p>";
+  ids.forEach(c => {
+    const d = document.createElement("div"); d.className = "cell";
+    d.innerHTML = `<img loading="lazy" src="${c.image}" alt="" onerror="imgFail(this)" data-name="${c.name.replace(/"/g, "")}"><div class="pad"><b>${c.emoji} ${c.name}</b><span class="badge">${c.rarity}</span></div>`;
+    g.appendChild(d);
+  });
+  $("#userModal").classList.remove("hidden");
+}
+
 // ---------- INIT ----------
 async function init() {
   // tabs
@@ -385,6 +411,8 @@ async function init() {
   })();
   $("#mClose").onclick = () => $("#modal").classList.add("hidden");
   $("#modal").onclick = (e) => { if (e.target.id === "modal") $("#modal").classList.add("hidden"); };
+  $("#uClose").onclick = () => $("#userModal").classList.add("hidden");
+  $("#userModal").onclick = (e) => { if (e.target.id === "userModal") $("#userModal").classList.add("hidden"); };
   $("#mWish").onclick = () => {
     if (!modalChar) return;
     const i = state.wishlist.indexOf(modalChar.id);
@@ -472,7 +500,9 @@ function fbSyncPlayer() {
   FB_DB.collection("players").doc(state.nickname).set({
     nick: state.nickname, harem: state.harem.length, kakera: state.kakera,
     ss: calcSS(), score: calcScore(), at: Date.now(),
-    avatar: state.profile.avatarCustom ? "custom" : (state.profile.avatarId || state.profile.avatarEmoji), theme: state.theme
+    avatar: state.profile.avatarCustom ? "custom" : (state.profile.avatarId || state.profile.avatarEmoji), theme: state.theme,
+    banner: state.profile.bannerCustom ? "custom" : state.profile.banner,
+    haremIds: state.harem.slice(0, 300)
   }, { merge: true }).then(() => {
     const el = $("#fbStatus"); if (el) el.textContent = "Status: online 🌐 (Firestore conectado). Sync " + new Date().toLocaleTimeString();
   }).catch((e) => {
@@ -516,9 +546,20 @@ function initFirebase() {
           pos += 1;
           const v = d.data();
           const li = document.createElement("li");
-          const me = d.id === state.nickname ? " — você" : "";
-          li.innerHTML = `<b>${medals[pos - 1] || pos + "º"} ${v.nick || d.id}</b> — ${v.harem || 0} 💍 • ${v.ss || 0} SS • ${v.kakera || 0}💠 • ${v.score ?? ((v.harem || 0) * 10 + (v.kakera || 0))} pts${me}`;
-          if (me) li.style.color = "#fbbf24";
+          li.className = "rank-row";
+          const me = d.id === state.nickname;
+          // fundo com o banner da pessoa
+          let bg = "";
+          if (v.banner && v.banner.startsWith("char:") && byId[v.banner.slice(5)]) bg = `background-image:url('${byId[v.banner.slice(5)].image}')`;
+          else if (v.banner && BANNERS[v.banner]) bg = `background:${BANNERS[v.banner]}`;
+          // avatar da pessoa (personagem, emoji ou inicial)
+          let av = "";
+          if (v.avatar && byId[v.avatar]) av = `<img class="rank-av" src="${byId[v.avatar].image}" alt="" loading="lazy" onerror="imgFail(this)" data-name="${(v.nick || d.id).replace(/"/g, "")}" />`;
+          else if (v.avatar && v.avatar !== "custom") av = `<span class="rank-av rank-emoji">${v.avatar}</span>`;
+          else av = `<span class="rank-av rank-emoji">${(v.nick || d.id).trim().charAt(0).toUpperCase()}</span>`;
+          li.innerHTML = `<div class="rbg" style="${bg}"></div><div class="rfg">${av}<div><b>${medals[pos - 1] || pos + "º"} ${v.nick || d.id}</b>${me ? " — você" : ""}<br><span class="muted">${v.harem || 0} 💍 • ${v.ss || 0} SS • ${v.kakera || 0}💠 • ${v.score ?? ((v.harem || 0) * 10 + (v.kakera || 0))} pts</span></div></div>`;
+          if (me) li.style.borderColor = "var(--gold)";
+          li.onclick = () => openUser(v.nick || d.id, v);
           el.appendChild(li);
         });
       };
