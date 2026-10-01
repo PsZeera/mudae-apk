@@ -6,6 +6,7 @@ const LS_KEY = "mudae_apk_v1";
 const RARITY_WEIGHT = { D: 45, C: 30, B: 18, A: 10, S: 5, SS: 2, SSS: 1 };
 const KAKERA = { D: 3, C: 6, B: 12, A: 30, S: 80, SS: 200, SSS: 500 };
 const MAX_ROLLS = 10, REGEN_MS = 3 * 60 * 1000, CLAIM_MS = 30 * 1000, CHAR_COOLDOWN_MS = 50 * 1000;
+const MARRY_COOLDOWN_MS = 60 * 1000;
 const DAILY_MS = 20 * 60 * 60 * 1000, DAILY_REWARD = 500;
 
 let CHARS = [];
@@ -16,9 +17,9 @@ let current = null, claimDeadline = 0, claimTimerInt = null, currentCanMarry = f
 function fresh() {
   return { nickname: "Player" + Math.floor(Math.random() * 900 + 100),
     kakera: 50, harem: [], wishlist: [], rolls: MAX_ROLLS,
-    lastRegen: Date.now(), lastDaily: 0, history: [], cd: {} };
+    lastRegen: Date.now(), lastDaily: 0, lastMarry: 0, history: [], cd: {} };
 }
-function load() { try { return JSON.parse(localStorage.getItem(LS_KEY)); } catch { return null; } }
+function load() { try { const s = JSON.parse(localStorage.getItem(LS_KEY)); if (s && !s.lastMarry) s.lastMarry = 0; if (s && !s.cd) s.cd = {}; return s; } catch { return null; } }
 function save() { localStorage.setItem(LS_KEY, JSON.stringify(state)); }
 
 function placeholder(name) {
@@ -45,11 +46,11 @@ function earnKakera(c, reason) {
   const v = KAKERA[c.rarity] ?? 10;
   state.kakera += v;
   pushHist(`${c.emoji} ${c.name} → +${v}💠 (${reason})`);
-  save(); renderWallet();
+  save(); renderWallet(); fbSyncPlayer();
 }
 function pushHist(t) { state.history.unshift(new Date().toLocaleTimeString() + " " + t); state.history = state.history.slice(0, 30); }
 
-// ---------- ROLL ----------
+function marryCooldownLeft() { return Math.max(0, (state.lastMarry || 0) + MARRY_COOLDOWN_MS - Date.now()); }
 function doRoll() {
   regen();
   if (state.rolls <= 0) { setStatus("Sem 🎲! Aguarde recarregar ou compre na loja."); return; }
@@ -76,8 +77,25 @@ function doRoll() {
     $("#btnKakera").textContent = `💠 Pegar kakera em vez de esperar`;
   } else {
     state.cd[c.id] = now;
-    setStatus(`Reaja com 💍 em até 30s para casar!`);
-    startClaim(c);
+    const mLeft = marryCooldownLeft();
+    if (mLeft > 0) {
+      const s = Math.ceil(mLeft / 1000);
+      setStatus(`💍 Casamento em cooldown (${s}s). Você pode ver o roll, mas só pode casar quando zerar — igual Mudae.`);
+      $("#btnMarry").disabled = true; $("#btnKakera").classList.remove("hidden");
+      $("#btnKakera").textContent = `💠 Pegar kakera`;
+      currentCanMarry = false;
+      // reabilita sozinho quando zerar
+      clearInterval(claimTimerInt);
+      $("#claimTimer").classList.add("hidden");
+      claimTimerInt = setInterval(() => {
+        const l = marryCooldownLeft();
+        if (l <= 0) { clearInterval(claimTimerInt); currentCanMarry = true; $("#btnMarry").disabled = false; $("#btnKakera").classList.add("hidden"); setStatus(`Reaja com 💍 em até 30s para casar!`); startClaim(c); }
+        else setStatus(`💍 Casamento em cooldown (${Math.ceil(l / 1000)}s).`);
+      }, 1000);
+    } else {
+      setStatus(`Reaja com 💍 em até 30s para casar!`);
+      startClaim(c);
+    }
   }
   pushHist(`🎲 ${c.emoji} ${c.name} (${c.series}) [${c.rarity}]`);
   save(); renderWallet(); renderHistory();
@@ -113,6 +131,8 @@ function startClaim(c) {
 }
 function doMarry() {
   if (!current) return;
+  const mLeft = marryCooldownLeft();
+  if (mLeft > 0) { setStatus(`💍 Cooldown de casamento: aguarde ${Math.ceil(mLeft / 1000)}s.`); $("#btnMarry").disabled = true; return; }
   if (!currentCanMarry) { setStatus("Esse personagem está em cooldown. Dê outro ROLL."); return; }
   if (Date.now() > claimDeadline) { setStatus("Tempo esgotado."); currentCanMarry = false; return; }
   if (state.harem.includes(current.id)) { setStatus("Você já está casado com essa pessoa."); return; }
@@ -122,10 +142,11 @@ function doMarry() {
     return;
   }
   state.harem.push(current.id);
+  state.lastMarry = Date.now();
   clearInterval(claimTimerInt); $("#claimTimer").classList.add("hidden");
   $("#btnMarry").disabled = true;
   currentCanMarry = false;
-  setStatus(`💍 Você casou com ${current.name} (${current.series})!`);
+  setStatus(`💍 Você casou com ${current.name} (${current.series})! Próximo casamento em 60s.`);
   pushHist(`💍 Casou com ${current.name}`);
   if (window._fbMarry) window._fbMarry(current).catch(() => {});
   save(); renderAll();
@@ -218,14 +239,18 @@ async function init() {
     if (window._fbDivorce) window._fbDivorce(modalChar).catch(() => {});
     save(); $("#modal").classList.add("hidden"); renderAll();
   };
-  $("#btnSaveNick").onclick = () => { state.nickname = ($("#nickInput").value || state.nickname).slice(0, 20); save(); renderRank(); };
+  $("#btnSaveNick").onclick = () => {
+    const old = state.nickname;
+    state.nickname = ($("#nickInput").value || state.nickname).slice(0, 20); save(); renderRank();
+    if (FB_DB && old !== state.nickname) { FB_DB.collection("players").doc(old).delete().catch(() => {}); fbSyncPlayer(); }
+  };
   $("#btnDaily").onclick = () => {
     if (Date.now() < state.lastDaily + DAILY_MS) { renderRank(); return; }
-    state.lastDaily = Date.now(); state.kakera += DAILY_REWARD; pushHist(`🎁 Daily +${DAILY_REWARD}💠`); save(); renderAll();
+    state.lastDaily = Date.now(); state.kakera += DAILY_REWARD; pushHist(`🎁 Daily +${DAILY_REWARD}💠`); save(); renderAll(); fbSyncPlayer();
   };
   $("#btnShopRolls").onclick = () => {
     if (state.kakera < 150) return alert("Kakera insuficiente (150💠).");
-    state.kakera -= 150; state.rolls = Math.min(99, state.rolls + 3); save(); renderAll();
+    state.kakera -= 150; state.rolls = Math.min(99, state.rolls + 3); save(); renderAll(); fbSyncPlayer();
   };
   $("#btnShopReset").onclick = () => {
     if (state.kakera < 50) return alert("Kakera insuficiente (50💠).");
@@ -243,7 +268,7 @@ async function init() {
     try {
       const obj = JSON.parse(decodeURIComponent(escape(atob($("#tradeBox").value.trim()))));
       const novo = (obj.h || []).filter(id => byId[id] && !state.harem.includes(id));
-      state.harem.push(...novo); pushHist(`🔀 Importou ${novo.length} de ${obj.n || "amigo"}`); save(); renderAll();
+      state.harem.push(...novo); pushHist(`🔀 Importou ${novo.length} de ${obj.n || "amigo"}`); save(); renderAll(); fbSyncPlayer();
     } catch { alert("Código inválido."); }
   };
 
@@ -262,6 +287,16 @@ async function init() {
 }
 
 // ---------- FIREBASE OPCIONAL ----------
+let FB_DB = null;
+function calcScore() { return state.harem.length * 10 + state.kakera; }
+function calcSS() { return state.harem.map(id => byId[id]).filter(c => c && (c.rarity === "SS" || c.rarity === "SSS")).length; }
+function fbSyncPlayer() {
+  if (!FB_DB) return;
+  FB_DB.collection("players").doc(state.nickname).set({
+    nick: state.nickname, harem: state.harem.length, kakera: state.kakera,
+    ss: calcSS(), score: calcScore(), at: Date.now()
+  }, { merge: true }).catch(() => {});
+}
 function initFirebase() {
   const cfg = window.FIREBASE_CONFIG;
   if (!cfg || !cfg.apiKey || cfg.apiKey.includes("SUA_")) { $("#fbStatus").textContent = "Status: offline solo (sem config)."; return; }
@@ -274,6 +309,7 @@ function initFirebase() {
       await load("https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js");
       firebase.initializeApp(cfg);
       const db = firebase.firestore();
+      FB_DB = db;
       await firebase.auth().signInAnonymously();
       $("#fbStatus").textContent = "Status: online 🌐 (Firestore conectado).";
       $("#onlineDot").classList.add("on");
@@ -282,12 +318,25 @@ function initFirebase() {
         window._fbClaimed = {};
         snap.forEach(d => window._fbClaimed[d.id] = d.data().owner);
       });
-      window._fbMarry = (c) => db.collection("claims").doc(c.id).set({ owner: state.nickname, at: Date.now(), series: c.series, rarity: c.rarity });
-      window._fbDivorce = (c) => db.collection("claims").doc(c.id).delete();
-      db.collection("players").doc(state.nickname).set({ harem: state.harem.length, kakera: state.kakera, at: Date.now() }, { merge: true });
-      db.collection("players").orderBy("harem", "desc").limit(10).onSnapshot(snap => {
-        $("#rankGlobal").innerHTML = ""; snap.forEach(d => { const li = document.createElement("li"); li.textContent = `${d.id} — ${d.data().harem} casamentos • ${d.data().kakera}💠`; $("#rankGlobal").appendChild(li); });
-      });
+      window._fbMarry = (c) => { fbSyncPlayer(); return db.collection("claims").doc(c.id).set({ owner: state.nickname, at: Date.now(), series: c.series, rarity: c.rarity }); };
+      window._fbDivorce = (c) => { fbSyncPlayer(); return db.collection("claims").doc(c.id).delete(); };
+      fbSyncPlayer();
+      setInterval(fbSyncPlayer, 30000);
+      db.collection("players").orderBy("score", "desc").limit(10).onSnapshot(snap => {
+        const el = $("#rankGlobal"); el.innerHTML = "";
+        if (snap.empty) { el.innerHTML = "<li class='muted'>Nenhum jogador ainda. Seja o primeiro!</li>"; return; }
+        const medals = ["🥇", "🥈", "🥉"];
+        let pos = 0;
+        snap.forEach(d => {
+          pos += 1;
+          const v = d.data();
+          const li = document.createElement("li");
+          const me = d.id === state.nickname ? " — você" : "";
+          li.innerHTML = `<b>${medals[pos - 1] || pos + "º"} ${v.nick || d.id}</b> — ${v.harem} 💍 • ${v.ss || 0} SS • ${v.kakera}💠 • ${v.score} pts${me}`;
+          if (me) li.style.color = "#fbbf24";
+          el.appendChild(li);
+        });
+      }, err => { $("#rankGlobal").innerHTML = `<li class='muted'>Erro no rank: ${err.message} (verifique Rules + índice score)</li>`; });
     } catch (e) { $("#fbStatus").textContent = "Firebase falhou: " + e.message; }
   })();
 }
